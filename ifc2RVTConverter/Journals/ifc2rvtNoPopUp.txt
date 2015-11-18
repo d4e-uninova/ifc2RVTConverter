@@ -1,0 +1,2591 @@
+' 0:< Initial VM: Avail 134217503 MB, Used 15 MB, Peak 44; RAM: Avail 1207 MB, Used 36 MB, Peak 44 
+'C 27-Jul-2015 11:02:57.042;   0:< started recording journal file 
+' Build: 20140606_1530(x64)
+' Branch: RELEASE_2015_RTM
+Dim Jrn
+Set Jrn = CrsJournalScript
+' 0:<  ->desktop InitApplication 
+' 0:<  <-desktop InitApplication 
+' 0:<  ->desktop InitNativeInstance 
+' 0:< Options::loadOptions: m_strDataLibraryLocations=Metric Library=C:\ProgramData\Autodesk\RVT 2015\Libraries\US Metric\,Metric Detail Library=C:\ProgramData\Autodesk\RVT 2015\Libraries\US Metric\Detail Items (defaultLib==\Library) 
+' 0:< ::0:: Delta VM: Avail -52 -> 134217451 MB, Used +5 -> 20 MB; RAM: Avail -7 -> 1201 MB, Used +13 -> 50 MB, Peak +13 -> 50 MB 
+'C 27-Jul-2015 11:02:58.040;   0:< License initialization complete 
+' 0:< ::0:: Delta VM: Avail -172 -> 134217279 MB, Used +41 -> 62 MB, Peak +26 -> 71 MB; RAM: Avail -9 -> 1192 MB, Used +58 -> 108 MB, Peak +58 -> 108 MB 
+' 0:< SystemSettings: 
+' 0:<               4=multiCoreCharacteristic 
+' 0:<           false=isProcessUserModeExceptionPolicyDisabledForCallbackFilter 
+' 0:< ::0:: Delta VM: Avail -724 -> 134216556 MB, Used +106 -> 168 MB, Peak +97 -> 168 MB; RAM: Avail +155 -> 1348 MB, Used +129 -> 238 MB, Peak +129 -> 238 MB 
+' 0:< Autodesk Revit 2015 
+' 0:< 64-bit load point = C:\Program Files\Autodesk\Revit 2015 
+' 0:< this journal = C:\Users\Administrator\AppData\Local\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt 
+' 0:< ::0:: Delta VM: Avail -55 -> 134216502 MB, Used +7 -> 176 MB, Peak +40 -> 209 MB; RAM: Avail -21 -> 1328 MB, Used +19 -> 258 MB, Peak +19 -> 258 MB 
+'  0.185634   1:<<<DictionaryAnalysis::initialize 
+' 0:< Journal Init 
+' 0:< Log Summary 
+' 0:< .Count 
+' 0:< ...CloseHiddenWindowsInAllDocuments = 1 
+' 0:< ...DBG_SOMETHING = 1 
+' 0:< ...DBG_WARNING = 1 
+' 0:< ...onUpdateWindowCloseHidden = 1 
+' 0:< ...PendingMessages = 2 
+' 0:< .Marshalling 
+' 0:< ...CompactCaching = 1 (Enabled) 
+' 0:< .ThreadPool 
+' 0:< ...ActivePoolSize = 21 
+' 0:< ...ConfiguredPoolSize = automatic 
+' 0:< ...ParallelCores = 4 
+' 0:< ...RequestedPoolSize = automatic 
+' 0:< .Tuning 
+' 0:< ...ElemTable = 1 (Serial except when multithreaded) 
+' 0:< ...Global = 0 (Scalable) 
+' 0:< ...PoolGlobal = 1 (Pool) 
+' 0:< ...PoolLocking = 1 (Locking) 
+' 0:< ...PoolScalable = 1 (Pool) 
+' 0:< ...PoolTreeNodes = 0 (Allocator) 
+' 0:< ...Scalable = 0 (Scalable) 
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Data "JournalDefaultTemplate"  _
+        , "Construction Template=$AllUsersAppData\Templates\Portugal\Construction-DefaultMetric.rte, Architectural Template=$AllUsersAppData\Templates\Portugal\DefaultMetric.rte, Structural Template=$AllUsersAppData\Templates\Portugal\Structural Analysis-DefaultPRTENU.rte, Mechanical Template=$AllUsersAppData\Templates\Portugal\Mechanical-Default_Metric.rte"
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Data "JournalDefaultViewDiscipline"  _
+        , "Coordination"
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "Version"  _
+        , "2015.000", "2.146"
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "Username"  _
+        , "Administrator"
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "CategoryDisciplineFilter"  _
+        , -1
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "DisciplineOption"  _
+        , 7677
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "TabDisplayOptions"  _
+        , "StayOnModifyInProject", 0
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "TabDisplayOptions"  _
+        , "StayOnModifyInFamily", 1
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "TabDisplayOptions"  _
+        , "ActiveCtOnSelection", 1
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "AllowLinkSelection"  _
+        , 1
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "AllowFaceSelection"  _
+        , 0
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "AllowUnderlaySelection"  _
+        , 1
+'H 27-Jul-2015 11:03:18.409;   0:< 
+Jrn.Directive "AllowPinnedSelection"  _
+        , 1
+' 0:< ::0:: Delta VM: Avail -19 -> 134216484 MB, Used +0 -> 177 MB; RAM: Avail -6 -> 1322 MB, Used +4 -> 262 MB, Peak +8 -> 266 MB 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(b3892e5f-9161-4bbc-958a-c8ef75e94e96); VendorId(ADSK); Description(This service supports managing references to external resources such as Revit links or other referenced data.) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(a9bdf0fd-2632-429e-bc35-50ebc2b824d2); VendorId(ADSK); Description(Navisworks Export Service) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(aaa05780-790c-43dc-bc41-1c2150227f45); VendorId(ADSK); Description(Snapping Service Description) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(de6db8de-dea6-40bd-9503-4ffe62ff6143); VendorId(ADSK); Description(The external service to view and modify code checking parameter in analytical elements.) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(c42c9b55-c491-4611-97e9-9e617958e13e); VendorId(ADSK); Description(The external service to view and modify service type parameter in structural elements.) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(d8b95737-f943-414c-9ad7-86785bf1acbc); VendorId(ADSK); Description(IFC) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(d8b95737-f943-414c-9ad7-86785bf1acbc); ServerId(ef8d0493-7f36-42b5-b9aa-8aaac716482b); Name(Default IFC); VendorId(ADSK); Description(Default IFC) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(98d317e2-e943-4cc0-a3da-2edf32a5d942); VendorId(ADSK); Description(IFC) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(98d317e2-e943-4cc0-a3da-2edf32a5d942); ServerId(660a7370-f6d6-43c8-8456-6b2eea785110); Name(Default IFC); VendorId(ADSK); Description(Default IFC) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(785d0bd7-3088-489a-af7a-593fc32e2540); VendorId(ADSK); Description(Duct fitting and accessory pressure drop service) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(b8656566-e4ef-4e6a-bedb-9ecc6b5a2780); VendorId(ADSK); Description(Pipe fitting and accessory pressure drop service) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(8c707bd6-ecd6-4150-a0df-bd6c85dd9bb0); VendorId(ADSK); Description(Duct Straight Segment Pressure Drop Calculation) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(62d13e0c-9fe1-4d8e-a0c7-1f93d24cf3f3); VendorId(ADSK); Description(Pipe Straight Segment Pressure Drop Calculation) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(bf0da776-5307-4747-8285-f358e92a90d0); VendorId(ADSK); Description(Convert Fixture Units to Flow for Plumbing Fixtures, which is applicable to Domestic Water System Flow Calculation) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(1fe75ba7-79d4-45f6-8e31-c1b83d4476a9); VendorId(ADSK); Description(This service supports custom handling of many UI operations related to external resources.) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(52009bda-c817-4aef-aa31-36dc3742516e); VendorId(ADSK); Description(Duct fitting and accessory pressure drop UI service) } 
+' 0:< API_SUCCESS { Registered an external service.: ServiceId(1931b323-1d29-4083-b1ce-bfdcddd011af); VendorId(ADSK); Description(Pipe fitting and accessory pressure drop UI service) } 
+' 0:< ::0:: Delta VM: Avail -61 -> 134216423 MB, Used +21 -> 198 MB; RAM: Avail -18 -> 1304 MB, Used +27 -> 290 MB, Peak +24 -> 290 MB 
+' 0:< To make IFC server work. 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(b3892e5f-9161-4bbc-958a-c8ef75e94e96); ServerId(bd4f0f53-394a-4468-b37e-1e7949013382); Name(Revit Default DB Server); VendorId(ADSK); Description(Revit BuiltIn server for loading local resources.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(bf0da776-5307-4747-8285-f358e92a90d0); ServerId(56121d7d-e1d7-42a3-bed8-f4d1d32058c8); Name(Plumbing Fixture Flow); VendorId(ADSK); Description(Calculation of flow using the Plumbing Fixture Flow method.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(62d13e0c-9fe1-4d8e-a0c7-1f93d24cf3f3); ServerId(ea275fb1-5d7b-47d6-b828-bf856df9bfd5); Name(Simplified Colebrook Equation); VendorId(ADSK); Description(Calculation of pressure drop using Darcy-Weisbach method.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(8c707bd6-ecd6-4150-a0df-bd6c85dd9bb0); ServerId(042a10e0-8d24-46a4-9596-d192b3125d0c); Name(Altshul-Tsal Equation); VendorId(ADSK); Description(Calculation of duct pressure drop using Darcy method.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(8c707bd6-ecd6-4150-a0df-bd6c85dd9bb0); ServerId(2e9a77c0-62a0-4693-9442-33312be60ad7); Name(Haaland Equation); VendorId(USERADDIN); Description(Computes Friction Factor using the Haaland Equation.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(62d13e0c-9fe1-4d8e-a0c7-1f93d24cf3f3); ServerId(58ea1b7c-2fca-453f-9ab9-7a3b9927ecc1); Name(Haaland Equation); VendorId(USERADDIN); Description(Computes Friction Factor using the Haaland Equation.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(8c707bd6-ecd6-4150-a0df-bd6c85dd9bb0); ServerId(e395a0ec-48a4-4255-b957-afbb3d73cb67); Name(Colebrook Equation); VendorId(USERADDIN); Description(Computes Friction Factor using Colebrook Equation.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(62d13e0c-9fe1-4d8e-a0c7-1f93d24cf3f3); ServerId(0875f550-6141-4e34-a6b7-547cf9cfda01); Name(Colebrook Equation); VendorId(USERADDIN); Description(Computes Friction Factor using Colebrook Equation.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(785d0bd7-3088-489a-af7a-593fc32e2540); ServerId(76eff5da-2e71-45f7-b940-cc5716328ba0); Name(Not Defined); VendorId(ADSK); Description(The Pressure Drop on the fitting will be treated as 0.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(785d0bd7-3088-489a-af7a-593fc32e2540); ServerId(8baf7d75-8b9b-46d0-b8ce-3ad1c19e6b19); Name(Coefficient from ASHRAE Table); VendorId(ADSK); Description(Version 5.0.0 of the ASHRAE duct fitting database has been implemented for duct fittings. When using this calculation method, the duct fitting coefficient will be read from the mapped ASHRAE table.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(785d0bd7-3088-489a-af7a-593fc32e2540); ServerId(5a598293-1504-46cc-a9c0-de55c82848b9); Name(Specific Coefficient); VendorId(ADSK); Description(Customize the Loss Coefficient on the fitting, then using the following method to calculate duct fitting pressure drop. this method only available for two connector fittings, like elbow, transitions, etc.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(785d0bd7-3088-489a-af7a-593fc32e2540); ServerId(46245996-eebb-4536-ac17-9c1cd917d8cf); Name(Specific Loss); VendorId(ADSK); Description(Customize the Pressure Drop on the fitting, this method only available for two connector fittings, like elbow, transitions, etc.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(b8656566-e4ef-4e6a-bedb-9ecc6b5a2780); ServerId(61e7b8e1-16d1-4fe4-82f0-327af736323f); Name(Not Defined); VendorId(ADSK); Description(The Pressure Drop on the fitting will be treated as 0.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(b8656566-e4ef-4e6a-bedb-9ecc6b5a2780); ServerId(51dd5e98-a9dd-464b-b286-4a37953610bf); Name(K Coefficient from Table); VendorId(ADSK); Description(CIBSE/ASHRAE/Crane standards are used for pipe fitting loss definition based on the pipe fitting types.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(b8656566-e4ef-4e6a-bedb-9ecc6b5a2780); ServerId(32d58662-b467-4f7b-b728-f6ad7b7ba5e3); Name(Specific Coefficient); VendorId(ADSK); Description(Customize the Loss Coefficient on the fitting, then using the following method to calculate pipe fitting pressure drop. This method only available for two connector fittings, like elbow, transitions, etc.) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(b8656566-e4ef-4e6a-bedb-9ecc6b5a2780); ServerId(16f4f7be-0ac0-461d-a9a4-1d3511cd280e); Name(Specific Loss); VendorId(ADSK); Description(Customize the Pressure Drop on the fitting, this method only available for two connector fittings, like elbow, transitions, etc.) } 
+' 0:< API registering ApplicationClosing event by application RaaS (d4f6554b-5d68-4a13-beec-4a0647c34408). 
+' 0:< API_SUCCESS { Replacing command id 'ID_PHOTO_RENDER_IN_CLOUD' Executed implementation with implementation from application 'RaaS' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\RaaSForRevit\RaaSApplication.dll'. } 
+' 0:< API_SUCCESS { API registering command  Executed event by application RaaS (d4f6554b-5d68-4a13-beec-4a0647c34408). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_PHOTO_RENDER_IN_CLOUD' CanExecute implementation with implementation from application 'RaaS' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\RaaSForRevit\RaaSApplication.dll'. } 
+' 0:< API_SUCCESS { API registering command  CanExecute event by application RaaS (d4f6554b-5d68-4a13-beec-4a0647c34408). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_PHOTO_RENDER_GALLERY' Executed implementation with implementation from application 'RaaS' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\RaaSForRevit\RaaSApplication.dll'. } 
+' 0:< API_SUCCESS { API registering command  Executed event by application RaaS (d4f6554b-5d68-4a13-beec-4a0647c34408). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_PHOTO_RENDER_GALLERY' CanExecute implementation with implementation from application 'RaaS' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\RaaSForRevit\RaaSApplication.dll'. } 
+' 0:< API_SUCCESS { API registering command  CanExecute event by application RaaS (d4f6554b-5d68-4a13-beec-4a0647c34408). } 
+' 0:< API_SUCCESS { API External Application added: RaaS, Class: Autodesk.RaaS.RevitAddin.EApplication, Assembly: RaaSApplication.dll, VendorId: ADSK, Description: Autodesk, www.autodesk.com. } 
+'H 27-Jul-2015 11:03:25.315;   0:< 
+Jrn.Directive "IdleTimeTaskSymbol"  _
+        , "0.ExternalEvent"
+' 0:< API_SUCCESS { API External Application added: AutoLoad, Class: AutoLoader.AutoLoader, Assembly: AutoLoader.dll, VendorId: ADSK, Description: . } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(52009bda-c817-4aef-aa31-36dc3742516e); ServerId(607992d7-359d-4593-b497-8aa238e2c564); Name(Duct not defined pressure drop UI server); VendorId(ADSK); Description(Duct not defined pressure drop UI server) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(52009bda-c817-4aef-aa31-36dc3742516e); ServerId(9641a039-441e-42e2-93a6-c0e2177cc23c); Name(Duct specific coefficient pressure drop UI server); VendorId(ADSK); Description(Duct specific coefficient pressure drop UI server) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(52009bda-c817-4aef-aa31-36dc3742516e); ServerId(d3b5e81d-9b8c-40da-8efb-99dd37fda611); Name(Duct specific loss pressure drop UI server); VendorId(ADSK); Description(Duct specific loss pressure drop UI server) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(52009bda-c817-4aef-aa31-36dc3742516e); ServerId(25fa8de2-67c4-47d1-91f6-bd6f0803a5ed); Name(Duct coefficient from table pressure drop UI server); VendorId(ADSK); Description(Duct coefficient from table pressure drop UI server) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(1931b323-1d29-4083-b1ce-bfdcddd011af); ServerId(62917391-e14d-4897-ad0c-05342d71e4f9); Name(Pipe not defined pressure drop UI server); VendorId(ADSK); Description(Pipe not defined pressure drop UI server) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(1931b323-1d29-4083-b1ce-bfdcddd011af); ServerId(247265b6-7b71-4147-97c6-cc52b39c12aa); Name(Pipe specific coefficient pressure drop UI server); VendorId(ADSK); Description(Pipe specific coefficient pressure drop UI server) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(1931b323-1d29-4083-b1ce-bfdcddd011af); ServerId(5978b92a-3f0b-4691-bbc8-caf2fae20a71); Name(Pipe specific loss pressure drop UI server); VendorId(ADSK); Description(Pipe specific loss pressure drop UI server) } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(1931b323-1d29-4083-b1ce-bfdcddd011af); ServerId(cda19b6f-fbd5-4725-a0ce-f159bf5d02fe); Name(Pipe K coefficient from table pressure drop UI server); VendorId(ADSK); Description(Pipe K coefficient from table pressure drop UI server) } 
+' 0:< API_SUCCESS { API External Application added: FittingAndAccessoryCalculationUIServers, Class: FittingAndAccessoryCalculationUIServers.ServerApp, Assembly: FittingAndAccessoryCalculationUIServers.dll, VendorId: ADSK, Description: Autodesk, www.autodesk.com. } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(1fe75ba7-79d4-45f6-8e31-c1b83d4476a9); ServerId(3ffc688a-bb2e-4145-90ab-9443da02aef6); Name(Revit Default UI Server.); VendorId(ADSK); Description(Handles user interface operations related to Revit builtIn DB server for local resources.) } 
+' 0:< API_SUCCESS { API External Application added: KeynoteUIServer, Class: KeynoteUIServer.ServerApp, Assembly: KeynoteUIServer.dll, VendorId: ADSK, Description: Autodesk, www.autodesk.com. } 
+' 0:< ::0:: Delta VM: Avail -11 -> 134216413 MB, Used -2 -> 197 MB; RAM: Avail -2 -> 1302 MB, Used +1 -> 291 MB, Peak +6 -> 297 MB 
+' 0:< API_SUCCESS { Replacing command id 'ID_NUMBERING_REINF_PARTITIONS' Executed implementation with implementation from application 'Object Numbering' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\ObjectNumbering\ObjectNumberingUI.dll'. } 
+' 0:< API_SUCCESS { API registering command  Executed event by application Object Numbering (32b5860a-aec9-4df7-96b0-07168b27446e). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_NUMBERING_REINF_PARTITIONS' CanExecute implementation with implementation from application 'Object Numbering' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\ObjectNumbering\ObjectNumberingUI.dll'. } 
+' 0:< API_SUCCESS { API registering command  CanExecute event by application Object Numbering (32b5860a-aec9-4df7-96b0-07168b27446e). } 
+' 0:< API_SUCCESS { API External Application added: Object Numbering, Class: BIM.Numbering.UI.NumberingUIApplication, Assembly: ObjectNumberingUI.dll, VendorId: ADSK, Description: Autodesk, www.autodesk.com. } 
+' 0:< API_SUCCESS { Replacing command id 'ID_MEP_DUCT_PRESSURE_LOSS_REPORT' CanExecute implementation with implementation from application 'PressureLossReport' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\MEPCalculation\PressureLossReport.dll'. } 
+' 0:< API_SUCCESS { API registering command Duct Pressure Loss Report CanExecute event by application PressureLossReport (b00d3753-d3bc-4255-9c97-e389de87a5d6). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_MEP_DUCT_PRESSURE_LOSS_REPORT' Executed implementation with implementation from application 'PressureLossReport' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\MEPCalculation\PressureLossReport.dll'. } 
+' 0:< API_SUCCESS { API registering command Duct Pressure Loss Report Executed event by application PressureLossReport (b00d3753-d3bc-4255-9c97-e389de87a5d6). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_MEP_PIPE_PRESSURE_LOSS_REPORT' CanExecute implementation with implementation from application 'PressureLossReport' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\MEPCalculation\PressureLossReport.dll'. } 
+' 0:< API_SUCCESS { API registering command Pipe Pressure Loss Report CanExecute event by application PressureLossReport (b00d3753-d3bc-4255-9c97-e389de87a5d6). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_MEP_PIPE_PRESSURE_LOSS_REPORT' Executed implementation with implementation from application 'PressureLossReport' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\MEPCalculation\PressureLossReport.dll'. } 
+' 0:< API_SUCCESS { API registering command Pipe Pressure Loss Report Executed event by application PressureLossReport (b00d3753-d3bc-4255-9c97-e389de87a5d6). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_MEP_SELECT_DUCT_PRESSURE_LOSS_REPORT' CanExecute implementation with implementation from application 'PressureLossReport' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\MEPCalculation\PressureLossReport.dll'. } 
+' 0:< API_SUCCESS { API registering command Duct Pressure Loss Report CanExecute event by application PressureLossReport (b00d3753-d3bc-4255-9c97-e389de87a5d6). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_MEP_SELECT_DUCT_PRESSURE_LOSS_REPORT' Executed implementation with implementation from application 'PressureLossReport' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\MEPCalculation\PressureLossReport.dll'. } 
+' 0:< API_SUCCESS { API registering command Duct Pressure Loss Report Executed event by application PressureLossReport (b00d3753-d3bc-4255-9c97-e389de87a5d6). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_MEP_SELECT_PIPE_PRESSURE_LOSS_REPORT' CanExecute implementation with implementation from application 'PressureLossReport' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\MEPCalculation\PressureLossReport.dll'. } 
+' 0:< API_SUCCESS { API registering command Pipe Pressure Loss Report CanExecute event by application PressureLossReport (b00d3753-d3bc-4255-9c97-e389de87a5d6). } 
+' 0:< API_SUCCESS { Replacing command id 'ID_MEP_SELECT_PIPE_PRESSURE_LOSS_REPORT' Executed implementation with implementation from application 'PressureLossReport' dll 'C:\Program Files\Autodesk\Revit 2015\AddIns\MEPCalculation\PressureLossReport.dll'. } 
+' 0:< API_SUCCESS { API registering command Pipe Pressure Loss Report Executed event by application PressureLossReport (b00d3753-d3bc-4255-9c97-e389de87a5d6). } 
+' 0:< API_SUCCESS { API External Application added: PressureLossReport, Class: PressureLossReport.PressureLossReportApplication, Assembly: PressureLossReport.dll, VendorId: ADSK, Description: Autodesk, www.autodesk.com. } 
+' 0:< API_SUCCESS { An external server has been registered.: ServiceId(c42c9b55-c491-4611-97e9-9e617958e13e); ServerId(1b91ce46-ddb4-44ec-a942-d45efadde353); Name(SectionTypeParameterServer); VendorId(ADSK); Description(Provides implementation for Section Type parameters) } 
+' 0:< API_SUCCESS { API External Application added: Structural Section Properties, Class: SectionPropertiesServerDB.ServerApp, Assembly: SectionPropertiesServerDB.dll, VendorId: ADSK, Description: Autodesk, www.autodesk.com. } 
+' 0:< Added new API pushbutton 6400 name  text Glue class BIM360RevitAddin.GlueItCommand assembly C:\Program Files\Autodesk\BIM360GlueAddins\Revit2015Addin\BIM360GlueRevit2015Addin.dll 
+' 0:< Added new API pushbutton 6401 name  text Clash
+'Pinpoint class BIM360RevitAddin.GluePinPointCommand assembly C:\Program Files\Autodesk\BIM360GlueAddins\Revit2015Addin\BIM360GlueRevit2015Addin.dll 
+' 0:< Added new API pushbutton 6402 name  text Equipment
+'Properties class BIM360RevitAddin.EquipmentCommand assembly C:\Program Files\Autodesk\BIM360GlueAddins\Revit2015Addin\BIM360GlueRevit2015Addin.dll 
+' 0:< API registering ApplicationInitialized event by application Ribbon (07587efb-05ef-495a-9a23-ab401bb15327). 
+' 0:< API registering ApplicationClosing event by application Ribbon (07587efb-05ef-495a-9a23-ab401bb15327). 
+' 0:< API_SUCCESS { API External Application added: Ribbon, Class: BIM360RevitAddin.HorizontalRibbon, Assembly: C:\Program Files\Autodesk\BIM360GlueAddins\Revit2015Addin\BIM360GlueRevit2015Addin.dll, VendorId: BIM360, Description: Autodesk, Inc, www.autodesk.com. } 
+' 0:< Added new API pushbutton 6403 name  text Export class DBRevitPlugin.ExportCmd assembly C:\Program Files (x86)\DesignBuilder\Lib\DBRevitPlugin.dll 
+' 0:< API_SUCCESS { API External Application added: DBRevitPlugin, Class: DBRevitPlugin.DesignBuilderPanel, Assembly: C:\Program Files (x86)\DesignBuilder\Lib\DBRevitPlugin.dll, VendorId: DBSO, Description: . } 
+' 0:< ::0:: Delta VM: Avail -12 -> 134216402 MB, Used +2 -> 199 MB, Peak +0 -> 210 MB; RAM: Avail -12 -> 1290 MB, Used +11 -> 303 MB, Peak +16 -> 313 MB 
+'C 27-Jul-2015 11:03:27.940;   0:< ->processShellCommand 
+ 'E 27-Jul-2015 11:03:27.940;   0:< 
+ Jrn.Command "Internal" , "Show or hide recent files , ID_STARTUP_PAGE"
+' 0:< ::1:: Delta VM: Avail -19 -> 134216383 MB, Used +1 -> 201 MB; RAM: Avail -3 -> 1288 MB, Used +3 -> 306 MB 
+'C 27-Jul-2015 11:03:28.362;   0:< <-processShellCommand 
+' 0:<  ->DesktopMFCApp::doStartupWarnings 
+'C 27-Jul-2015 11:03:28.362;   0:< manage licensing 
+' 0:< License mode: Standalone 
+' 0:< Status: Your license will expire in 1019 days. 
+' 0:< Type: Standalone - Locked 
+' 0:< Usage: Student Version 
+' 0:< Behavior: Extendable 
+' 0:< Expiration: Friday, May 11, 2018 
+'C 27-Jul-2015 11:03:29.471;   0:< manage involvement 
+' 0:< ::1:: Delta VM: Avail -56 -> 134216328 MB, Used +1 -> 202 MB; RAM: Avail -7 -> 1281 MB, Used +7 -> 314 MB, Peak +0 -> 314 MB 
+'C 27-Jul-2015 11:03:30.049;   0:< manage debug modes 
+'C 27-Jul-2015 11:03:30.049;   0:< MFCApp::testMSAA 
+' 0:< ::1:: Delta VM: Avail -42 -> 134216286 MB, Used +2 -> 205 MB; RAM: Avail -7 -> 1274 MB, Used +7 -> 321 MB, Peak +6 -> 321 MB 
+' 0:< Revit Graphics Information 
+' 0:< 	Current Mode : DirectX Software 
+' 0:< 	Use Hardware: ON 
+' 0:< 	Use Overlays : ON 
+' 0:< START CanUseHardware(forced) 
+' 1:< ::1:: Delta VM: Avail -35 -> 134216252 MB, Used +25 -> 230 MB, Peak +21 -> 232 MB; RAM: Avail -10 -> 1264 MB, Used +8 -> 330 MB, Peak +10 -> 332 MB 
+' 1:< DX Device: DirectX 11, WARP 
+'C 27-Jul-2015 11:03:30.352;   1:< START video card certification 
+' 1:< ::1:: Delta VM: Avail -16 -> 134216236 MB, Used +2 -> 232 MB, Peak +9 -> 241 MB; RAM: Avail -2 -> 1263 MB, Used +0 -> 331 MB, Peak +9 -> 341 MB 
+' 1:< 
+'Current driver version: 5.0.0.0
+'Certified driver(s):  
+' 1:< VIDEO CARD ENVIRONMENT: CARD="VirtualBox Graphics Adapter for Windows 8" ManufacturerID="80EE" DeviceID="BEEF" osID="8000" DRIVER="5.0.0.0" DEVICE="DX11" FL_Caps="50" (Shader Model) 
+'C 27-Jul-2015 11:03:30.707;   1:< FINISH video card certification 
+'  0.563021   1:<<<CanUseHardware(forced) 
+' 0:< 
+'Can use hardware=y
+'Hardware support flags:
+'FeatureLevelLow=n
+'DrvOlderThanTested=n
+'DrvNewerThanTested=n
+'CardIsNotListed=y
+'NotCertifiedEnv=n
+'3GBSwitchIsOn=n
+'SoftwareModeForced=n 
+' 0:< FINISH CanUseHardware(forced) 
+'C 27-Jul-2015 11:03:30.707;   0:< postConditionalWarnings 
+'C 27-Jul-2015 11:03:30.707;   0:< giveAtomRegistrationWarnings 
+'C 27-Jul-2015 11:03:30.707;   0:< warnings->consumeAll 
+'C 27-Jul-2015 11:03:30.709;   0:< Process result of DebugModes-Changed Task Dialog 
+'C 27-Jul-2015 11:03:30.709;   0:< isMaterialLibraryAvailable 
+'C 27-Jul-2015 11:03:30.709;   0:< start up warnings for AddIns 
+' 0:<  <-DesktopMFCApp::doStartupWarnings 
+' 0:<  <-desktop InitNativeInstance 
+' 0:<  ->desktop InitManagedInstance 
+' 0:<  <-desktop InitManagedInstance 
+' 0:< ::1:: Delta VM: Avail -34 -> 134216203 MB, Used +5 -> 237 MB; RAM: Avail -16 -> 1247 MB, Used +17 -> 348 MB, Peak +6 -> 348 MB 
+'C 27-Jul-2015 11:03:31.718;   0:< appPriv idle 
+' 0:< OPERATING SYSTEM INFORMATION:  
+' 0:<    BuildNumber : 9600 
+' 0:<    BuildType : Multiprocessor Free 
+' 0:<    Caption : Microsoft Windows Server 2012 R2 Standard Evaluation 
+' 0:<    CodeSet : 1252 
+' 0:<    CountryCode : 351 
+' 0:<    FreePhysicalMemory : 1270840 
+' 0:<    FreeSpaceInPagingFiles : 1235800 
+' 0:<    FreeVirtualMemory : 2367116 
+' 0:<    MaxProcessMemorySize : 137438953344 
+' 0:<    OSLanguage : 1033 
+' 0:<    OSType : 18 
+' 0:<    ServicePackMajorVersion : 0 
+' 0:<    ServicePackMinorVersion : 0 
+' 0:<    TotalVirtualMemorySize : 3600952 
+' 0:<    TotalVisibleMemorySize : 2355768 
+' 0:<    Version : 6.3.9600 
+' 0:<    Process affinity mask : F 
+' 0:<    System affinity mask : F 
+' 0:< PROCESSOR INFORMATION:  
+' 0:<    AddressWidth : 64 
+' 0:<    Architecture : 9 
+' 0:<    Availability : 3 
+' 0:<    Caption : Intel64 Family 6 Model 23 Stepping 7 
+' 0:<    CurrentClockSpeed : 2500 
+' 0:<    DataWidth : 64 
+' 0:<    Description : Intel64 Family 6 Model 23 Stepping 7 
+' 0:<    Family : 2 
+' 0:<    Level : 6 
+' 0:<    Manufacturer : GenuineIntel 
+' 0:<    MaxClockSpeed : 2500 
+' 0:<    Name : Intel(R) Core(TM)2 Quad  CPU   Q9300  @ 2.50GHz 
+' 0:<    Revision : 5895 
+' 0:<    Role : CPU 
+' 0:<    StatusInfo : 3 
+' 0:<    Version :  
+' 0:< VIDEO CONTROLLER INFORMATION:  
+' 0:<    AdapterCompatibility : Oracle Corporation 
+' 0:<    AdapterDACType : Oracle Corporation 
+' 0:<    AdapterRAM : 0 
+' 0:<    Caption : VirtualBox Graphics Adapter for Windows 8 
+' 0:<    CurrentBitsPerPixel : 32 
+' 0:<    CurrentHorizontalResolution : 1920 
+' 0:<    CurrentNumberOfColors : 4294967296 
+' 0:<    CurrentRefreshRate : 60 
+' 0:<    CurrentVerticalResolution : 1080 
+' 0:<    Description : VirtualBox Graphics Adapter for Windows 8 
+' 0:<    DriverDate : 20150709000000.000000-000 
+' 0:<    DriverVersion : 5.0.0.0 
+' 0:<    MaxRefreshRate : 60 
+' 0:<    MinRefreshRate : 60 
+' 0:<    Monochrome : 0 
+' 0:<    Name : VirtualBox Graphics Adapter for Windows 8 
+' 0:<    VideoArchitecture : 5 
+' 0:<    VideoMemoryType : 2 
+' 0:<    VideoModeDescription : 1920 x 1080 x 4294967296 colors 
+' 0:<    VideoProcessor : VirtualBox VESA BIOS 
+' 0:< PRINTER INFORMATION:  
+' 0:<    Caption : Microsoft XPS Document Writer 
+' 0:<    Default : 0 
+' 0:<    DeviceID : Microsoft XPS Document Writer 
+' 0:<    Direct : 0 
+' 0:<    DriverName : Microsoft XPS Document Writer v4 
+' 0:<    EnableBIDI : 0 
+' 0:<    EnableDevQueryPrint : 0 
+' 0:<    HorizontalResolution : 600 
+' 0:<    Local : -1 
+' 0:<    Name : Microsoft XPS Document Writer 
+' 0:<    Network : 0 
+' 0:<    PortName : PORTPROMPT: 
+' 0:<    PrintJobDataType : RAW 
+' 0:<    PrintProcessor : winprint 
+' 0:<    RawOnly : 0 
+' 0:<    Shared : 0 
+' 0:<    SpoolEnabled : -1 
+' 0:<    VerticalResolution : 600 
+' 0:< PRINTER INFORMATION:  
+' 0:<    Caption : Foxit Reader PDF Printer 
+' 0:<    Default : -1 
+' 0:<    DeviceID : Foxit Reader PDF Printer 
+' 0:<    Direct : 0 
+' 0:<    DriverName : Foxit Reader PDF Printer Driver 
+' 0:<    EnableBIDI : 0 
+' 0:<    EnableDevQueryPrint : 0 
+' 0:<    HorizontalResolution : 600 
+' 0:<    Local : -1 
+' 0:<    Name : Foxit Reader PDF Printer 
+' 0:<    Network : 0 
+' 0:<    PortName : FOXIT_Reader: 
+' 0:<    PrintJobDataType : RAW 
+' 0:<    PrintProcessor : winprint 
+' 0:<    RawOnly : 0 
+' 0:<    Shared : 0 
+' 0:<    SpoolEnabled : -1 
+' 0:<    VerticalResolution : 600 
+' 0:<    Caption : DIALux PDF Printer 
+' 0:<    Default : 0 
+' 0:<    DeviceID : DIALux PDF Printer 
+' 0:<    Direct : 0 
+' 0:<    DriverName : Amyuni Document Converter 450 
+' 0:<    EnableBIDI : 0 
+' 0:<    EnableDevQueryPrint : 0 
+' 0:<    HorizontalResolution : 600 
+' 0:<    Local : -1 
+' 0:<    Name : DIALux PDF Printer 
+' 0:<    Network : 0 
+' 0:<    PortName : NUL: 
+' 0:<    PrintJobDataType : RAW 
+' 0:<    PrintProcessor : winprint 
+' 0:<    RawOnly : -1 
+' 0:<    Shared : 0 
+' 0:<    SpoolEnabled : -1 
+' 0:<    VerticalResolution : 600 
+' 0:< PRINTER CONFIGURATION INFORMATION:  
+' 0:<    Color : 2 
+' 0:<    Copies : 1 
+' 0:<    Description : Microsoft XPS Document Writer 
+' 0:<    DriverVersion : 1539 
+' 0:<    Orientation : 1 
+' 0:<    PaperLength : 2794 
+' 0:<    PaperSize : Letter 8 1/2 x 11 in 
+' 0:<    PaperWidth : 2159 
+' 0:<    PrintQuality : 600 
+' 0:<    SpecificationVersion : 1025 
+' 0:<    XResolution : 600 
+' 0:<    YResolution : 600 
+' 0:< PRINTER CONFIGURATION INFORMATION:  
+' 0:<    Color : 2 
+' 0:<    Copies : 1 
+' 0:<    Description : Foxit Reader PDF Printer 
+' 0:<    DriverVersion : 1025 
+' 0:<    Duplex : 0 
+' 0:<    MediaType : 1 
+' 0:<    Orientation : 1 
+' 0:<    PaperLength : 2970 
+' 0:<    PaperSize : A4 210 x 297 mm 
+' 0:<    PaperWidth : 2100 
+' 0:<    PrintQuality : 600 
+' 0:<    SpecificationVersion : 1025 
+' 0:<    XResolution : 600 
+' 0:<    YResolution : 600 
+' 0:<    Color : 2 
+' 0:<    Copies : 1 
+' 0:<    Description : DIALux PDF Printer 
+' 0:<    DriverVersion : 100 
+' 0:<    Duplex : 0 
+' 0:<    Orientation : 1 
+' 0:<    PaperLength : 2970 
+' 0:<    PaperSize : A4 210 x 297 mm 
+' 0:<    PaperWidth : 2100 
+' 0:<    PrintQuality : 600 
+' 0:<    SpecificationVersion : 1025 
+' 0:<    XResolution : 600 
+' 0:<    YResolution : 600 
+ ' 0:< ::1:: Delta VM: Avail -11 -> 134216192 MB, Used +1 -> 239 MB; RAM: Avail -11 -> 1237 MB, Used +4 -> 353 MB, Peak +4 -> 353 MB 
+ 'E 27-Jul-2015 11:03:37.633;   0:< 
+ Jrn.AppButtonEvent 1 , "Application Menu is opening"
+' 0:< ::2:: Delta VM: Avail -5 -> 134216188 MB, Used +5 -> 244 MB, Peak +5 -> 247 MB; RAM: Avail -10 -> 1228 MB, Used +8 -> 361 MB, Peak +11 -> 364 MB 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+ 'E 27-Jul-2015 11:03:40.680;   0:< 
+ Jrn.AppButtonEvent 0 , "Application Menu is closing"
+ 'E 27-Jul-2015 11:03:40.774;   0:< 
+ Jrn.Command "Internal" , "Open IFC File , ID_IMPORT_IFC"
+ ' 0:< DBG_WARN: Preview bitmap control is null while trying to preview.: line 2342 of d:\ship\2015_px64\source\revit\revitmfc\dialog\AFileNavDialog.cpp. 
+ ' 0:< ::4:: Delta VM: Avail -16 -> 134216172 MB, Used +4 -> 249 MB, Peak +3 -> 251 MB; RAM: Avail -6 -> 1222 MB, Used +7 -> 368 MB, Peak +5 -> 370 MB 
+ 'H 27-Jul-2015 11:03:44.706;   0:< 
+ Jrn.Data "FileDialog"  _
+         , "IDOK", "C:\Users\Administrator\AppData\Local\ifc2rvt\in.ifc", "ifc" _
+         , "in.ifc", "in"
+ 'H 27-Jul-2015 11:03:44.707;   0:< 
+ Jrn.Data "FileType"  _
+         , "All Supported Files (*.ifc;*.ifcXML;*.ifcZIP)"
+ 'H 27-Jul-2015 11:03:44.709;   0:< 
+ Jrn.Data "Import IFC Intent"  _
+         , "0"
+ 'H 27-Jul-2015 11:03:44.709;   0:< 
+ Jrn.Data "Import IFC AutoJoin"  _
+         , "1"
+ 'H 27-Jul-2015 11:03:44.719;   0:< 
+ Jrn.Directive "DocSymbol"  _
+         , "[Project1]"
+ ' 1:< File: Open 
+ ' 2:< Connecting session [$2ec1d78e] to Worksharing Log [C:\Users\Administrator\AppData\Local\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt] 
+ '  0.000143     3:<<<WorksharingLog::getSlog [] 
+ ' 2:< Additional IP address/name found for host WIN-DAGP2QCH00H: fe80::184c:15de:f5ff:fdf0%14  
+ ' 2:< Additional IP address/name found for host WIN-DAGP2QCH00H: 10.0.2.15  
+ '  0.002809---- 3:<<acquireFileLock 
+ '  0.003475     3:<<acquireFileLock 
+ '  0.008749    2:<<OpenDocumentTask::acquireFileLock 
+ '  0.053056       5:<<<loadAllClasses 
+ '  0.000753       5:<<<RegisterPreDocLoadCallback::invokeCallbacks 
+ '  0.000294        6:<<<LoadModel DSI 
+ '  0.000486       5:<<loading DocumentStorageIndex 
+  'E 27-Jul-2015 11:03:44.907;   5:< 
+  ' [Jrn.BasicFileInfo] Rvt.Attr.Worksharing: Not enabled Rvt.Attr.UserName:  Rvt.Attr.CentralModelPath:  Rvt.Attr.RevitBuildVersion: Autodesk Revit 2015 (Build: 20140117_1515) Rvt.Attr.LastSavePath: C:\US_Data_P4\Dev\Data\Metric\Templates\Construction-DefaultMetric1.rte Rvt.Attr.ProjectSpark: notProjectSpark Rvt.Attr.LocaleWhenSaved: ENU 
+  ' 6:< [ISL] On open, Adler Checksum: 0xeb7bfe0d [C:\ProgramData\Autodesk\RVT 2015\Templates\Portugal\Construction-DefaultMetric.rte] 
+  '  0.022372        6:<<<Checking Checksum 
+  ' 5:< [ISL] Read last modification time: 29-Jan-2014 07:04:14 (UTC: 29-Jan-2014 07:04:14) 
+  ' 5:< ::5:: Delta VM: Avail -10 -> 134216163 MB, Used +6 -> 255 MB, Peak +4 -> 255 MB; RAM: Avail -10 -> 1212 MB, Used +10 -> 379 MB, Peak +9 -> 379 MB 
+  '  0.011228        6:<<<app infos and other global data 
+  ' 5:< File was saved in Autodesk Revit 2015 (Build: 20140117_1515) 
+  '  0.001761         7:<<<ET::repairModificationDatesOutOfSequence 
+  '  0.017127        6:<<ElemTable 
+  '  0.024140        6:<<<ContentDocuments 
+  '  0.002126        6:<<<History 
+  '  0.000634        6:<<<increment table 
+  '  0.000242        6:<<<WorksetTable 
+  '  0.000028        6:<<<partitionStorageLock.open 
+  '  0.000424        6:<<<prepareLoadTargets 
+  '  0.000151         7:<<<loadLatestVersionsEstimate 
+  ' 7:< ::5:: Delta VM: Avail -37 -> 134216127 MB, Used +12 -> 267 MB, Peak +12 -> 267 MB; RAM: Avail -25 -> 1188 MB, Used +20 -> 399 MB, Peak +20 -> 399 MB 
+  ' 7:< Loaded elemStream#32: uncompSize=14252098, compSize=2605150, count=24999 
+  '  0.604186         7:<<<loadLatestVersion 
+  '  0.318049         7:<<<commitSwapouts 
+  '  0.922851        6:<<loadSelectedEpochs 
+  '  1.133827       5:<<TrustedUtility::readStreams 
+  ' 5:< Current project ADocument version:2660 
+  '  0.101563         7:<<<updating dependencies in delayed deletion 
+  '  0.000268         7:<<<getAllNonexistentParents in delayed deletion 
+  '  0.022617         7:<<<findAppInfoNonexistentParents in delayed deletion 
+  '  0.128228        6:<<overall delayed deletion from upgrade 
+  '  0.001620        6:<<<forceResetOfElemRecOwnerCache 
+  '  0.235977       5:<<ADocumentUpgrade::docUpgrade [C:\ProgramData\Autodesk\RVT 2015\Templates\Portugal\Construction-DefaultMetric.rte] 
+  '  1.426242     3:<<loadSerialize 
+  '  1.426689    2:<<LoadFromStorage 
+  ' 2:< DummyStorage destroying DataStorageInterface 0x0000000034212ED0 
+  '  0.023587    2:<<<relinquishAllLocks 
+  ' 1:< ::5:: Delta VM: Avail -5 -> 134216122 MB, Used +10 -> 278 MB, Peak +10 -> 278 MB; RAM: Avail -3 -> 1185 MB, Used +8 -> 408 MB, Peak +9 -> 409 MB 
+  ' 1:< No key-based tree File: RevitKeynotes_Metric.txt - in this Library Location: C:\ProgramData\Autodesk\RVT 2015\Libraries\US Metric\ - file does not exist: C:\ProgramData\Autodesk\RVT 2015\Libraries\US Metric\RevitKeynotes_Metric.txt 
+  ' 1:< No key-based tree File: RevitKeynotes_Metric.txt - in this Library Location: C:\ProgramData\Autodesk\RVT 2015\Libraries\US Metric\Detail Items - file does not exist: C:\ProgramData\Autodesk\RVT 2015\Libraries\US Metric\Detail Items\RevitKeynotes_Metric.txt 
+  ' 1:< No key-based tree File: UniformatClassifications.txt - in this Library Location: C:\ProgramData\Autodesk\RVT 2015\Libraries\US Metric\ - file does not exist: C:\ProgramData\Autodesk\RVT 2015\Libraries\US Metric\UniformatClassifications.txt 
+  ' 1:< No key-based tree File: UniformatClassifications.txt - in this Library Location: C:\ProgramData\Autodesk\RVT 2015\Libraries\US Metric\Detail Items - file does not exist: C:\ProgramData\Autodesk\RVT 2015\Libraries\US Metric\Detail Items\UniformatClassifications.txt 
+  '  0.001603     3:<<<forceResetOfElemRecOwnerCache 
+  ' 3:< Unnecessary nesting;Document\PostLoadDocument.cpp;169;String_Revit_DelayedPropagatoinRegen ;N++E(N); 
+  ' 4:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+  ' 4:< RAM Statistics:     1185 /     2300       408=InUse      409=Peak  
+  ' 4:< VM  Statistics: 134216122 / 134217727       278=InUse      278=Peak  
+  ' 4:< Element Expansion Statistics: 
+  ' 4:<  0% Opening Plans                    (0) 
+  ' 4:<  0% Opening RC Plans                 (0) 
+  ' 4:<  0% Opening 3d Views                 (0) 
+  ' 4:<  0% Opening Elevations and Sections  (0) 
+  ' 4:<  0% In Regnerate                     (0) 
+  ' 4:<  0% In Autojoin                      (0) 
+  ' 4:<  0% In Overlap Checking              (0) 
+  ' 4:<  0% Reviewing PostedWarnings         (0) 
+  ' 4:<  100% Other                            (1947905) 
+  ' 4:< total bytes expanded: 1947905 
+  ' 4:< ;EES;0;0;0;0;0;0;0;0;100; 
+  '  0.000051       5:<<<ppg constructor 
+  '  0.000016       5:<<<updating dependencies in dp 
+  '  0.000011        6:<<<updating dependencies in delayed deletion 
+  '  0.000329        6:<<<getAllNonexistentParents in delayed deletion 
+  '  0.007943        6:<<<findAppInfoNonexistentParents in delayed deletion 
+  '  0.010005       5:<<delayed deletion from merge 
+  '  0.027575      4:<<DelayedPropagation::delayedPropagation 
+  '  0.000663       5:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+  '  0.000078       5:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
+  '  0.000005        6:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
+  ' 5:< Connecting session [$00065a2e] to Worksharing Log [C:\Users\Administrator\AppData\Local\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt] 
+  '  0.000023        6:<<<WorksharingLog::getSlog [] 
+  ' 5:< Additional IP address/name found for host WIN-DAGP2QCH00H: fe80::184c:15de:f5ff:fdf0%14  
+  ' 5:< Additional IP address/name found for host WIN-DAGP2QCH00H: 10.0.2.15  
+  '  0.000341         7:<<<;PERF;MISC;regenerating 
+  '  0.002613       5:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT;/ALL_GAPS   0.002244/TurnOff_GAPs 3% 
+  '  0.044976       5:<<<Unmarshaller::expandInParallel 
+  '  0.050600      4:<<EndOrAbortUndoTransaction();DOPT; 
+  '  0.080026     3:<<delayed propagation on open 
+  '  0.000032     3:<<<updating dependencies on open 
+  '  0.000017       5:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+  '  0.000013       5:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
+  '  0.000006        6:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
+  '  0.000015         7:<<<;PERF;MISC;regenerating 
+  '  0.000229       5:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT;/ALL_GAPS   0.000208/TurnOff_GAPs 30% 
+  '  0.003257      4:<<EndOrAbortUndoTransaction();DOPT; 
+  '  0.003358     3:<<reloadLinkedInstances [0/0] 
+  '  0.000012      4:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+  '  0.000006      4:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
+  '  0.000009       5:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
+  '  0.000010        6:<<<;PERF;MISC;regenerating 
+  '  0.000263      4:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT;/ALL_GAPS   0.000244/TurnOff_GAPs 25% 
+  '  0.000521     3:<<EndOrAbortUndoTransaction();DOPT;/ALL_GAPS   0.000240/TurnOff_GAPs 18% 
+  '  0.000009      4:<<<;PERF;MISC;regenerating 
+  '  0.000012      4:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+  '  0.000023      4:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
+  '  0.000005       5:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
+  '  0.000009        6:<<<;PERF;MISC;regenerating 
+  '  0.000186      4:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT;/ALL_GAPS   0.000172/TurnOff_GAPs 36% 
+  '  0.000570     3:<<EndOrAbortUndoTransaction();DOPT;/ALL_GAPS   0.000350/TurnOff_GAPs 5% 
+  ' 2:< Unnecessary nesting;Document\PostLoadDocument.cpp;423;ID_SETTINGS_SNAPPING ;N++E(N); 
+  '  0.000011      4:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+  '  0.000006      4:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
+  '  0.000006       5:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
+  '  0.000009        6:<<<;PERF;MISC;regenerating 
+  '  0.000244      4:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT;/ALL_GAPS   0.000229/TurnOff_GAPs 26% 
+  '  0.000613     3:<<EndOrAbortUndoTransaction();DOPT;/ALL_GAPS   0.000352/TurnOff_GAPs 5% 
+  ' 2:< Unnecessary nesting;Document\PostLoadDocument.cpp;436;String_Revit_CoverType ;N++E(N); 
+  ' 6:< FaultyAtomsCheckLog - Comparasion difference found :  
+  '  0.034331      4:<<;PERF;MISC;regenerating 
+  '  0.000041      4:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+  '  0.000007      4:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
+  '  0.000005       5:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
+  '  0.000009        6:<<<;PERF;MISC;regenerating 
+  '  0.000332      4:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT;/ALL_GAPS   0.000317/TurnOff_GAPs 27% 
+  '  0.000763     3:<<EndOrAbortUndoTransaction();DOPT;/ALL_GAPS   0.000383/TurnOff_GAPs 5% 
+  'C 27-Jul-2015 11:03:46.488;   3:< The current load request is an automated one. 
+  '  0.244208     3:<<<Keynoting Settings -> readFile 
+  '  0.000016      4:<<<;PERF;MISC;regenerating 
+  '  0.000129      4:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+  '  0.000033      4:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
+  '  0.000091       5:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
+  '  0.000014        6:<<<;PERF;MISC;regenerating 
+  '  0.000788      4:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT;/ALL_GAPS   0.000683/TurnOff_GAPs 36% 
+  '  0.003469     3:<<EndOrAbortUndoTransaction();DOPT;/ALL_GAPS   0.002518/TurnOff_GAPs 3% 
+  'C 27-Jul-2015 11:03:46.600;   3:< The current load request is an automated one. 
+  '  0.024178     3:<<<Assembly Code Settings -> readFile 
+  '  0.000024      4:<<<;PERF;MISC;regenerating 
+  '  0.000532      4:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+  '  0.000008      4:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
+  '  0.000007       5:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
+  '  0.000013        6:<<<;PERF;MISC;regenerating 
+  '  0.000313      4:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT;/ALL_GAPS   0.000293/TurnOff_GAPs 44% 
+  '  0.001937     3:<<EndOrAbortUndoTransaction();DOPT;/ALL_GAPS   0.001084/TurnOff_GAPs 3% 
+  ' 2:< Document save history --> : 
+  ' 2:<   Revit 2015 - Preview Pre-Release 2015 (2015.000) : 20140117_1515 
+  ' 2:< Document save history <-- 
+  '  0.409462    2:<<[Cloud]postLoadDocument 
+  ' 0:< ::5:: Delta VM: Avail -7 -> 134216116 MB, Used +10 -> 288 MB, Peak +10 -> 288 MB; RAM: Avail -15 -> 1171 MB, Used +8 -> 416 MB, Peak +7 -> 416 MB 
+  '  2.066760   1:<<FormOrAbandon::openFromModelPath [C:\ProgramData\Autodesk\RVT 2015\Templates\Portugal\Construction-DefaultMetric.rte] 
+  'H 27-Jul-2015 11:03:47.112;   1:< 
+  Jrn.Directive "GlobalToProj"  _
+          , "[Project1]", "Floor Plan: Level 1" _
+          , 0.01000000000000 _
+          , 1.00000000000000, 0.00000000000000, 0.00000000000000 _
+          , 0.00000000000000, 1.00000000000000, 0.00000000000000 _
+          , 0.00000000000000, 0.00000000000000, 1.00000000000000 _
+          , 0.00000000000000, 0.00000000000000, 0.00000000000000
+  'H 27-Jul-2015 11:03:47.114;   1:< 
+  Jrn.Directive "ProjToPage"  _
+          , "[Project1]", "Floor Plan: Level 1" _
+          , 99.99999999999990 _
+          , 99.99999999999993, 0.00000000000000, 0.00000000000000 _
+          , 0.00000000000000, 99.99999999999993, 0.00000000000000 _
+          , 0.00000000000000, 0.00000000000000, 99.99999999999993 _
+          , 0.00000000000000, 0.00000000000000, 0.00000000000000
+  'H 27-Jul-2015 11:03:47.114;   1:< 
+  Jrn.Directive "WindowSize"  _
+          , "[Project1]", "Floor Plan: Level 1" _
+          , 1036, 378
+  ' 1:< Before : Create Display Manager 
+  ' 1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+  ' 1:< RAM Statistics:     1168 /     2300       417=InUse      417=Peak  
+  ' 1:< VM  Statistics: 134216116 / 134217727       288=InUse      288=Peak  
+  ' 1:< Revit Graphics Information 
+  ' 1:< 	Current Mode : DirectX Software 
+  ' 1:< 	Use Hardware: ON 
+  ' 1:< 	Use Overlays : ON 
+  ' 1:< After : Create Display Manager 
+  ' 1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+  ' 1:< RAM Statistics:     1168 /     2300       417=InUse      417=Peak  
+  ' 1:< VM  Statistics: 134216116 / 134217727       288=InUse      288=Peak  
+  ' 1:< ::5:: Delta VM: Avail -9 -> 134216108 MB, Used +3 -> 292 MB, Peak +3 -> 292 MB; RAM: Avail -12 -> 1160 MB, Used +3 -> 419 MB, Peak +6 -> 422 MB 
+  'H 27-Jul-2015 11:03:47.499;   1:< 
+  Jrn.Directive "ScreenResolution"  _
+          , 286, 1080
+   ' 1:< Activate "[Project1]" , Floor Plan: Level 1 
+   ' 1:< View Open: Element expansion used 0.000000 seconds averaging 0.000000 seconds/hit for 0 hits. 
+ ' 1:< ::5:: Delta VM: Avail -3 -> 134216105 MB, Used +19 -> 311 MB, Peak +19 -> 311 MB; RAM: Avail -11 -> 1149 MB, Used +20 -> 440 MB, Peak +17 -> 440 MB 
+ 'H 27-Jul-2015 11:03:49.457;   1:< 
+ Jrn.Directive "WindowSize"  _
+         , "[Project1]", "Floor Plan: Level 1" _
+         , 1036, 503
+'C 27-Jul-2015 11:03:49.666;   1:< Protein : Register Preview Factories 
+'C 27-Jul-2015 11:03:49.666;   1:< Protein : Initialize Renderer Module 
+'C 27-Jul-2015 11:03:49.666;   1:< Protein : Load the MR Renderer plug-in 
+' 1:< ::5:: Delta VM: Avail -28 -> 134216077 MB, Used +6 -> 317 MB, Peak +7 -> 318 MB; RAM: Avail -8 -> 1142 MB, Used +7 -> 448 MB, Peak +9 -> 450 MB 
+'C 27-Jul-2015 11:03:49.838;   1:< Protein : initialize RPC plug-ins 
+'C 27-Jul-2015 11:03:49.877;   1:< Protein : Open Protein content Libraries 
+' 1:< ::5:: Delta VM: Avail -10 -> 134216068 MB, Used +11 -> 329 MB, Peak +10 -> 329 MB; RAM: Avail -13 -> 1130 MB, Used +13 -> 461 MB, Peak +11 -> 461 MB 
+'C 27-Jul-2015 11:03:50.046;   1:< Protein : Load Library:  
+' 1:< C:\Program Files (x86)\Common Files\Autodesk Shared\Materials\2015\assetlibrary_base.adsklib 
+'C 27-Jul-2015 11:03:50.046;   1:< Protein : Texture Path:  
+' 1:< C:/Program Files (x86)/Common Files/Autodesk Shared/Materials/Textures/ 
+' 1:< Protein Build       5.2.8.100 
+' 1:< MSI Version         5.2.8.100 
+' 1:< Version Control DLL 5.0.0.0 
+'C 27-Jul-2015 11:03:51.064;   1:< Protein: RPC Message 
+' 1:< This plugin is unable to acquire a license.
+'Only demo content will be fully functional. 
+' 1:< ::5:: Delta VM: Avail 134216068 MB, Used 329 MB; RAM: Avail -27 -> 1104 MB, Used +1 -> 462 MB, Peak +1 -> 462 MB 
+'C 27-Jul-2015 11:03:52.244;   1:< Protein : Notify Plugins to load the content on the asset library 
+'C 27-Jul-2015 11:03:52.245;   1:< Protein : Register the Protein RenderingAsset Manager 
+ 'H 27-Jul-2015 11:03:52.252;   1:< 
+ Jrn.Directive "WindowSize"  _
+         , "[Project1]", "Floor Plan: Level 1" _
+         , 1019, 486
+'  4.912246!!! 2:!!!BIG_GAP [Cloud]openOntoDesktop 
+' 1:< DBG_INFO: Detected unfrozen change of selection.: line 570 of d:\ship\2015_px64\source\revit\revitui\modscope\ModScope.cpp. 
+' 1:< ::5:: Delta VM: Avail +3 -> 134216072 MB, Used +1 -> 330 MB, Peak +2 -> 331 MB; RAM: Avail +20 -> 1124 MB, Used +2 -> 464 MB, Peak +2 -> 465 MB 
+' 1:< <<Begin build CT>>
+'
+'Edit mode: IDR_COMMON
+'Command: 
+'Category: 0
+'Bar list: 
+'	
+'Presenter list: 
+'	
+'Product: Unknown
+'
+'
+'Edit mode context, but no edit mode set.
+'<<End build CT>> 
+ 'H 27-Jul-2015 11:03:54.243;   1:< 
+ Jrn.Directive "WindowSize"  _
+         , "[Project1]", "Floor Plan: Level 1" _
+         , 1040, 507
+  'H 27-Jul-2015 11:03:54.248;   1:< 
+  Jrn.Directive "WindowSize"  _
+          , "[Project1]", "Floor Plan: Level 1" _
+          , 1019, 486
+  ' 1:< View Open: Element expansion used 0.000000 seconds averaging 0.000000 seconds/hit for 0 hits. 
+  '  7.420527   1:<<[Cloud]openOntoDesktop 
+  ' 0:< Third Party Updater 'Revit: ObjectNumberingUpdater' registered for document 'Project1'. 
+  ' 0:< Third Party Updater 'Revit: ObjectNumberingUpdater' registered for document 'Project1'. 
+  'H 27-Jul-2015 11:03:54.475;   0:< 
+  Jrn.Directive "DocSymbol"  _
+          , "[in]"
+  ' 0:< ::5:: Delta VM: Avail -55 -> 134216018 MB, Used +35 -> 366 MB, Peak +41 -> 372 MB; RAM: Avail -74 -> 1051 MB, Used +42 -> 507 MB, Peak +43 -> 508 MB 
+  ' 0:< DBG_INFO: IFC: Can't handle IfcSIUnit type FREQUENCYUNIT: line 12960 of Source\IFCImportProcessIFCEntites.cpp. 
+  ' 8:< ::5:: Delta VM: Avail -24 -> 134215995 MB, Used +24 -> 391 MB, Peak +18 -> 391 MB; RAM: Avail +6 -> 1057 MB, Used +3 -> 510 MB, Peak +1 -> 510 MB 
+  ' 8:< FileCheckTrigger dependencies update 
+  ' 7:< REGEN_DOC_CONTEXT_INFO: Changing wrong atom in regeneration 
+  '  0.109813       5:<<;PERF;MISC;regenerating 
+  ' 7:< DBG_INFO: Different numbers of Geometries for old and new snapshots.: line 3615 of d:\ship\2015_px64\source\revit\revitdb\regen\GeomStepList.cpp. 
+  ' 7:< DBG_INFO: setSnapshotGeomChangeInfo failed. Please look at previous journal entries and file a bug.: line 3768 of d:\ship\2015_px64\source\revit\revitdb\regen\GeomStepList.cpp. 
+  ' 4:< ::attachToElem() actually attaching [263410,1]+[263411,0] 
+  ' 4:< ::attachToElem() actually attaching [263411,1]+[263412,0] 
+  ' 4:< ::attachToElem() actually attaching [263412,1]+[263413,0] 
+  ' 4:< ::attachToElem() actually attaching [263413,1]+[263410,0] 
+  '11:< REGEN_DOC_CONTEXT_INFO: Known attempt to modify wrong element during regeneration 
+  '16:< Snapshot is constant 
+  '16:< Snapshot is constant and really did nothing 
+  ' 4:< ::attachToElem() actually attaching [263417,1]+[263418,0] 
+  ' 4:< ::attachToElem() actually attaching [263418,1]+[263419,0] 
+  ' 4:< ::attachToElem() actually attaching [263419,1]+[263420,0] 
+  ' 4:< ::attachToElem() actually attaching [263420,1]+[263417,0] 
+  ' 4:< ::attachToElem() actually attaching [263424,1]+[263425,0] 
+  ' 4:< ::attachToElem() actually attaching [263425,1]+[263426,0] 
+  ' 4:< ::attachToElem() actually attaching [263426,1]+[263427,0] 
+  ' 4:< ::attachToElem() actually attaching [263427,1]+[263424,0] 
+  ' 4:< ::attachToElem() actually attaching [263431,1]+[263432,0] 
+  ' 4:< ::attachToElem() actually attaching [263432,1]+[263433,0] 
+  ' 4:< ::attachToElem() actually attaching [263433,1]+[263434,0] 
+  ' 4:< ::attachToElem() actually attaching [263434,1]+[263431,0] 
+  ' 4:< ::attachToElem() actually attaching [263438,1]+[263439,0] 
+  ' 4:< ::attachToElem() actually attaching [263439,1]+[263440,0] 
+  ' 4:< ::attachToElem() actually attaching [263440,1]+[263441,0] 
+  ' 4:< ::attachToElem() actually attaching [263441,1]+[263438,0] 
+  ' 4:< ::attachToElem() actually attaching [263445,1]+[263446,0] 
+  ' 4:< ::attachToElem() actually attaching [263446,1]+[263447,0] 
+  ' 4:< ::attachToElem() actually attaching [263447,1]+[263448,0] 
+  ' 4:< ::attachToElem() actually attaching [263448,1]+[263445,0] 
+  ' 4:< ::attachToElem() actually attaching [263452,1]+[263453,0] 
+  ' 4:< ::attachToElem() actually attaching [263453,1]+[263454,0] 
+  ' 4:< ::attachToElem() actually attaching [263454,1]+[263455,0] 
+  ' 4:< ::attachToElem() actually attaching [263455,1]+[263452,0] 
+  ' 4:< ::attachToElem() actually attaching [263459,1]+[263460,0] 
+  ' 4:< ::attachToElem() actually attaching [263460,1]+[263461,0] 
+  ' 4:< ::attachToElem() actually attaching [263461,1]+[263462,0] 
+  ' 4:< ::attachToElem() actually attaching [263462,1]+[263459,0] 
+  ' 4:< ::attachToElem() actually attaching [263466,1]+[263467,0] 
+  ' 4:< ::attachToElem() actually attaching [263467,1]+[263468,0] 
+  ' 4:< ::attachToElem() actually attaching [263468,1]+[263469,0] 
+  ' 4:< ::attachToElem() actually attaching [263469,1]+[263466,0] 
+  ' 4:< ::attachToElem() actually attaching [263473,1]+[263474,0] 
+  ' 4:< ::attachToElem() actually attaching [263474,1]+[263475,0] 
+  ' 4:< ::attachToElem() actually attaching [263475,1]+[263476,0] 
+  ' 4:< ::attachToElem() actually attaching [263476,1]+[263473,0] 
+  ' 4:< ::attachToElem() actually attaching [263480,1]+[263481,0] 
+  ' 4:< ::attachToElem() actually attaching [263481,1]+[263482,0] 
+  ' 4:< ::attachToElem() actually attaching [263482,1]+[263483,0] 
+  ' 4:< ::attachToElem() actually attaching [263483,1]+[263480,0] 
+  ' 4:< ::attachToElem() actually attaching [263487,1]+[263488,0] 
+  ' 4:< ::attachToElem() actually attaching [263488,1]+[263489,0] 
+  ' 4:< ::attachToElem() actually attaching [263489,1]+[263490,0] 
+  ' 4:< ::attachToElem() actually attaching [263490,1]+[263487,0] 
+  ' 4:< ::attachToElem() actually attaching [263494,1]+[263495,0] 
+  ' 4:< ::attachToElem() actually attaching [263495,1]+[263496,0] 
+  ' 4:< ::attachToElem() actually attaching [263496,1]+[263497,0] 
+  ' 4:< ::attachToElem() actually attaching [263497,1]+[263494,0] 
+  ' 4:< ::attachToElem() actually attaching [263501,1]+[263502,0] 
+  ' 4:< ::attachToElem() actually attaching [263502,1]+[263503,0] 
+  ' 4:< ::attachToElem() actually attaching [263503,1]+[263504,0] 
+  ' 4:< ::attachToElem() actually attaching [263504,1]+[263501,0] 
+  ' 4:< ::attachToElem() actually attaching [263508,1]+[263509,0] 
+  ' 4:< ::attachToElem() actually attaching [263509,1]+[263510,0] 
+  ' 4:< ::attachToElem() actually attaching [263510,1]+[263511,0] 
+  ' 4:< ::attachToElem() actually attaching [263511,1]+[263508,0] 
+  ' 4:< ::attachToElem() actually attaching [263515,1]+[263516,0] 
+  ' 4:< ::attachToElem() actually attaching [263516,1]+[263517,0] 
+  ' 4:< ::attachToElem() actually attaching [263517,1]+[263518,0] 
+  ' 4:< ::attachToElem() actually attaching [263518,1]+[263515,0] 
+  '  0.117974       5:<<;PERF;MISC;regenerating 
+  ' 4:< ::attachToElem() actually attaching [263543,1]+[263544,0] 
+  ' 4:< ::attachToElem() actually attaching [263544,1]+[263545,0] 
+  ' 4:< ::attachToElem() actually attaching [263545,1]+[263546,0] 
+  ' 4:< ::attachToElem() actually attaching [263546,1]+[263543,0] 
+  ' 4:< ::attachToElem() actually attaching [263550,1]+[263551,0] 
+  ' 4:< ::attachToElem() actually attaching [263551,1]+[263552,0] 
+  ' 4:< ::attachToElem() actually attaching [263552,1]+[263553,0] 
+  ' 4:< ::attachToElem() actually attaching [263553,1]+[263550,0] 
+  ' 4:< ::attachToElem() actually attaching [263557,1]+[263558,0] 
+  ' 4:< ::attachToElem() actually attaching [263558,1]+[263559,0] 
+  ' 4:< ::attachToElem() actually attaching [263559,1]+[263560,0] 
+  ' 4:< ::attachToElem() actually attaching [263560,1]+[263557,0] 
+  ' 4:< ::attachToElem() actually attaching [263564,1]+[263565,0] 
+  ' 4:< ::attachToElem() actually attaching [263565,1]+[263566,0] 
+  ' 4:< ::attachToElem() actually attaching [263566,1]+[263567,0] 
+  ' 4:< ::attachToElem() actually attaching [263567,1]+[263564,0] 
+  ' 4:< ::attachToElem() actually attaching [263571,1]+[263572,0] 
+  ' 4:< ::attachToElem() actually attaching [263572,1]+[263573,0] 
+  ' 4:< ::attachToElem() actually attaching [263573,1]+[263574,0] 
+  ' 4:< ::attachToElem() actually attaching [263574,1]+[263571,0] 
+  ' 4:< ::attachToElem() actually attaching [263578,1]+[263579,0] 
+  ' 4:< ::attachToElem() actually attaching [263579,1]+[263580,0] 
+  ' 4:< ::attachToElem() actually attaching [263580,1]+[263581,0] 
+  ' 4:< ::attachToElem() actually attaching [263581,1]+[263578,0] 
+  ' 4:< ::attachToElem() actually attaching [263585,1]+[263586,0] 
+  ' 4:< ::attachToElem() actually attaching [263586,1]+[263587,0] 
+  ' 4:< ::attachToElem() actually attaching [263587,1]+[263588,0] 
+  ' 4:< ::attachToElem() actually attaching [263588,1]+[263585,0] 
+  ' 4:< ::attachToElem() actually attaching [263592,1]+[263593,0] 
+  ' 4:< ::attachToElem() actually attaching [263593,1]+[263594,0] 
+  ' 4:< ::attachToElem() actually attaching [263594,1]+[263595,0] 
+  ' 4:< ::attachToElem() actually attaching [263595,1]+[263592,0] 
+  ' 4:< ::attachToElem() actually attaching [263599,1]+[263600,0] 
+  ' 4:< ::attachToElem() actually attaching [263600,1]+[263601,0] 
+  ' 4:< ::attachToElem() actually attaching [263601,1]+[263602,0] 
+  ' 4:< ::attachToElem() actually attaching [263602,1]+[263599,0] 
+  ' 4:< ::attachToElem() actually attaching [263606,1]+[263607,0] 
+  ' 4:< ::attachToElem() actually attaching [263607,1]+[263608,0] 
+  ' 4:< ::attachToElem() actually attaching [263608,1]+[263609,0] 
+  ' 4:< ::attachToElem() actually attaching [263609,1]+[263606,0] 
+  ' 4:< ::attachToElem() actually attaching [263613,1]+[263614,0] 
+  ' 4:< ::attachToElem() actually attaching [263614,1]+[263615,0] 
+  ' 4:< ::attachToElem() actually attaching [263615,1]+[263616,0] 
+  ' 4:< ::attachToElem() actually attaching [263616,1]+[263613,0] 
+  ' 4:< ::attachToElem() actually attaching [263620,1]+[263621,0] 
+  ' 4:< ::attachToElem() actually attaching [263621,1]+[263622,0] 
+  ' 4:< ::attachToElem() actually attaching [263622,1]+[263623,0] 
+  ' 4:< ::attachToElem() actually attaching [263623,1]+[263620,0] 
+  ' 4:< ::attachToElem() actually attaching [263627,1]+[263628,0] 
+  ' 4:< ::attachToElem() actually attaching [263628,1]+[263629,0] 
+  ' 4:< ::attachToElem() actually attaching [263629,1]+[263630,0] 
+  ' 4:< ::attachToElem() actually attaching [263630,1]+[263627,0] 
+  ' 4:< ::attachToElem() actually attaching [263634,1]+[263635,0] 
+  ' 4:< ::attachToElem() actually attaching [263635,1]+[263636,0] 
+  ' 4:< ::attachToElem() actually attaching [263636,1]+[263637,0] 
+  ' 4:< ::attachToElem() actually attaching [263637,1]+[263634,0] 
+  ' 4:< ::attachToElem() actually attaching [263641,1]+[263642,0] 
+  ' 4:< ::attachToElem() actually attaching [263642,1]+[263643,0] 
+  ' 4:< ::attachToElem() actually attaching [263643,1]+[263644,0] 
+  ' 4:< ::attachToElem() actually attaching [263644,1]+[263641,0] 
+  ' 4:< ::attachToElem() actually attaching [263648,1]+[263649,0] 
+  ' 4:< ::attachToElem() actually attaching [263649,1]+[263650,0] 
+  ' 4:< ::attachToElem() actually attaching [263650,1]+[263651,0] 
+  ' 4:< ::attachToElem() actually attaching [263651,1]+[263648,0] 
+  ' 4:< ::attachToElem() actually attaching [263663,1]+[263664,0] 
+  ' 4:< ::attachToElem() actually attaching [263664,1]+[263665,0] 
+  ' 4:< ::attachToElem() actually attaching [263665,1]+[263666,0] 
+  ' 4:< ::attachToElem() actually attaching [263666,1]+[263667,0] 
+  ' 4:< ::attachToElem() actually attaching [263667,1]+[263663,0] 
+  ' 4:< ::attachToElem() actually attaching [263679,1]+[263680,0] 
+  ' 4:< ::attachToElem() actually attaching [263680,1]+[263681,0] 
+  ' 4:< ::attachToElem() actually attaching [263681,1]+[263682,0] 
+  ' 4:< ::attachToElem() actually attaching [263682,1]+[263683,0] 
+  ' 4:< ::attachToElem() actually attaching [263683,1]+[263679,0] 
+  ' 4:< ::attachToElem() actually attaching [263701,1]+[263702,0] 
+  ' 4:< ::attachToElem() actually attaching [263702,1]+[263703,0] 
+  ' 4:< ::attachToElem() actually attaching [263703,1]+[263704,0] 
+  ' 4:< ::attachToElem() actually attaching [263704,1]+[263705,0] 
+  ' 4:< ::attachToElem() actually attaching [263705,1]+[263706,0] 
+  ' 4:< ::attachToElem() actually attaching [263706,1]+[263701,0] 
+  ' 4:< ::attachToElem() actually attaching [263710,1]+[263711,0] 
+  ' 4:< ::attachToElem() actually attaching [263711,1]+[263712,0] 
+  ' 4:< ::attachToElem() actually attaching [263712,1]+[263713,0] 
+  ' 4:< ::attachToElem() actually attaching [263713,1]+[263710,0] 
+  ' 4:< ::attachToElem() actually attaching [263717,1]+[263718,0] 
+  ' 4:< ::attachToElem() actually attaching [263718,1]+[263719,0] 
+  ' 4:< ::attachToElem() actually attaching [263719,1]+[263720,0] 
+  ' 4:< ::attachToElem() actually attaching [263720,1]+[263721,0] 
+  ' 4:< ::attachToElem() actually attaching [263721,1]+[263722,0] 
+  ' 4:< ::attachToElem() actually attaching [263722,1]+[263717,0] 
+  ' 4:< ::attachToElem() actually attaching [263726,1]+[263727,0] 
+  ' 4:< ::attachToElem() actually attaching [263727,1]+[263728,0] 
+  ' 4:< ::attachToElem() actually attaching [263728,1]+[263729,0] 
+  ' 4:< ::attachToElem() actually attaching [263729,1]+[263726,0] 
+  ' 4:< ::attachToElem() actually attaching [263733,1]+[263734,0] 
+  ' 4:< ::attachToElem() actually attaching [263734,1]+[263735,0] 
+  ' 4:< ::attachToElem() actually attaching [263735,1]+[263736,0] 
+  ' 4:< ::attachToElem() actually attaching [263736,1]+[263737,0] 
+  ' 4:< ::attachToElem() actually attaching [263737,1]+[263738,0] 
+  ' 4:< ::attachToElem() actually attaching [263738,1]+[263733,0] 
+  ' 4:< ::attachToElem() actually attaching [263742,1]+[263743,0] 
+  ' 4:< ::attachToElem() actually attaching [263743,1]+[263744,0] 
+  ' 4:< ::attachToElem() actually attaching [263744,1]+[263745,0] 
+  ' 4:< ::attachToElem() actually attaching [263745,1]+[263742,0] 
+  ' 4:< ::attachToElem() actually attaching [263749,1]+[263750,0] 
+  ' 4:< ::attachToElem() actually attaching [263750,1]+[263751,0] 
+  ' 4:< ::attachToElem() actually attaching [263751,1]+[263752,0] 
+  ' 4:< ::attachToElem() actually attaching [263752,1]+[263753,0] 
+  ' 4:< ::attachToElem() actually attaching [263753,1]+[263754,0] 
+  ' 4:< ::attachToElem() actually attaching [263754,1]+[263749,0] 
+  ' 4:< ::attachToElem() actually attaching [263758,1]+[263759,0] 
+  ' 4:< ::attachToElem() actually attaching [263759,1]+[263760,0] 
+  ' 4:< ::attachToElem() actually attaching [263760,1]+[263761,0] 
+  ' 4:< ::attachToElem() actually attaching [263761,1]+[263758,0] 
+  ' 4:< ::attachToElem() actually attaching [263765,1]+[263766,0] 
+  ' 4:< ::attachToElem() actually attaching [263766,1]+[263767,0] 
+  ' 4:< ::attachToElem() actually attaching [263767,1]+[263768,0] 
+  ' 4:< ::attachToElem() actually attaching [263768,1]+[263769,0] 
+  ' 4:< ::attachToElem() actually attaching [263769,1]+[263770,0] 
+  ' 4:< ::attachToElem() actually attaching [263770,1]+[263765,0] 
+  ' 4:< ::attachToElem() actually attaching [263774,1]+[263775,0] 
+  ' 4:< ::attachToElem() actually attaching [263775,1]+[263776,0] 
+  ' 4:< ::attachToElem() actually attaching [263776,1]+[263777,0] 
+  ' 4:< ::attachToElem() actually attaching [263777,1]+[263774,0] 
+  ' 4:< ::attachToElem() actually attaching [263781,1]+[263782,0] 
+  ' 4:< ::attachToElem() actually attaching [263782,1]+[263783,0] 
+  ' 4:< ::attachToElem() actually attaching [263783,1]+[263784,0] 
+  ' 4:< ::attachToElem() actually attaching [263784,1]+[263781,0] 
+  ' 4:< ::attachToElem() actually attaching [263811,1]+[263812,0] 
+  ' 4:< ::attachToElem() actually attaching [263812,1]+[263813,0] 
+  ' 4:< ::attachToElem() actually attaching [263813,1]+[263814,0] 
+  ' 4:< ::attachToElem() actually attaching [263814,1]+[263815,0] 
+  ' 4:< ::attachToElem() actually attaching [263815,1]+[263816,0] 
+  ' 4:< ::attachToElem() actually attaching [263816,1]+[263817,0] 
+  ' 4:< ::attachToElem() actually attaching [263817,1]+[263818,0] 
+  ' 4:< ::attachToElem() actually attaching [263818,1]+[263819,0] 
+  ' 4:< ::attachToElem() actually attaching [263819,1]+[263820,0] 
+  ' 4:< ::attachToElem() actually attaching [263820,1]+[263811,0] 
+  ' 4:< ::attachToElem() actually attaching [263824,1]+[263825,0] 
+  ' 4:< ::attachToElem() actually attaching [263825,1]+[263826,0] 
+  ' 4:< ::attachToElem() actually attaching [263826,1]+[263827,0] 
+  ' 4:< ::attachToElem() actually attaching [263827,1]+[263824,0] 
+  ' 4:< ::attachToElem() actually attaching [263831,1]+[263832,0] 
+  ' 4:< ::attachToElem() actually attaching [263832,1]+[263833,0] 
+  ' 4:< ::attachToElem() actually attaching [263833,1]+[263834,0] 
+  ' 4:< ::attachToElem() actually attaching [263834,1]+[263835,0] 
+  ' 4:< ::attachToElem() actually attaching [263835,1]+[263836,0] 
+  ' 4:< ::attachToElem() actually attaching [263836,1]+[263837,0] 
+  ' 4:< ::attachToElem() actually attaching [263837,1]+[263838,0] 
+  ' 4:< ::attachToElem() actually attaching [263838,1]+[263839,0] 
+  ' 4:< ::attachToElem() actually attaching [263839,1]+[263831,0] 
+  ' 4:< ::attachToElem() actually attaching [263843,1]+[263844,0] 
+  ' 4:< ::attachToElem() actually attaching [263844,1]+[263845,0] 
+  ' 4:< ::attachToElem() actually attaching [263845,1]+[263846,0] 
+  ' 4:< ::attachToElem() actually attaching [263846,1]+[263847,0] 
+  ' 4:< ::attachToElem() actually attaching [263847,1]+[263848,0] 
+  ' 4:< ::attachToElem() actually attaching [263848,1]+[263849,0] 
+  ' 4:< ::attachToElem() actually attaching [263849,1]+[263850,0] 
+  ' 4:< ::attachToElem() actually attaching [263850,1]+[263851,0] 
+  ' 4:< ::attachToElem() actually attaching [263851,1]+[263852,0] 
+  ' 4:< ::attachToElem() actually attaching [263852,1]+[263853,0] 
+  ' 4:< ::attachToElem() actually attaching [263853,1]+[263854,0] 
+  ' 4:< ::attachToElem() actually attaching [263854,1]+[263843,0] 
+  ' 2:< DBG_INFO: Could not get material property type from RenderingAsset! Name is MasonryCMUSchema.: line 264 of RvtLink\ExternalFileUtils.cpp. 
+  ' 7:< ::5:: Delta VM: Avail +0 -> 134215996 MB, Used +5 -> 396 MB, Peak +5 -> 396 MB; RAM: Avail -11 -> 1046 MB, Used +9 -> 520 MB, Peak +9 -> 520 MB 
+  ' 7:< Unnecessary nesting;Family\FamilyDocument.cpp;642;ContentADoc__UpdateReplicasInSmallDocStep;N++EB(NB); 
+  ' 9:< Connecting session [$76174263] to Worksharing Log [C:\Users\Administrator\AppData\Local\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt] 
+  ' 9:< Additional IP address/name found for host WIN-DAGP2QCH00H: fe80::184c:15de:f5ff:fdf0%14  
+  ' 9:< Additional IP address/name found for host WIN-DAGP2QCH00H: 10.0.2.15  
+  ' 8:< Excusing Content Doc "Transaction Successful": ContentADoc__UpdateReplicasInSmallDocStep 
+  ' 7:< Unnecessary nesting;Family\FamilyDocument.cpp;642;ContentADoc__UpdateReplicasInSmallDocStep;N++EB(NB); 
+  ' 8:< Excusing Content Doc "Transaction Successful": ContentADoc__UpdateReplicasInSmallDocStep 
+  ' 8:< Before : Create Display Manager for Occlusion Culling 
+  ' 8:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+  ' 8:< RAM Statistics:     1042 /     2300       524=InUse      524=Peak  
+  ' 8:< VM  Statistics: 134215994 / 134217727       396=InUse      396=Peak  
+  ' 8:< Revit Graphics Information 
+  ' 8:< 	Current Mode : DirectX Software 
+  ' 8:< 	Use Hardware: OFF 
+  ' 8:< 	Use Overlays : ON 
+  ' 8:< 	OpenGL Specific - Extensions 
+  ' 8:< GL_WIN_swap_hint GL_EXT_bgra GL_EXT_paletted_texture 
+  ' 8:< 	Used Extensions 
+  ' 8:< 	Model Overlay Type : Texture method 
+  ' 8:< 	Anno/Temp Overlay Type : Texture method 
+  ' 8:< 	Support Partial Update : YES 
+  ' 8:< 	Occlusion Culling Type : None 
+  ' 8:< After : Create Display Manager for Occlusion Culling 
+  ' 8:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+  ' 8:< RAM Statistics:     1041 /     2300       525=InUse      525=Peak  
+  ' 8:< VM  Statistics: 134215993 / 134217727       397=InUse      397=Peak  
+  '10:< ViewElemCache::updateConsolidationData(): DBViewPlan, id=263968, SL_ModelDefault, GReps=3, inSeqOfTotal=100%, inSeqOfOk=100%, seqLen=3.0, seqNodes=74.0 
+  '  1.449446       5:<<;PERF;MISC;regenerating 
+  ' 4:< ::5:: Delta VM: Avail -10 -> 134215986 MB, Used +7 -> 404 MB, Peak +7 -> 404 MB; RAM: Avail -12 -> 1034 MB, Used +11 -> 531 MB, Peak +10 -> 531 MB 
+  ' 4:< ::attachToElem() actually attaching [264166,1]+[264167,0] 
+  ' 4:< ::attachToElem() actually attaching [264167,1]+[264168,0] 
+  ' 4:< ::attachToElem() actually attaching [264168,1]+[264169,0] 
+  ' 4:< ::attachToElem() actually attaching [264169,1]+[264166,0] 
+  ' 4:< ::attachToElem() actually attaching [264173,1]+[264174,0] 
+  ' 4:< ::attachToElem() actually attaching [264174,1]+[264175,0] 
+  ' 4:< ::attachToElem() actually attaching [264175,1]+[264176,0] 
+  ' 4:< ::attachToElem() actually attaching [264176,1]+[264173,0] 
+  ' 4:< ::attachToElem() actually attaching [264180,1]+[264181,0] 
+  ' 4:< ::attachToElem() actually attaching [264181,1]+[264182,0] 
+  ' 4:< ::attachToElem() actually attaching [264182,1]+[264183,0] 
+  ' 4:< ::attachToElem() actually attaching [264183,1]+[264180,0] 
+  ' 4:< ::attachToElem() actually attaching [264187,1]+[264188,0] 
+  ' 4:< ::attachToElem() actually attaching [264188,1]+[264189,0] 
+  ' 4:< ::attachToElem() actually attaching [264189,1]+[264190,0] 
+  ' 4:< ::attachToElem() actually attaching [264190,1]+[264187,0] 
+  ' 4:< ::attachToElem() actually attaching [264194,1]+[264195,0] 
+  ' 4:< ::attachToElem() actually attaching [264195,1]+[264196,0] 
+  ' 4:< ::attachToElem() actually attaching [264196,1]+[264197,0] 
+  ' 4:< ::attachToElem() actually attaching [264197,1]+[264194,0] 
+  ' 4:< ::attachToElem() actually attaching [264201,1]+[264202,0] 
+  ' 4:< ::attachToElem() actually attaching [264202,1]+[264203,0] 
+  ' 4:< ::attachToElem() actually attaching [264203,1]+[264204,0] 
+  ' 4:< ::attachToElem() actually attaching [264204,1]+[264201,0] 
+  ' 4:< ::attachToElem() actually attaching [264208,1]+[264209,0] 
+  ' 4:< ::attachToElem() actually attaching [264209,1]+[264210,0] 
+  ' 4:< ::attachToElem() actually attaching [264210,1]+[264211,0] 
+  ' 4:< ::attachToElem() actually attaching [264211,1]+[264208,0] 
+  ' 4:< ::attachToElem() actually attaching [264215,1]+[264216,0] 
+  ' 4:< ::attachToElem() actually attaching [264216,1]+[264217,0] 
+  ' 4:< ::attachToElem() actually attaching [264217,1]+[264218,0] 
+  ' 4:< ::attachToElem() actually attaching [264218,1]+[264215,0] 
+  ' 4:< ::attachToElem() actually attaching [264222,1]+[264223,0] 
+  ' 4:< ::attachToElem() actually attaching [264223,1]+[264224,0] 
+  ' 4:< ::attachToElem() actually attaching [264224,1]+[264225,0] 
+  ' 4:< ::attachToElem() actually attaching [264225,1]+[264222,0] 
+  ' 4:< ::attachToElem() actually attaching [264229,1]+[264230,0] 
+  ' 4:< ::attachToElem() actually attaching [264230,1]+[264231,0] 
+  ' 4:< ::attachToElem() actually attaching [264231,1]+[264232,0] 
+  ' 4:< ::attachToElem() actually attaching [264232,1]+[264229,0] 
+  ' 4:< ::attachToElem() actually attaching [264236,1]+[264237,0] 
+  ' 4:< ::attachToElem() actually attaching [264237,1]+[264238,0] 
+  ' 4:< ::attachToElem() actually attaching [264238,1]+[264239,0] 
+  ' 4:< ::attachToElem() actually attaching [264239,1]+[264236,0] 
+  ' 4:< ::attachToElem() actually attaching [264243,1]+[264244,0] 
+  ' 4:< ::attachToElem() actually attaching [264244,1]+[264245,0] 
+  ' 4:< ::attachToElem() actually attaching [264245,1]+[264246,0] 
+  ' 4:< ::attachToElem() actually attaching [264246,1]+[264243,0] 
+  ' 4:< ::attachToElem() actually attaching [264250,1]+[264251,0] 
+  ' 4:< ::attachToElem() actually attaching [264251,1]+[264252,0] 
+  ' 4:< ::attachToElem() actually attaching [264252,1]+[264253,0] 
+  ' 4:< ::attachToElem() actually attaching [264253,1]+[264250,0] 
+  ' 4:< ::attachToElem() actually attaching [264257,1]+[264258,0] 
+  ' 4:< ::attachToElem() actually attaching [264258,1]+[264259,0] 
+  ' 4:< ::attachToElem() actually attaching [264259,1]+[264260,0] 
+  ' 4:< ::attachToElem() actually attaching [264260,1]+[264257,0] 
+  ' 4:< ::attachToElem() actually attaching [264264,1]+[264265,0] 
+  ' 4:< ::attachToElem() actually attaching [264265,1]+[264266,0] 
+  ' 4:< ::attachToElem() actually attaching [264266,1]+[264267,0] 
+  ' 4:< ::attachToElem() actually attaching [264267,1]+[264264,0] 
+  ' 4:< ::attachToElem() actually attaching [264271,1]+[264272,0] 
+  ' 4:< ::attachToElem() actually attaching [264272,1]+[264273,0] 
+  ' 4:< ::attachToElem() actually attaching [264273,1]+[264274,0] 
+  ' 4:< ::attachToElem() actually attaching [264274,1]+[264271,0] 
+  ' 4:< ::attachToElem() actually attaching [264278,1]+[264279,0] 
+  ' 4:< ::attachToElem() actually attaching [264279,1]+[264280,0] 
+  ' 4:< ::attachToElem() actually attaching [264280,1]+[264281,0] 
+  ' 4:< ::attachToElem() actually attaching [264281,1]+[264278,0] 
+  ' 4:< ::attachToElem() actually attaching [264285,1]+[264286,0] 
+  ' 4:< ::attachToElem() actually attaching [264286,1]+[264287,0] 
+  ' 4:< ::attachToElem() actually attaching [264287,1]+[264288,0] 
+  ' 4:< ::attachToElem() actually attaching [264288,1]+[264285,0] 
+  ' 4:< ::attachToElem() actually attaching [264292,1]+[264293,0] 
+  ' 4:< ::attachToElem() actually attaching [264293,1]+[264294,0] 
+  ' 4:< ::attachToElem() actually attaching [264294,1]+[264295,0] 
+  ' 4:< ::attachToElem() actually attaching [264295,1]+[264292,0] 
+  ' 4:< ::attachToElem() actually attaching [264306,1]+[264307,0] 
+  ' 4:< ::attachToElem() actually attaching [264307,1]+[264308,0] 
+  ' 4:< ::attachToElem() actually attaching [264308,1]+[264309,0] 
+  ' 4:< ::attachToElem() actually attaching [264309,1]+[264306,0] 
+  ' 4:< ::attachToElem() actually attaching [264313,1]+[264314,0] 
+  ' 4:< ::attachToElem() actually attaching [264314,1]+[264315,0] 
+  ' 4:< ::attachToElem() actually attaching [264315,1]+[264316,0] 
+  ' 4:< ::attachToElem() actually attaching [264316,1]+[264313,0] 
+  ' 4:< ::attachToElem() actually attaching [264320,1]+[264321,0] 
+  ' 4:< ::attachToElem() actually attaching [264321,1]+[264322,0] 
+  ' 4:< ::attachToElem() actually attaching [264322,1]+[264323,0] 
+  ' 4:< ::attachToElem() actually attaching [264323,1]+[264320,0] 
+  ' 4:< ::attachToElem() actually attaching [264327,1]+[264328,0] 
+  ' 4:< ::attachToElem() actually attaching [264328,1]+[264329,0] 
+  ' 4:< ::attachToElem() actually attaching [264329,1]+[264330,0] 
+  ' 4:< ::attachToElem() actually attaching [264330,1]+[264327,0] 
+  ' 4:< ::attachToElem() actually attaching [264334,1]+[264335,0] 
+  ' 4:< ::attachToElem() actually attaching [264335,1]+[264336,0] 
+  ' 4:< ::attachToElem() actually attaching [264336,1]+[264337,0] 
+  ' 4:< ::attachToElem() actually attaching [264337,1]+[264334,0] 
+  ' 4:< ::attachToElem() actually attaching [264341,1]+[264342,0] 
+  ' 4:< ::attachToElem() actually attaching [264342,1]+[264343,0] 
+  ' 4:< ::attachToElem() actually attaching [264343,1]+[264344,0] 
+  ' 4:< ::attachToElem() actually attaching [264344,1]+[264341,0] 
+  ' 4:< ::attachToElem() actually attaching [264348,1]+[264349,0] 
+  ' 4:< ::attachToElem() actually attaching [264349,1]+[264350,0] 
+  ' 4:< ::attachToElem() actually attaching [264350,1]+[264351,0] 
+  ' 4:< ::attachToElem() actually attaching [264351,1]+[264348,0] 
+  ' 4:< ::attachToElem() actually attaching [264355,1]+[264356,0] 
+  ' 4:< ::attachToElem() actually attaching [264356,1]+[264357,0] 
+  ' 4:< ::attachToElem() actually attaching [264357,1]+[264358,0] 
+  ' 4:< ::attachToElem() actually attaching [264358,1]+[264355,0] 
+  ' 4:< ::attachToElem() actually attaching [264362,1]+[264363,0] 
+  ' 4:< ::attachToElem() actually attaching [264363,1]+[264364,0] 
+  ' 4:< ::attachToElem() actually attaching [264364,1]+[264365,0] 
+  ' 4:< ::attachToElem() actually attaching [264365,1]+[264362,0] 
+  ' 4:< ::attachToElem() actually attaching [264369,1]+[264370,0] 
+  ' 4:< ::attachToElem() actually attaching [264370,1]+[264371,0] 
+  ' 4:< ::attachToElem() actually attaching [264371,1]+[264372,0] 
+  ' 4:< ::attachToElem() actually attaching [264372,1]+[264369,0] 
+  ' 4:< ::attachToElem() actually attaching [264376,1]+[264377,0] 
+  ' 4:< ::attachToElem() actually attaching [264377,1]+[264378,0] 
+  ' 4:< ::attachToElem() actually attaching [264378,1]+[264379,0] 
+  ' 4:< ::attachToElem() actually attaching [264379,1]+[264376,0] 
+  ' 4:< ::attachToElem() actually attaching [264383,1]+[264384,0] 
+  ' 4:< ::attachToElem() actually attaching [264384,1]+[264385,0] 
+  ' 4:< ::attachToElem() actually attaching [264385,1]+[264386,0] 
+  ' 4:< ::attachToElem() actually attaching [264386,1]+[264383,0] 
+  ' 4:< ::attachToElem() actually attaching [264390,1]+[264391,0] 
+  ' 4:< ::attachToElem() actually attaching [264391,1]+[264392,0] 
+  ' 4:< ::attachToElem() actually attaching [264392,1]+[264393,0] 
+  ' 4:< ::attachToElem() actually attaching [264393,1]+[264390,0] 
+  ' 4:< ::attachToElem() actually attaching [264397,1]+[264398,0] 
+  ' 4:< ::attachToElem() actually attaching [264398,1]+[264399,0] 
+  ' 4:< ::attachToElem() actually attaching [264399,1]+[264400,0] 
+  ' 4:< ::attachToElem() actually attaching [264400,1]+[264397,0] 
+  ' 4:< ::attachToElem() actually attaching [264404,1]+[264405,0] 
+  ' 4:< ::attachToElem() actually attaching [264405,1]+[264406,0] 
+  ' 4:< ::attachToElem() actually attaching [264406,1]+[264407,0] 
+  ' 4:< ::attachToElem() actually attaching [264407,1]+[264404,0] 
+  ' 4:< ::attachToElem() actually attaching [264411,1]+[264412,0] 
+  ' 4:< ::attachToElem() actually attaching [264412,1]+[264413,0] 
+  ' 4:< ::attachToElem() actually attaching [264413,1]+[264414,0] 
+  ' 4:< ::attachToElem() actually attaching [264414,1]+[264411,0] 
+  ' 4:< ::attachToElem() actually attaching [264418,1]+[264419,0] 
+  ' 4:< ::attachToElem() actually attaching [264419,1]+[264420,0] 
+  ' 4:< ::attachToElem() actually attaching [264420,1]+[264421,0] 
+  ' 4:< ::attachToElem() actually attaching [264421,1]+[264418,0] 
+  ' 4:< ::attachToElem() actually attaching [264425,1]+[264426,0] 
+  ' 4:< ::attachToElem() actually attaching [264426,1]+[264427,0] 
+  ' 4:< ::attachToElem() actually attaching [264427,1]+[264428,0] 
+  ' 4:< ::attachToElem() actually attaching [264428,1]+[264425,0] 
+  ' 4:< ::attachToElem() actually attaching [264432,1]+[264433,0] 
+  ' 4:< ::attachToElem() actually attaching [264433,1]+[264434,0] 
+  ' 4:< ::attachToElem() actually attaching [264434,1]+[264435,0] 
+  ' 4:< ::attachToElem() actually attaching [264435,1]+[264432,0] 
+  ' 4:< ::attachToElem() actually attaching [264446,1]+[264447,0] 
+  ' 4:< ::attachToElem() actually attaching [264447,1]+[264448,0] 
+  ' 4:< ::attachToElem() actually attaching [264448,1]+[264449,0] 
+  ' 4:< ::attachToElem() actually attaching [264449,1]+[264450,0] 
+  ' 4:< ::attachToElem() actually attaching [264450,1]+[264446,0] 
+  ' 4:< ::attachToElem() actually attaching [264456,1]+[264457,0] 
+  ' 4:< ::attachToElem() actually attaching [264457,1]+[264458,0] 
+  ' 4:< ::attachToElem() actually attaching [264458,1]+[264459,0] 
+  ' 4:< ::attachToElem() actually attaching [264459,1]+[264460,0] 
+  ' 4:< ::attachToElem() actually attaching [264460,1]+[264456,0] 
+  ' 4:< ::attachToElem() actually attaching [264475,1]+[264476,0] 
+  ' 4:< ::attachToElem() actually attaching [264476,1]+[264477,0] 
+  ' 4:< ::attachToElem() actually attaching [264477,1]+[264478,0] 
+  ' 4:< ::attachToElem() actually attaching [264478,1]+[264479,0] 
+  ' 4:< ::attachToElem() actually attaching [264479,1]+[264480,0] 
+  ' 4:< ::attachToElem() actually attaching [264480,1]+[264475,0] 
+  ' 4:< ::attachToElem() actually attaching [264484,1]+[264485,0] 
+  ' 4:< ::attachToElem() actually attaching [264485,1]+[264486,0] 
+  ' 4:< ::attachToElem() actually attaching [264486,1]+[264487,0] 
+  ' 4:< ::attachToElem() actually attaching [264487,1]+[264484,0] 
+  ' 4:< ::attachToElem() actually attaching [264491,1]+[264492,0] 
+  ' 4:< ::attachToElem() actually attaching [264492,1]+[264493,0] 
+  ' 4:< ::attachToElem() actually attaching [264493,1]+[264494,0] 
+  ' 4:< ::attachToElem() actually attaching [264494,1]+[264495,0] 
+  ' 4:< ::attachToElem() actually attaching [264495,1]+[264496,0] 
+  ' 4:< ::attachToElem() actually attaching [264496,1]+[264491,0] 
+  ' 4:< ::attachToElem() actually attaching [264500,1]+[264501,0] 
+  ' 4:< ::attachToElem() actually attaching [264501,1]+[264502,0] 
+  ' 4:< ::attachToElem() actually attaching [264502,1]+[264503,0] 
+  ' 4:< ::attachToElem() actually attaching [264503,1]+[264500,0] 
+  ' 4:< ::attachToElem() actually attaching [264507,1]+[264508,0] 
+  ' 4:< ::attachToElem() actually attaching [264508,1]+[264509,0] 
+  ' 4:< ::attachToElem() actually attaching [264509,1]+[264510,0] 
+  ' 4:< ::attachToElem() actually attaching [264510,1]+[264511,0] 
+  ' 4:< ::attachToElem() actually attaching [264511,1]+[264512,0] 
+  ' 4:< ::attachToElem() actually attaching [264512,1]+[264507,0] 
+  ' 4:< ::attachToElem() actually attaching [264516,1]+[264517,0] 
+  ' 4:< ::attachToElem() actually attaching [264517,1]+[264518,0] 
+  ' 4:< ::attachToElem() actually attaching [264518,1]+[264519,0] 
+  ' 4:< ::attachToElem() actually attaching [264519,1]+[264516,0] 
+  ' 4:< ::attachToElem() actually attaching [264523,1]+[264524,0] 
+  ' 4:< ::attachToElem() actually attaching [264524,1]+[264525,0] 
+  ' 4:< ::attachToElem() actually attaching [264525,1]+[264526,0] 
+  ' 4:< ::attachToElem() actually attaching [264526,1]+[264527,0] 
+  ' 4:< ::attachToElem() actually attaching [264527,1]+[264528,0] 
+  ' 4:< ::attachToElem() actually attaching [264528,1]+[264523,0] 
+  ' 4:< ::attachToElem() actually attaching [264532,1]+[264533,0] 
+  ' 4:< ::attachToElem() actually attaching [264533,1]+[264534,0] 
+  ' 4:< ::attachToElem() actually attaching [264534,1]+[264535,0] 
+  ' 4:< ::attachToElem() actually attaching [264535,1]+[264532,0] 
+  ' 4:< ::attachToElem() actually attaching [264539,1]+[264540,0] 
+  ' 4:< ::attachToElem() actually attaching [264540,1]+[264541,0] 
+  ' 4:< ::attachToElem() actually attaching [264541,1]+[264542,0] 
+  ' 4:< ::attachToElem() actually attaching [264542,1]+[264543,0] 
+  ' 4:< ::attachToElem() actually attaching [264543,1]+[264544,0] 
+  ' 4:< ::attachToElem() actually attaching [264544,1]+[264539,0] 
+  ' 4:< ::attachToElem() actually attaching [264548,1]+[264549,0] 
+  ' 4:< ::attachToElem() actually attaching [264549,1]+[264550,0] 
+  ' 4:< ::attachToElem() actually attaching [264550,1]+[264551,0] 
+  ' 4:< ::attachToElem() actually attaching [264551,1]+[264548,0] 
+  ' 4:< ::attachToElem() actually attaching [264555,1]+[264556,0] 
+  ' 4:< ::attachToElem() actually attaching [264556,1]+[264557,0] 
+  ' 4:< ::attachToElem() actually attaching [264557,1]+[264558,0] 
+  ' 4:< ::attachToElem() actually attaching [264558,1]+[264559,0] 
+  ' 4:< ::attachToElem() actually attaching [264559,1]+[264560,0] 
+  ' 4:< ::attachToElem() actually attaching [264560,1]+[264555,0] 
+  ' 4:< ::attachToElem() actually attaching [264564,1]+[264565,0] 
+  ' 4:< ::attachToElem() actually attaching [264565,1]+[264566,0] 
+  ' 4:< ::attachToElem() actually attaching [264566,1]+[264567,0] 
+  ' 4:< ::attachToElem() actually attaching [264567,1]+[264564,0] 
+  ' 4:< ::attachToElem() actually attaching [264571,1]+[264572,0] 
+  ' 4:< ::attachToElem() actually attaching [264572,1]+[264573,0] 
+  ' 4:< ::attachToElem() actually attaching [264573,1]+[264574,0] 
+  ' 4:< ::attachToElem() actually attaching [264574,1]+[264571,0] 
+  ' 7:< Unnecessary nesting;Family\FamilyDocument.cpp;642;ContentADoc__UpdateReplicasInSmallDocStep;N++EB(NB); 
+  ' 8:< Excusing Content Doc "Transaction Successful": ContentADoc__UpdateReplicasInSmallDocStep 
+  ' 7:< Unnecessary nesting;Family\FamilyDocument.cpp;642;ContentADoc__UpdateReplicasInSmallDocStep;N++EB(NB); 
+  ' 8:< Excusing Content Doc "Transaction Successful": ContentADoc__UpdateReplicasInSmallDocStep 
+  '  0.752611       5:<<;PERF;MISC;regenerating 
+  ' 4:< ::5:: Delta VM: Avail +3 -> 134215989 MB, Used +9 -> 413 MB, Peak +9 -> 413 MB; RAM: Avail -12 -> 1023 MB, Used +10 -> 541 MB, Peak +10 -> 541 MB 
+  ' 4:< ::attachToElem() actually attaching [264683,1]+[264684,0] 
+  ' 4:< ::attachToElem() actually attaching [264684,1]+[264685,0] 
+  ' 4:< ::attachToElem() actually attaching [264685,1]+[264686,0] 
+  ' 4:< ::attachToElem() actually attaching [264686,1]+[264683,0] 
+  ' 4:< ::attachToElem() actually attaching [264690,1]+[264691,0] 
+  ' 4:< ::attachToElem() actually attaching [264691,1]+[264692,0] 
+  ' 4:< ::attachToElem() actually attaching [264692,1]+[264693,0] 
+  ' 4:< ::attachToElem() actually attaching [264693,1]+[264694,0] 
+  ' 4:< ::attachToElem() actually attaching [264694,1]+[264695,0] 
+  ' 4:< ::attachToElem() actually attaching [264695,1]+[264696,0] 
+  ' 4:< ::attachToElem() actually attaching [264696,1]+[264697,0] 
+  ' 4:< ::attachToElem() actually attaching [264697,1]+[264698,0] 
+  ' 4:< ::attachToElem() actually attaching [264698,1]+[264699,0] 
+  ' 4:< ::attachToElem() actually attaching [264699,1]+[264700,0] 
+  ' 4:< ::attachToElem() actually attaching [264700,1]+[264701,0] 
+  ' 4:< ::attachToElem() actually attaching [264701,1]+[264702,0] 
+  ' 4:< ::attachToElem() actually attaching [264702,1]+[264703,0] 
+  ' 4:< ::attachToElem() actually attaching [264703,1]+[264690,0] 
+  ' 4:< ::attachToElem() actually attaching [264707,1]+[264708,0] 
+  ' 4:< ::attachToElem() actually attaching [264708,1]+[264709,0] 
+  ' 4:< ::attachToElem() actually attaching [264709,1]+[264710,0] 
+  ' 4:< ::attachToElem() actually attaching [264710,1]+[264711,0] 
+  ' 4:< ::attachToElem() actually attaching [264711,1]+[264712,0] 
+  ' 4:< ::attachToElem() actually attaching [264712,1]+[264713,0] 
+  ' 4:< ::attachToElem() actually attaching [264713,1]+[264714,0] 
+  ' 4:< ::attachToElem() actually attaching [264714,1]+[264715,0] 
+  ' 4:< ::attachToElem() actually attaching [264715,1]+[264716,0] 
+  ' 4:< ::attachToElem() actually attaching [264716,1]+[264717,0] 
+  ' 4:< ::attachToElem() actually attaching [264717,1]+[264718,0] 
+  ' 4:< ::attachToElem() actually attaching [264718,1]+[264719,0] 
+  ' 4:< ::attachToElem() actually attaching [264719,1]+[264720,0] 
+  ' 4:< ::attachToElem() actually attaching [264720,1]+[264707,0] 
+  ' 4:< ::attachToElem() actually attaching [264724,1]+[264725,0] 
+  ' 4:< ::attachToElem() actually attaching [264725,1]+[264726,0] 
+  ' 4:< ::attachToElem() actually attaching [264726,1]+[264727,0] 
+  ' 4:< ::attachToElem() actually attaching [264727,1]+[264728,0] 
+  ' 4:< ::attachToElem() actually attaching [264728,1]+[264729,0] 
+  ' 4:< ::attachToElem() actually attaching [264729,1]+[264730,0] 
+  ' 4:< ::attachToElem() actually attaching [264730,1]+[264731,0] 
+  ' 4:< ::attachToElem() actually attaching [264731,1]+[264732,0] 
+  ' 4:< ::attachToElem() actually attaching [264732,1]+[264733,0] 
+  ' 4:< ::attachToElem() actually attaching [264733,1]+[264734,0] 
+  ' 4:< ::attachToElem() actually attaching [264734,1]+[264735,0] 
+  ' 4:< ::attachToElem() actually attaching [264735,1]+[264736,0] 
+  ' 4:< ::attachToElem() actually attaching [264736,1]+[264737,0] 
+  ' 4:< ::attachToElem() actually attaching [264737,1]+[264738,0] 
+  ' 4:< ::attachToElem() actually attaching [264738,1]+[264739,0] 
+  ' 4:< ::attachToElem() actually attaching [264739,1]+[264740,0] 
+  ' 4:< ::attachToElem() actually attaching [264740,1]+[264741,0] 
+  ' 4:< ::attachToElem() actually attaching [264741,1]+[264742,0] 
+  ' 4:< ::attachToElem() actually attaching [264742,1]+[264743,0] 
+  ' 4:< ::attachToElem() actually attaching [264743,1]+[264744,0] 
+  ' 4:< ::attachToElem() actually attaching [264744,1]+[264745,0] 
+  ' 4:< ::attachToElem() actually attaching [264745,1]+[264746,0] 
+  ' 4:< ::attachToElem() actually attaching [264746,1]+[264747,0] 
+  ' 4:< ::attachToElem() actually attaching [264747,1]+[264748,0] 
+  ' 4:< ::attachToElem() actually attaching [264748,1]+[264749,0] 
+  ' 4:< ::attachToElem() actually attaching [264749,1]+[264724,0] 
+  ' 4:< ::attachToElem() actually attaching [264772,1]+[264773,0] 
+  ' 4:< ::attachToElem() actually attaching [264773,1]+[264774,0] 
+  ' 4:< ::attachToElem() actually attaching [264774,1]+[264775,0] 
+  ' 4:< ::attachToElem() actually attaching [264775,1]+[264772,0] 
+  ' 4:< ::attachToElem() actually attaching [264779,1]+[264780,0] 
+  ' 4:< ::attachToElem() actually attaching [264780,1]+[264781,0] 
+  ' 4:< ::attachToElem() actually attaching [264781,1]+[264782,0] 
+  ' 4:< ::attachToElem() actually attaching [264782,1]+[264779,0] 
+  ' 4:< ::attachToElem() actually attaching [264786,1]+[264787,0] 
+  ' 4:< ::attachToElem() actually attaching [264787,1]+[264788,0] 
+  ' 4:< ::attachToElem() actually attaching [264788,1]+[264789,0] 
+  ' 4:< ::attachToElem() actually attaching [264789,1]+[264786,0] 
+  ' 4:< ::attachToElem() actually attaching [264793,1]+[264794,0] 
+  ' 4:< ::attachToElem() actually attaching [264794,1]+[264795,0] 
+  ' 4:< ::attachToElem() actually attaching [264795,1]+[264796,0] 
+  ' 4:< ::attachToElem() actually attaching [264796,1]+[264793,0] 
+  ' 4:< ::attachToElem() actually attaching [264800,1]+[264801,0] 
+  ' 4:< ::attachToElem() actually attaching [264801,1]+[264802,0] 
+  ' 4:< ::attachToElem() actually attaching [264802,1]+[264803,0] 
+  ' 4:< ::attachToElem() actually attaching [264803,1]+[264800,0] 
+  ' 4:< ::attachToElem() actually attaching [264807,1]+[264808,0] 
+  ' 4:< ::attachToElem() actually attaching [264808,1]+[264809,0] 
+  ' 4:< ::attachToElem() actually attaching [264809,1]+[264810,0] 
+  ' 4:< ::attachToElem() actually attaching [264810,1]+[264807,0] 
+  ' 4:< ::attachToElem() actually attaching [264814,1]+[264815,0] 
+  ' 4:< ::attachToElem() actually attaching [264815,1]+[264816,0] 
+  ' 4:< ::attachToElem() actually attaching [264816,1]+[264817,0] 
+  ' 4:< ::attachToElem() actually attaching [264817,1]+[264814,0] 
+  ' 4:< ::attachToElem() actually attaching [264875,1]+[264876,0] 
+  ' 4:< ::attachToElem() actually attaching [264876,1]+[264877,0] 
+  ' 4:< ::attachToElem() actually attaching [264877,1]+[264878,0] 
+  ' 4:< ::attachToElem() actually attaching [264878,1]+[264875,0] 
+  ' 4:< ::attachToElem() actually attaching [264882,1]+[264883,0] 
+  ' 4:< ::attachToElem() actually attaching [264883,1]+[264884,0] 
+  ' 4:< ::attachToElem() actually attaching [264884,1]+[264885,0] 
+  ' 4:< ::attachToElem() actually attaching [264885,1]+[264886,0] 
+  ' 4:< ::attachToElem() actually attaching [264886,1]+[264887,0] 
+  ' 4:< ::attachToElem() actually attaching [264887,1]+[264882,0] 
+  ' 4:< ::attachToElem() actually attaching [264891,1]+[264892,0] 
+  ' 4:< ::attachToElem() actually attaching [264892,1]+[264893,0] 
+  ' 4:< ::attachToElem() actually attaching [264893,1]+[264894,0] 
+  ' 4:< ::attachToElem() actually attaching [264894,1]+[264891,0] 
+  ' 4:< ::attachToElem() actually attaching [264898,1]+[264899,0] 
+  ' 4:< ::attachToElem() actually attaching [264899,1]+[264900,0] 
+  ' 4:< ::attachToElem() actually attaching [264900,1]+[264901,0] 
+  ' 4:< ::attachToElem() actually attaching [264901,1]+[264898,0] 
+  ' 4:< ::attachToElem() actually attaching [264905,1]+[264906,0] 
+  ' 4:< ::attachToElem() actually attaching [264906,1]+[264907,0] 
+  ' 4:< ::attachToElem() actually attaching [264907,1]+[264908,0] 
+  ' 4:< ::attachToElem() actually attaching [264908,1]+[264905,0] 
+  ' 4:< ::attachToElem() actually attaching [264912,1]+[264913,0] 
+  ' 4:< ::attachToElem() actually attaching [264913,1]+[264914,0] 
+  ' 4:< ::attachToElem() actually attaching [264914,1]+[264915,0] 
+  ' 4:< ::attachToElem() actually attaching [264915,1]+[264916,0] 
+  ' 4:< ::attachToElem() actually attaching [264916,1]+[264917,0] 
+  ' 4:< ::attachToElem() actually attaching [264917,1]+[264918,0] 
+  ' 4:< ::attachToElem() actually attaching [264918,1]+[264919,0] 
+  ' 4:< ::attachToElem() actually attaching [264919,1]+[264912,0] 
+  ' 4:< ::attachToElem() actually attaching [264923,1]+[264924,0] 
+  ' 4:< ::attachToElem() actually attaching [264924,1]+[264925,0] 
+  ' 4:< ::attachToElem() actually attaching [264925,1]+[264926,0] 
+  ' 4:< ::attachToElem() actually attaching [264926,1]+[264927,0] 
+  ' 4:< ::attachToElem() actually attaching [264927,1]+[264928,0] 
+  ' 4:< ::attachToElem() actually attaching [264928,1]+[264929,0] 
+  ' 4:< ::attachToElem() actually attaching [264929,1]+[264930,0] 
+  ' 4:< ::attachToElem() actually attaching [264930,1]+[264923,0] 
+  ' 4:< ::attachToElem() actually attaching [264931,1]+[264932,0] 
+  ' 4:< ::attachToElem() actually attaching [264932,1]+[264933,0] 
+  ' 4:< ::attachToElem() actually attaching [264933,1]+[264934,0] 
+  ' 4:< ::attachToElem() actually attaching [264934,1]+[264931,0] 
+  ' 4:< ::attachToElem() actually attaching [264935,1]+[264936,0] 
+  ' 4:< ::attachToElem() actually attaching [264936,1]+[264937,0] 
+  ' 4:< ::attachToElem() actually attaching [264937,1]+[264938,0] 
+  ' 4:< ::attachToElem() actually attaching [264938,1]+[264935,0] 
+  ' 4:< ::attachToElem() actually attaching [264939,1]+[264940,0] 
+  ' 4:< ::attachToElem() actually attaching [264940,1]+[264941,0] 
+  ' 4:< ::attachToElem() actually attaching [264941,1]+[264942,0] 
+  ' 4:< ::attachToElem() actually attaching [264942,1]+[264939,0] 
+  ' 4:< ::attachToElem() actually attaching [264943,1]+[264944,0] 
+  ' 4:< ::attachToElem() actually attaching [264944,1]+[264945,0] 
+  ' 4:< ::attachToElem() actually attaching [264945,1]+[264946,0] 
+  ' 4:< ::attachToElem() actually attaching [264946,1]+[264943,0] 
+  ' 4:< ::attachToElem() actually attaching [264947,1]+[264948,0] 
+  ' 4:< ::attachToElem() actually attaching [264948,1]+[264949,0] 
+  ' 4:< ::attachToElem() actually attaching [264949,1]+[264950,0] 
+  ' 4:< ::attachToElem() actually attaching [264950,1]+[264947,0] 
+  ' 4:< ::attachToElem() actually attaching [264951,1]+[264952,0] 
+  ' 4:< ::attachToElem() actually attaching [264952,1]+[264953,0] 
+  ' 4:< ::attachToElem() actually attaching [264953,1]+[264954,0] 
+  ' 4:< ::attachToElem() actually attaching [264954,1]+[264951,0] 
+  ' 4:< ::attachToElem() actually attaching [264955,1]+[264956,0] 
+  ' 4:< ::attachToElem() actually attaching [264956,1]+[264957,0] 
+  ' 4:< ::attachToElem() actually attaching [264957,1]+[264958,0] 
+  ' 4:< ::attachToElem() actually attaching [264958,1]+[264955,0] 
+  ' 4:< ::attachToElem() actually attaching [264959,1]+[264960,0] 
+  ' 4:< ::attachToElem() actually attaching [264960,1]+[264961,0] 
+  ' 4:< ::attachToElem() actually attaching [264961,1]+[264962,0] 
+  ' 4:< ::attachToElem() actually attaching [264962,1]+[264959,0] 
+  ' 4:< ::attachToElem() actually attaching [264963,1]+[264964,0] 
+  ' 4:< ::attachToElem() actually attaching [264964,1]+[264965,0] 
+  ' 4:< ::attachToElem() actually attaching [264965,1]+[264966,0] 
+  ' 4:< ::attachToElem() actually attaching [264966,1]+[264963,0] 
+  ' 4:< ::5:: Delta VM: Avail -16 -> 134215973 MB, Used +3 -> 416 MB, Peak +3 -> 416 MB; RAM: Avail -6 -> 1018 MB, Used +4 -> 546 MB, Peak +4 -> 546 MB 
+  ' 4:< ::attachToElem() actually attaching [265008,1]+[265009,0] 
+  ' 4:< ::attachToElem() actually attaching [265009,1]+[265010,0] 
+  ' 4:< ::attachToElem() actually attaching [265010,1]+[265011,0] 
+  ' 4:< ::attachToElem() actually attaching [265011,1]+[265008,0] 
+  ' 4:< ::attachToElem() actually attaching [265015,1]+[265016,0] 
+  ' 4:< ::attachToElem() actually attaching [265016,1]+[265017,0] 
+  ' 4:< ::attachToElem() actually attaching [265017,1]+[265018,0] 
+  ' 4:< ::attachToElem() actually attaching [265018,1]+[265019,0] 
+  ' 4:< ::attachToElem() actually attaching [265019,1]+[265020,0] 
+  ' 4:< ::attachToElem() actually attaching [265020,1]+[265021,0] 
+  ' 4:< ::attachToElem() actually attaching [265021,1]+[265022,0] 
+  ' 4:< ::attachToElem() actually attaching [265022,1]+[265015,0] 
+  ' 4:< ::attachToElem() actually attaching [265026,1]+[265027,0] 
+  ' 4:< ::attachToElem() actually attaching [265027,1]+[265028,0] 
+  ' 4:< ::attachToElem() actually attaching [265028,1]+[265029,0] 
+  ' 4:< ::attachToElem() actually attaching [265029,1]+[265030,0] 
+  ' 4:< ::attachToElem() actually attaching [265030,1]+[265031,0] 
+  ' 4:< ::attachToElem() actually attaching [265031,1]+[265032,0] 
+  ' 4:< ::attachToElem() actually attaching [265032,1]+[265033,0] 
+  ' 4:< ::attachToElem() actually attaching [265033,1]+[265026,0] 
+  ' 4:< ::attachToElem() actually attaching [265037,1]+[265038,0] 
+  ' 4:< ::attachToElem() actually attaching [265038,1]+[265039,0] 
+  ' 4:< ::attachToElem() actually attaching [265039,1]+[265040,0] 
+  ' 4:< ::attachToElem() actually attaching [265040,1]+[265037,0] 
+  ' 4:< ::attachToElem() actually attaching [265044,1]+[265045,0] 
+  ' 4:< ::attachToElem() actually attaching [265045,1]+[265046,0] 
+  ' 4:< ::attachToElem() actually attaching [265046,1]+[265047,0] 
+  ' 4:< ::attachToElem() actually attaching [265047,1]+[265044,0] 
+  ' 4:< ::attachToElem() actually attaching [265048,1]+[265049,0] 
+  ' 4:< ::attachToElem() actually attaching [265049,1]+[265050,0] 
+  ' 4:< ::attachToElem() actually attaching [265050,1]+[265051,0] 
+  ' 4:< ::attachToElem() actually attaching [265051,1]+[265048,0] 
+  ' 4:< ::attachToElem() actually attaching [265162,1]+[265163,0] 
+  ' 4:< ::attachToElem() actually attaching [265163,1]+[265164,0] 
+  ' 4:< ::attachToElem() actually attaching [265164,1]+[265165,0] 
+  ' 4:< ::attachToElem() actually attaching [265165,1]+[265162,0] 
+  ' 4:< ::attachToElem() actually attaching [265169,1]+[265170,0] 
+  ' 4:< ::attachToElem() actually attaching [265170,1]+[265171,0] 
+  ' 4:< ::attachToElem() actually attaching [265171,1]+[265172,0] 
+  ' 4:< ::attachToElem() actually attaching [265172,1]+[265169,0] 
+  ' 4:< ::attachToElem() actually attaching [265176,1]+[265177,0] 
+  ' 4:< ::attachToElem() actually attaching [265177,1]+[265178,0] 
+  ' 4:< ::attachToElem() actually attaching [265178,1]+[265179,0] 
+  ' 4:< ::attachToElem() actually attaching [265179,1]+[265176,0] 
+  ' 4:< ::attachToElem() actually attaching [265183,1]+[265184,0] 
+  ' 4:< ::attachToElem() actually attaching [265184,1]+[265185,0] 
+  ' 4:< ::attachToElem() actually attaching [265185,1]+[265186,0] 
+  ' 4:< ::attachToElem() actually attaching [265186,1]+[265183,0] 
+  ' 4:< ::attachToElem() actually attaching [265190,1]+[265191,0] 
+  ' 4:< ::attachToElem() actually attaching [265191,1]+[265192,0] 
+  ' 4:< ::attachToElem() actually attaching [265192,1]+[265193,0] 
+  ' 4:< ::attachToElem() actually attaching [265193,1]+[265190,0] 
+  ' 4:< ::attachToElem() actually attaching [265197,1]+[265198,0] 
+  ' 4:< ::attachToElem() actually attaching [265198,1]+[265199,0] 
+  ' 4:< ::attachToElem() actually attaching [265199,1]+[265200,0] 
+  ' 4:< ::attachToElem() actually attaching [265200,1]+[265197,0] 
+  ' 4:< ::attachToElem() actually attaching [265204,1]+[265205,0] 
+  ' 4:< ::attachToElem() actually attaching [265205,1]+[265206,0] 
+  ' 4:< ::attachToElem() actually attaching [265206,1]+[265207,0] 
+  ' 4:< ::attachToElem() actually attaching [265207,1]+[265204,0] 
+  ' 4:< ::attachToElem() actually attaching [265211,1]+[265212,0] 
+  ' 4:< ::attachToElem() actually attaching [265212,1]+[265213,0] 
+  ' 4:< ::attachToElem() actually attaching [265213,1]+[265214,0] 
+  ' 4:< ::attachToElem() actually attaching [265214,1]+[265211,0] 
+  ' 4:< ::attachToElem() actually attaching [265218,1]+[265219,0] 
+  ' 4:< ::attachToElem() actually attaching [265219,1]+[265220,0] 
+  ' 4:< ::attachToElem() actually attaching [265220,1]+[265221,0] 
+  ' 4:< ::attachToElem() actually attaching [265221,1]+[265218,0] 
+  ' 4:< ::attachToElem() actually attaching [265225,1]+[265226,0] 
+  ' 4:< ::attachToElem() actually attaching [265226,1]+[265227,0] 
+  ' 4:< ::attachToElem() actually attaching [265227,1]+[265228,0] 
+  ' 4:< ::attachToElem() actually attaching [265228,1]+[265225,0] 
+  ' 4:< ::attachToElem() actually attaching [265232,1]+[265233,0] 
+  ' 4:< ::attachToElem() actually attaching [265233,1]+[265234,0] 
+  ' 4:< ::attachToElem() actually attaching [265234,1]+[265235,0] 
+  ' 4:< ::attachToElem() actually attaching [265235,1]+[265232,0] 
+  ' 4:< ::attachToElem() actually attaching [265239,1]+[265240,0] 
+  ' 4:< ::attachToElem() actually attaching [265240,1]+[265241,0] 
+  ' 4:< ::attachToElem() actually attaching [265241,1]+[265242,0] 
+  ' 4:< ::attachToElem() actually attaching [265242,1]+[265239,0] 
+  ' 4:< ::attachToElem() actually attaching [265246,1]+[265247,0] 
+  ' 4:< ::attachToElem() actually attaching [265247,1]+[265248,0] 
+  ' 4:< ::attachToElem() actually attaching [265248,1]+[265249,0] 
+  ' 4:< ::attachToElem() actually attaching [265249,1]+[265246,0] 
+  ' 4:< ::attachToElem() actually attaching [265253,1]+[265254,0] 
+  ' 4:< ::attachToElem() actually attaching [265254,1]+[265255,0] 
+  ' 698 journal comments skipped for brevity
+  '  0:< ::attachToElem() actually attaching [268117,1]+[268114,0]
+  '  0:< ::attachToElem() actually attaching [268118,1]+[268119,0]
+  '  0:< ::attachToElem() actually attaching [268119,1]+[268120,0]
+  '  0:< ::attachToElem() actually attaching [268120,1]+[268121,0]
+  '  0:< ::attachToElem() actually attaching [268121,1]+[268118,0]
+  '  0:< ::attachToElem() actually attaching [268122,1]+[268123,0]
+  '  0:< ::attachToElem() actually attaching [268123,1]+[268124,0]
+  '  0:< ::attachToElem() actually attaching [268124,1]+[268125,0]
+  '  0:< ::attachToElem() actually attaching [268125,1]+[268122,0]
+  '  0:< ::attachToElem() actually attaching [268134,1]+[268135,0]
+  '  0:< ::attachToElem() actually attaching [268135,1]+[268136,0]
+  '  0:< ::attachToElem() actually attaching [268136,1]+[268137,0]
+  '  0:< ::attachToElem() actually attaching [268137,1]+[268134,0]
+  '   0.474206     3:<<;PERF;MISC;regenerating
+  '  1:< Before : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      990 /     2300       572=InUse      572=Peak 
+  '  1:< VM  Statistics: 134215961 / 134217727       442=InUse      443=Peak 
+  '  1:< After : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      990 /     2300       572=InUse      572=Peak 
+  '  1:< VM  Statistics: 134215961 / 134217727       442=InUse      443=Peak 
+  '  0:< ::attachToElem() actually attaching [268423,1]+[268424,0]
+  '  0:< ::attachToElem() actually attaching [268424,1]+[268425,0]
+  '  0:< ::attachToElem() actually attaching [268425,1]+[268426,0]
+  '  0:< ::attachToElem() actually attaching [268426,1]+[268423,0]
+  '  0:< ::attachToElem() actually attaching [268430,1]+[268431,0]
+  '  0:< ::attachToElem() actually attaching [268431,1]+[268432,0]
+  '  0:< ::attachToElem() actually attaching [268432,1]+[268433,0]
+  '  0:< ::attachToElem() actually attaching [268433,1]+[268430,0]
+  '  0:< ::attachToElem() actually attaching [268437,1]+[268438,0]
+  '  0:< ::attachToElem() actually attaching [268438,1]+[268439,0]
+  '  0:< ::attachToElem() actually attaching [268439,1]+[268440,0]
+  '  0:< ::attachToElem() actually attaching [268440,1]+[268437,0]
+  '  0:< ::attachToElem() actually attaching [268444,1]+[268445,0]
+  '  0:< ::attachToElem() actually attaching [268445,1]+[268446,0]
+  '  0:< ::attachToElem() actually attaching [268446,1]+[268447,0]
+  '  0:< ::attachToElem() actually attaching [268447,1]+[268444,0]
+  '  0:< ::attachToElem() actually attaching [268451,1]+[268452,0]
+  '  0:< ::attachToElem() actually attaching [268452,1]+[268453,0]
+  '  0:< ::attachToElem() actually attaching [268453,1]+[268454,0]
+  '  0:< ::attachToElem() actually attaching [268454,1]+[268455,0]
+  '  0:< ::attachToElem() actually attaching [268455,1]+[268456,0]
+  '  0:< ::attachToElem() actually attaching [268456,1]+[268457,0]
+  '  0:< ::attachToElem() actually attaching [268457,1]+[268458,0]
+  '  0:< ::attachToElem() actually attaching [268458,1]+[268451,0]
+  '  0:< ::attachToElem() actually attaching [268462,1]+[268463,0]
+  '  0:< ::attachToElem() actually attaching [268463,1]+[268464,0]
+  '  0:< ::attachToElem() actually attaching [268464,1]+[268465,0]
+  '  0:< ::attachToElem() actually attaching [268465,1]+[268466,0]
+  '  0:< ::attachToElem() actually attaching [268466,1]+[268467,0]
+  '  0:< ::attachToElem() actually attaching [268467,1]+[268468,0]
+  '  0:< ::attachToElem() actually attaching [268468,1]+[268469,0]
+  '  0:< ::attachToElem() actually attaching [268469,1]+[268462,0]
+  '  0:< ::attachToElem() actually attaching [268473,1]+[268474,0]
+  '  0:< ::attachToElem() actually attaching [268474,1]+[268475,0]
+  '  0:< ::attachToElem() actually attaching [268475,1]+[268476,0]
+  '  0:< ::attachToElem() actually attaching [268476,1]+[268473,0]
+  '  0:< ::attachToElem() actually attaching [268477,1]+[268478,0]
+  '  0:< ::attachToElem() actually attaching [268478,1]+[268479,0]
+  '  0:< ::attachToElem() actually attaching [268479,1]+[268480,0]
+  '  0:< ::attachToElem() actually attaching [268480,1]+[268477,0]
+  '  0:< ::attachToElem() actually attaching [268481,1]+[268482,0]
+  '  0:< ::attachToElem() actually attaching [268482,1]+[268483,0]
+  '  0:< ::attachToElem() actually attaching [268483,1]+[268484,0]
+  '  0:< ::attachToElem() actually attaching [268484,1]+[268481,0]
+  '  0:< ::attachToElem() actually attaching [268485,1]+[268486,0]
+  '  0:< ::attachToElem() actually attaching [268486,1]+[268487,0]
+  '  0:< ::attachToElem() actually attaching [268487,1]+[268488,0]
+  '  0:< ::attachToElem() actually attaching [268488,1]+[268485,0]
+  '  0:< ::attachToElem() actually attaching [268489,1]+[268490,0]
+  '  0:< ::attachToElem() actually attaching [268490,1]+[268491,0]
+  '  0:< ::attachToElem() actually attaching [268491,1]+[268492,0]
+  '  0:< ::attachToElem() actually attaching [268492,1]+[268489,0]
+  '  0:< ::attachToElem() actually attaching [268501,1]+[268502,0]
+  '  0:< ::attachToElem() actually attaching [268502,1]+[268503,0]
+  '  0:< ::attachToElem() actually attaching [268503,1]+[268504,0]
+  '  0:< ::attachToElem() actually attaching [268504,1]+[268501,0]
+  '   0.240549     3:<<;PERF;MISC;regenerating
+  '  1:< Before : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      989 /     2300       573=InUse      573=Peak 
+  '  1:< VM  Statistics: 134215961 / 134217727       442=InUse      443=Peak 
+  '  1:< After : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      989 /     2300       573=InUse      573=Peak 
+  '  1:< VM  Statistics: 134215961 / 134217727       442=InUse      443=Peak 
+  '  0:< ::attachToElem() actually attaching [268787,1]+[268788,0]
+  '  0:< ::attachToElem() actually attaching [268788,1]+[268789,0]
+  '  0:< ::attachToElem() actually attaching [268789,1]+[268790,0]
+  '  0:< ::attachToElem() actually attaching [268790,1]+[268787,0]
+  '   0.208470     3:<<;PERF;MISC;regenerating
+  '  1:< Before : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      989 /     2300       574=InUse      574=Peak 
+  '  1:< VM  Statistics: 134215961 / 134217727       442=InUse      443=Peak 
+  '  1:< After : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      989 /     2300       574=InUse      574=Peak 
+  '  1:< VM  Statistics: 134215961 / 134217727       442=InUse      443=Peak 
+  '  0:< ::attachToElem() actually attaching [269074,1]+[269075,0]
+  '  0:< ::attachToElem() actually attaching [269075,1]+[269076,0]
+  '  0:< ::attachToElem() actually attaching [269076,1]+[269077,0]
+  '  0:< ::attachToElem() actually attaching [269077,1]+[269078,0]
+  '  0:< ::attachToElem() actually attaching [269078,1]+[269079,0]
+  '  0:< ::attachToElem() actually attaching [269079,1]+[269080,0]
+  '  0:< ::attachToElem() actually attaching [269080,1]+[269081,0]
+  '  0:< ::attachToElem() actually attaching [269081,1]+[269082,0]
+  '  0:< ::attachToElem() actually attaching [269082,1]+[269083,0]
+  '  0:< ::attachToElem() actually attaching [269083,1]+[269084,0]
+  '  0:< ::attachToElem() actually attaching [269084,1]+[269085,0]
+  '  0:< ::attachToElem() actually attaching [269085,1]+[269086,0]
+  '  0:< ::attachToElem() actually attaching [269086,1]+[269087,0]
+  '  0:< ::attachToElem() actually attaching [269087,1]+[269088,0]
+  '  0:< ::attachToElem() actually attaching [269088,1]+[269089,0]
+  '  0:< ::attachToElem() actually attaching [269089,1]+[269074,0]
+  '   0.308762     3:<<;PERF;MISC;regenerating
+  '  1:< Before : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      988 /     2300       574=InUse      574=Peak 
+  '  1:< VM  Statistics: 134215961 / 134217727       442=InUse      443=Peak 
+  '  1:< After : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      988 /     2300       574=InUse      574=Peak 
+  '  1:< VM  Statistics: 134215961 / 134217727       442=InUse      443=Peak 
+  '  0:< ::attachToElem() actually attaching [269377,1]+[269378,0]
+  '  0:< ::attachToElem() actually attaching [269378,1]+[269379,0]
+  '  0:< ::attachToElem() actually attaching [269379,1]+[269380,0]
+  '  0:< ::attachToElem() actually attaching [269380,1]+[269377,0]
+  '  0:< ::attachToElem() actually attaching [269384,1]+[269385,0]
+  '  0:< ::attachToElem() actually attaching [269385,1]+[269386,0]
+  '  0:< ::attachToElem() actually attaching [269386,1]+[269387,0]
+  '  0:< ::attachToElem() actually attaching [269387,1]+[269384,0]
+  '  0:< ::attachToElem() actually attaching [269391,1]+[269392,0]
+  '  0:< ::attachToElem() actually attaching [269392,1]+[269393,0]
+  '  0:< ::attachToElem() actually attaching [269393,1]+[269394,0]
+  '  0:< ::attachToElem() actually attaching [269394,1]+[269391,0]
+  '  0:< ::attachToElem() actually attaching [269398,1]+[269399,0]
+  '  0:< ::attachToElem() actually attaching [269399,1]+[269400,0]
+  '  0:< ::attachToElem() actually attaching [269400,1]+[269401,0]
+  '  0:< ::attachToElem() actually attaching [269401,1]+[269398,0]
+  '  0:< ::attachToElem() actually attaching [269405,1]+[269406,0]
+  '  0:< ::attachToElem() actually attaching [269406,1]+[269407,0]
+  '  0:< ::attachToElem() actually attaching [269407,1]+[269408,0]
+  '  0:< ::attachToElem() actually attaching [269408,1]+[269405,0]
+  '  0:< ::attachToElem() actually attaching [269412,1]+[269413,0]
+  '  0:< ::attachToElem() actually attaching [269413,1]+[269414,0]
+  '  0:< ::attachToElem() actually attaching [269414,1]+[269415,0]
+  '  0:< ::attachToElem() actually attaching [269415,1]+[269412,0]
+  '  0:< ::attachToElem() actually attaching [269419,1]+[269420,0]
+  '  0:< ::attachToElem() actually attaching [269420,1]+[269421,0]
+  '  0:< ::attachToElem() actually attaching [269421,1]+[269422,0]
+  '  0:< ::attachToElem() actually attaching [269422,1]+[269419,0]
+  '  0:< ::attachToElem() actually attaching [269426,1]+[269427,0]
+  '  0:< ::attachToElem() actually attaching [269427,1]+[269428,0]
+  '  0:< ::attachToElem() actually attaching [269428,1]+[269429,0]
+  '  0:< ::attachToElem() actually attaching [269429,1]+[269426,0]
+  '  0:< ::attachToElem() actually attaching [269433,1]+[269434,0]
+  '  0:< ::attachToElem() actually attaching [269434,1]+[269435,0]
+  '  0:< ::attachToElem() actually attaching [269435,1]+[269436,0]
+  '  0:< ::attachToElem() actually attaching [269436,1]+[269433,0]
+  '  0:< ::attachToElem() actually attaching [269440,1]+[269441,0]
+  '  0:< ::attachToElem() actually attaching [269441,1]+[269442,0]
+  '  0:< ::attachToElem() actually attaching [269442,1]+[269443,0]
+  '  0:< ::attachToElem() actually attaching [269443,1]+[269440,0]
+  '  0:< ::attachToElem() actually attaching [269447,1]+[269448,0]
+  '  0:< ::attachToElem() actually attaching [269448,1]+[269449,0]
+  '  0:< ::attachToElem() actually attaching [269449,1]+[269450,0]
+  '  0:< ::attachToElem() actually attaching [269450,1]+[269447,0]
+  '  0:< ::attachToElem() actually attaching [269454,1]+[269455,0]
+  '  0:< ::attachToElem() actually attaching [269455,1]+[269456,0]
+  '  0:< ::attachToElem() actually attaching [269456,1]+[269457,0]
+  '  0:< ::attachToElem() actually attaching [269457,1]+[269454,0]
+  '  0:< ::attachToElem() actually attaching [269461,1]+[269462,0]
+  '  0:< ::attachToElem() actually attaching [269462,1]+[269463,0]
+  '  0:< ::attachToElem() actually attaching [269463,1]+[269464,0]
+  '  0:< ::attachToElem() actually attaching [269464,1]+[269461,0]
+  '  0:< ::attachToElem() actually attaching [269468,1]+[269469,0]
+  '  0:< ::attachToElem() actually attaching [269469,1]+[269470,0]
+  '  0:< ::attachToElem() actually attaching [269470,1]+[269471,0]
+  '  0:< ::attachToElem() actually attaching [269471,1]+[269468,0]
+  '  0:< ::attachToElem() actually attaching [269475,1]+[269476,0]
+  '  0:< ::attachToElem() actually attaching [269476,1]+[269477,0]
+  '  0:< ::attachToElem() actually attaching [269477,1]+[269478,0]
+  '  0:< ::attachToElem() actually attaching [269478,1]+[269475,0]
+  '  0:< ::attachToElem() actually attaching [269482,1]+[269483,0]
+  '  0:< ::attachToElem() actually attaching [269483,1]+[269484,0]
+  '  0:< ::attachToElem() actually attaching [269484,1]+[269485,0]
+  '  0:< ::attachToElem() actually attaching [269485,1]+[269482,0]
+  '  0:< ::attachToElem() actually attaching [269489,1]+[269490,0]
+  '  0:< ::attachToElem() actually attaching [269490,1]+[269491,0]
+  '  0:< ::attachToElem() actually attaching [269491,1]+[269492,0]
+  '  0:< ::attachToElem() actually attaching [269492,1]+[269493,0]
+  '  0:< ::attachToElem() actually attaching [269493,1]+[269489,0]
+  '  0:< ::attachToElem() actually attaching [269494,1]+[269495,0]
+  '  0:< ::attachToElem() actually attaching [269495,1]+[269496,0]
+  '  0:< ::attachToElem() actually attaching [269496,1]+[269497,0]
+  '  0:< ::attachToElem() actually attaching [269497,1]+[269494,0]
+  '  0:< ::attachToElem() actually attaching [269498,1]+[269499,0]
+  '  0:< ::attachToElem() actually attaching [269499,1]+[269500,0]
+  '  0:< ::attachToElem() actually attaching [269500,1]+[269501,0]
+  '  0:< ::attachToElem() actually attaching [269501,1]+[269498,0]
+  '  0:< ::attachToElem() actually attaching [269502,1]+[269503,0]
+  '  0:< ::attachToElem() actually attaching [269503,1]+[269504,0]
+  '  0:< ::attachToElem() actually attaching [269504,1]+[269505,0]
+  '  0:< ::attachToElem() actually attaching [269505,1]+[269502,0]
+  '  0:< ::attachToElem() actually attaching [269506,1]+[269507,0]
+  '  0:< ::attachToElem() actually attaching [269507,1]+[269508,0]
+  '  0:< ::attachToElem() actually attaching [269508,1]+[269509,0]
+  '  0:< ::attachToElem() actually attaching [269509,1]+[269506,0]
+  '  0:< ::attachToElem() actually attaching [269510,1]+[269511,0]
+  '  0:< ::attachToElem() actually attaching [269511,1]+[269512,0]
+  '  0:< ::attachToElem() actually attaching [269512,1]+[269513,0]
+  '  0:< ::attachToElem() actually attaching [269513,1]+[269510,0]
+  '  0:< ::attachToElem() actually attaching [269514,1]+[269515,0]
+  '  0:< ::attachToElem() actually attaching [269515,1]+[269516,0]
+  '  0:< ::attachToElem() actually attaching [269516,1]+[269517,0]
+  '  0:< ::attachToElem() actually attaching [269517,1]+[269514,0]
+  '  0:< ::attachToElem() actually attaching [269518,1]+[269519,0]
+  '  0:< ::attachToElem() actually attaching [269519,1]+[269520,0]
+  '  0:< ::attachToElem() actually attaching [269520,1]+[269521,0]
+  '  0:< ::attachToElem() actually attaching [269521,1]+[269518,0]
+  '  0:< ::attachToElem() actually attaching [269522,1]+[269523,0]
+  '  0:< ::attachToElem() actually attaching [269523,1]+[269524,0]
+  '  0:< ::attachToElem() actually attaching [269524,1]+[269525,0]
+  '  0:< ::attachToElem() actually attaching [269525,1]+[269522,0]
+  '  0:< ::attachToElem() actually attaching [269526,1]+[269527,0]
+  '  0:< ::attachToElem() actually attaching [269527,1]+[269528,0]
+  '  0:< ::attachToElem() actually attaching [269528,1]+[269529,0]
+  '  0:< ::attachToElem() actually attaching [269529,1]+[269526,0]
+  '  0:< ::attachToElem() actually attaching [269530,1]+[269531,0]
+  '  0:< ::attachToElem() actually attaching [269531,1]+[269532,0]
+  '  0:< ::attachToElem() actually attaching [269532,1]+[269533,0]
+  '  0:< ::attachToElem() actually attaching [269533,1]+[269530,0]
+  '  0:< ::attachToElem() actually attaching [269534,1]+[269535,0]
+  '  0:< ::attachToElem() actually attaching [269535,1]+[269536,0]
+  '  0:< ::attachToElem() actually attaching [269536,1]+[269537,0]
+  '  0:< ::attachToElem() actually attaching [269537,1]+[269534,0]
+  '  0:< ::attachToElem() actually attaching [269538,1]+[269539,0]
+  '  0:< ::attachToElem() actually attaching [269539,1]+[269540,0]
+  '  0:< ::attachToElem() actually attaching [269540,1]+[269541,0]
+  '  0:< ::attachToElem() actually attaching [269541,1]+[269538,0]
+  '  0:< ::attachToElem() actually attaching [269542,1]+[269543,0]
+  '  0:< ::attachToElem() actually attaching [269543,1]+[269544,0]
+  '  0:< ::attachToElem() actually attaching [269544,1]+[269545,0]
+  '  0:< ::attachToElem() actually attaching [269545,1]+[269542,0]
+  '  0:< ::attachToElem() actually attaching [269546,1]+[269547,0]
+  '  0:< ::attachToElem() actually attaching [269547,1]+[269548,0]
+  '  0:< ::attachToElem() actually attaching [269548,1]+[269549,0]
+  '  0:< ::attachToElem() actually attaching [269549,1]+[269546,0]
+  '  0:< ::attachToElem() actually attaching [269550,1]+[269551,0]
+  '  0:< ::attachToElem() actually attaching [269551,1]+[269552,0]
+  '  0:< ::attachToElem() actually attaching [269552,1]+[269553,0]
+  '  0:< ::attachToElem() actually attaching [269553,1]+[269550,0]
+  '  0:< ::attachToElem() actually attaching [269554,1]+[269555,0]
+  '  0:< ::attachToElem() actually attaching [269555,1]+[269556,0]
+  '  0:< ::attachToElem() actually attaching [269556,1]+[269557,0]
+  '  0:< ::attachToElem() actually attaching [269557,1]+[269554,0]
+  '   0.102624    2:<<;PERF;MISC;regenerating
+  '  0:< ::attachToElem() actually attaching [269561,1]+[269562,0]
+  '  0:< ::attachToElem() actually attaching [269562,1]+[269563,0]
+  '  0:< ::attachToElem() actually attaching [269563,1]+[269564,0]
+  '  0:< ::attachToElem() actually attaching [269564,1]+[269565,0]
+  '  0:< ::attachToElem() actually attaching [269565,1]+[269566,0]
+  '  0:< ::attachToElem() actually attaching [269566,1]+[269567,0]
+  '  0:< ::attachToElem() actually attaching [269567,1]+[269568,0]
+  '  0:< ::attachToElem() actually attaching [269568,1]+[269561,0]
+  '  0:< ::attachToElem() actually attaching [269572,1]+[269573,0]
+  '  0:< ::attachToElem() actually attaching [269573,1]+[269574,0]
+  '  0:< ::attachToElem() actually attaching [269574,1]+[269575,0]
+  '  0:< ::attachToElem() actually attaching [269575,1]+[269576,0]
+  '  0:< ::attachToElem() actually attaching [269576,1]+[269577,0]
+  '  0:< ::attachToElem() actually attaching [269577,1]+[269578,0]
+  '  0:< ::attachToElem() actually attaching [269578,1]+[269579,0]
+  '  0:< ::attachToElem() actually attaching [269579,1]+[269572,0]
+  '  0:< ::attachToElem() actually attaching [269593,1]+[269594,0]
+  '  0:< ::attachToElem() actually attaching [269594,1]+[269595,0]
+  '  0:< ::attachToElem() actually attaching [269595,1]+[269596,0]
+  '  0:< ::attachToElem() actually attaching [269596,1]+[269593,0]
+  '   0.319603     3:<<;PERF;MISC;regenerating
+  '  1:< Before : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      987 /     2300       576=InUse      576=Peak 
+  '  1:< VM  Statistics: 134215957 / 134217727       446=InUse      447=Peak 
+  '  1:< After : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      986 /     2300       576=InUse      576=Peak 
+  '  1:< VM  Statistics: 134215957 / 134217727       446=InUse      447=Peak 
+  '  0:< ::attachToElem() actually attaching [269882,1]+[269883,0]
+  '  0:< ::attachToElem() actually attaching [269883,1]+[269884,0]
+  '  0:< ::attachToElem() actually attaching [269884,1]+[269885,0]
+  '  0:< ::attachToElem() actually attaching [269885,1]+[269886,0]
+  '  0:< ::attachToElem() actually attaching [269886,1]+[269887,0]
+  '  0:< ::attachToElem() actually attaching [269887,1]+[269888,0]
+  '  0:< ::attachToElem() actually attaching [269888,1]+[269889,0]
+  '  0:< ::attachToElem() actually attaching [269889,1]+[269882,0]
+  '  0:< ::attachToElem() actually attaching [269893,1]+[269894,0]
+  '  0:< ::attachToElem() actually attaching [269894,1]+[269895,0]
+  '  0:< ::attachToElem() actually attaching [269895,1]+[269896,0]
+  '  0:< ::attachToElem() actually attaching [269896,1]+[269897,0]
+  '  0:< ::attachToElem() actually attaching [269897,1]+[269898,0]
+  '  0:< ::attachToElem() actually attaching [269898,1]+[269899,0]
+  '  0:< ::attachToElem() actually attaching [269899,1]+[269900,0]
+  '  0:< ::attachToElem() actually attaching [269900,1]+[269893,0]
+  '  0:< ::attachToElem() actually attaching [269904,1]+[269905,0]
+  '  0:< ::attachToElem() actually attaching [269905,1]+[269906,0]
+  '  0:< ::attachToElem() actually attaching [269906,1]+[269907,0]
+  '  0:< ::attachToElem() actually attaching [269907,1]+[269904,0]
+  '  0:< ::attachToElem() actually attaching [269916,1]+[269917,0]
+  '  0:< ::attachToElem() actually attaching [269917,1]+[269918,0]
+  '  0:< ::attachToElem() actually attaching [269918,1]+[269919,0]
+  '  0:< ::attachToElem() actually attaching [269919,1]+[269916,0]
+  '   0.301021     3:<<;PERF;MISC;regenerating
+  '  1:< Before : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      986 /     2300       576=InUse      577=Peak 
+  '  1:< VM  Statistics: 134215957 / 134217727       447=InUse      447=Peak 
+  '  1:< After : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      986 /     2300       576=InUse      577=Peak 
+  '  1:< VM  Statistics: 134215957 / 134217727       447=InUse      447=Peak 
+  '  0:< ::attachToElem() actually attaching [270205,1]+[270206,0]
+  '  0:< ::attachToElem() actually attaching [270206,1]+[270207,0]
+  '  0:< ::attachToElem() actually attaching [270207,1]+[270208,0]
+  '  0:< ::attachToElem() actually attaching [270208,1]+[270205,0]
+  '  0:< ::attachToElem() actually attaching [270212,1]+[270213,0]
+  '  0:< ::attachToElem() actually attaching [270213,1]+[270214,0]
+  '  0:< ::attachToElem() actually attaching [270214,1]+[270215,0]
+  '  0:< ::attachToElem() actually attaching [270215,1]+[270212,0]
+  '  0:< ::attachToElem() actually attaching [270219,1]+[270220,0]
+  '  0:< ::attachToElem() actually attaching [270220,1]+[270221,0]
+  '  0:< ::attachToElem() actually attaching [270221,1]+[270222,0]
+  '  0:< ::attachToElem() actually attaching [270222,1]+[270219,0]
+  '  0:< ::attachToElem() actually attaching [270226,1]+[270227,0]
+  '  0:< ::attachToElem() actually attaching [270227,1]+[270228,0]
+  '  0:< ::attachToElem() actually attaching [270228,1]+[270229,0]
+  '  0:< ::attachToElem() actually attaching [270229,1]+[270226,0]
+  '  0:< ::attachToElem() actually attaching [270233,1]+[270234,0]
+  '  0:< ::attachToElem() actually attaching [270234,1]+[270235,0]
+  '  0:< ::attachToElem() actually attaching [270235,1]+[270236,0]
+  '  0:< ::attachToElem() actually attaching [270236,1]+[270233,0]
+  '  0:< ::attachToElem() actually attaching [270240,1]+[270241,0]
+  '  0:< ::attachToElem() actually attaching [270241,1]+[270242,0]
+  '  0:< ::attachToElem() actually attaching [270242,1]+[270243,0]
+  '  0:< ::attachToElem() actually attaching [270243,1]+[270240,0]
+  '  0:< ::attachToElem() actually attaching [270247,1]+[270248,0]
+  '  0:< ::attachToElem() actually attaching [270248,1]+[270249,0]
+  '  0:< ::attachToElem() actually attaching [270249,1]+[270250,0]
+  '  0:< ::attachToElem() actually attaching [270250,1]+[270247,0]
+  '  0:< ::attachToElem() actually attaching [270254,1]+[270255,0]
+  '  0:< ::attachToElem() actually attaching [270255,1]+[270256,0]
+  '  0:< ::attachToElem() actually attaching [270256,1]+[270257,0]
+  '  0:< ::attachToElem() actually attaching [270257,1]+[270254,0]
+  '  0:< ::attachToElem() actually attaching [270261,1]+[270262,0]
+  '  0:< ::attachToElem() actually attaching [270262,1]+[270263,0]
+  '  0:< ::attachToElem() actually attaching [270263,1]+[270264,0]
+  '  0:< ::attachToElem() actually attaching [270264,1]+[270261,0]
+  '  0:< ::attachToElem() actually attaching [270268,1]+[270269,0]
+  '  0:< ::attachToElem() actually attaching [270269,1]+[270270,0]
+  '  0:< ::attachToElem() actually attaching [270270,1]+[270271,0]
+  '  0:< ::attachToElem() actually attaching [270271,1]+[270268,0]
+  '  0:< ::attachToElem() actually attaching [270275,1]+[270276,0]
+  '  0:< ::attachToElem() actually attaching [270276,1]+[270277,0]
+  '  0:< ::attachToElem() actually attaching [270277,1]+[270278,0]
+  '  0:< ::attachToElem() actually attaching [270278,1]+[270275,0]
+  '  0:< ::attachToElem() actually attaching [270282,1]+[270283,0]
+  '  0:< ::attachToElem() actually attaching [270283,1]+[270284,0]
+  '  0:< ::attachToElem() actually attaching [270284,1]+[270285,0]
+  '  0:< ::attachToElem() actually attaching [270285,1]+[270282,0]
+  '  0:< ::attachToElem() actually attaching [270289,1]+[270290,0]
+  '  0:< ::attachToElem() actually attaching [270290,1]+[270291,0]
+  '  0:< ::attachToElem() actually attaching [270291,1]+[270292,0]
+  '  0:< ::attachToElem() actually attaching [270292,1]+[270289,0]
+  '  0:< ::attachToElem() actually attaching [270296,1]+[270297,0]
+  '  0:< ::attachToElem() actually attaching [270297,1]+[270298,0]
+  '  0:< ::attachToElem() actually attaching [270298,1]+[270299,0]
+  '  0:< ::attachToElem() actually attaching [270299,1]+[270296,0]
+  '  0:< ::attachToElem() actually attaching [270303,1]+[270304,0]
+  '  0:< ::attachToElem() actually attaching [270304,1]+[270305,0]
+  '  0:< ::attachToElem() actually attaching [270305,1]+[270306,0]
+  '  0:< ::attachToElem() actually attaching [270306,1]+[270303,0]
+  '  0:< ::attachToElem() actually attaching [270310,1]+[270311,0]
+  '  0:< ::attachToElem() actually attaching [270311,1]+[270312,0]
+  '  0:< ::attachToElem() actually attaching [270312,1]+[270313,0]
+  '  0:< ::attachToElem() actually attaching [270313,1]+[270310,0]
+  '  0:< ::attachToElem() actually attaching [270317,1]+[270318,0]
+  '  0:< ::attachToElem() actually attaching [270318,1]+[270319,0]
+  '  0:< ::attachToElem() actually attaching [270319,1]+[270320,0]
+  '  0:< ::attachToElem() actually attaching [270320,1]+[270321,0]
+  '  0:< ::attachToElem() actually attaching [270321,1]+[270317,0]
+  '  0:< ::attachToElem() actually attaching [270322,1]+[270323,0]
+  '  0:< ::attachToElem() actually attaching [270323,1]+[270324,0]
+  '  0:< ::attachToElem() actually attaching [270324,1]+[270325,0]
+  '  0:< ::attachToElem() actually attaching [270325,1]+[270322,0]
+  '  0:< ::attachToElem() actually attaching [270326,1]+[270327,0]
+  '  0:< ::attachToElem() actually attaching [270327,1]+[270328,0]
+  '  0:< ::attachToElem() actually attaching [270328,1]+[270329,0]
+  '  0:< ::attachToElem() actually attaching [270329,1]+[270326,0]
+  '  0:< ::attachToElem() actually attaching [270330,1]+[270331,0]
+  '  0:< ::attachToElem() actually attaching [270331,1]+[270332,0]
+  '  0:< ::attachToElem() actually attaching [270332,1]+[270333,0]
+  '  0:< ::attachToElem() actually attaching [270333,1]+[270330,0]
+  '  0:< ::attachToElem() actually attaching [270334,1]+[270335,0]
+  '  0:< ::attachToElem() actually attaching [270335,1]+[270336,0]
+  '  0:< ::attachToElem() actually attaching [270336,1]+[270337,0]
+  '  0:< ::attachToElem() actually attaching [270337,1]+[270334,0]
+  '  0:< ::attachToElem() actually attaching [270338,1]+[270339,0]
+  '  0:< ::attachToElem() actually attaching [270339,1]+[270340,0]
+  '  0:< ::attachToElem() actually attaching [270340,1]+[270341,0]
+  '  0:< ::attachToElem() actually attaching [270341,1]+[270338,0]
+  '  0:< ::attachToElem() actually attaching [270342,1]+[270343,0]
+  '  0:< ::attachToElem() actually attaching [270343,1]+[270344,0]
+  '  0:< ::attachToElem() actually attaching [270344,1]+[270345,0]
+  '  0:< ::attachToElem() actually attaching [270345,1]+[270342,0]
+  '  0:< ::attachToElem() actually attaching [270346,1]+[270347,0]
+  '  0:< ::attachToElem() actually attaching [270347,1]+[270348,0]
+  '  0:< ::attachToElem() actually attaching [270348,1]+[270349,0]
+  '  0:< ::attachToElem() actually attaching [270349,1]+[270346,0]
+  '  0:< ::attachToElem() actually attaching [270350,1]+[270351,0]
+  '  0:< ::attachToElem() actually attaching [270351,1]+[270352,0]
+  '  0:< ::attachToElem() actually attaching [270352,1]+[270353,0]
+  '  0:< ::attachToElem() actually attaching [270353,1]+[270350,0]
+  '  0:< ::attachToElem() actually attaching [270354,1]+[270355,0]
+  '  0:< ::attachToElem() actually attaching [270355,1]+[270356,0]
+  '  0:< ::attachToElem() actually attaching [270356,1]+[270357,0]
+  '  0:< ::attachToElem() actually attaching [270357,1]+[270354,0]
+  '  0:< ::attachToElem() actually attaching [270358,1]+[270359,0]
+  '  0:< ::attachToElem() actually attaching [270359,1]+[270360,0]
+  '  0:< ::attachToElem() actually attaching [270360,1]+[270361,0]
+  '  0:< ::attachToElem() actually attaching [270361,1]+[270358,0]
+  '  0:< ::attachToElem() actually attaching [270362,1]+[270363,0]
+  '  0:< ::attachToElem() actually attaching [270363,1]+[270364,0]
+  '  0:< ::attachToElem() actually attaching [270364,1]+[270365,0]
+  '  0:< ::attachToElem() actually attaching [270365,1]+[270362,0]
+  '  0:< ::attachToElem() actually attaching [270366,1]+[270367,0]
+  '  0:< ::attachToElem() actually attaching [270367,1]+[270368,0]
+  '  0:< ::attachToElem() actually attaching [270368,1]+[270369,0]
+  '  0:< ::attachToElem() actually attaching [270369,1]+[270366,0]
+  '  0:< ::attachToElem() actually attaching [270370,1]+[270371,0]
+  '  0:< ::attachToElem() actually attaching [270371,1]+[270372,0]
+  '  0:< ::attachToElem() actually attaching [270372,1]+[270373,0]
+  '  0:< ::attachToElem() actually attaching [270373,1]+[270370,0]
+  '  0:< ::attachToElem() actually attaching [270374,1]+[270375,0]
+  '  0:< ::attachToElem() actually attaching [270375,1]+[270376,0]
+  '  0:< ::attachToElem() actually attaching [270376,1]+[270377,0]
+  '  0:< ::attachToElem() actually attaching [270377,1]+[270374,0]
+  '  0:< ::attachToElem() actually attaching [270378,1]+[270379,0]
+  '  0:< ::attachToElem() actually attaching [270379,1]+[270380,0]
+  '  0:< ::attachToElem() actually attaching [270380,1]+[270381,0]
+  '  0:< ::attachToElem() actually attaching [270381,1]+[270378,0]
+  '  0:< ::attachToElem() actually attaching [270382,1]+[270383,0]
+  '  0:< ::attachToElem() actually attaching [270383,1]+[270384,0]
+  '  0:< ::attachToElem() actually attaching [270384,1]+[270385,0]
+  '  0:< ::attachToElem() actually attaching [270385,1]+[270382,0]
+  '  0:< ::attachToElem() actually attaching [270389,1]+[270390,0]
+  '  0:< ::attachToElem() actually attaching [270390,1]+[270391,0]
+  '  0:< ::attachToElem() actually attaching [270391,1]+[270392,0]
+  '  0:< ::attachToElem() actually attaching [270392,1]+[270393,0]
+  '  0:< ::attachToElem() actually attaching [270393,1]+[270394,0]
+  '  0:< ::attachToElem() actually attaching [270394,1]+[270395,0]
+  '  0:< ::attachToElem() actually attaching [270395,1]+[270396,0]
+  '  0:< ::attachToElem() actually attaching [270396,1]+[270389,0]
+  '  0:< ::attachToElem() actually attaching [270400,1]+[270401,0]
+  '  0:< ::attachToElem() actually attaching [270401,1]+[270402,0]
+  '  0:< ::attachToElem() actually attaching [270402,1]+[270403,0]
+  '  0:< ::attachToElem() actually attaching [270403,1]+[270404,0]
+  '  0:< ::attachToElem() actually attaching [270404,1]+[270405,0]
+  '  0:< ::attachToElem() actually attaching [270405,1]+[270406,0]
+  '  0:< ::attachToElem() actually attaching [270406,1]+[270407,0]
+  '  0:< ::attachToElem() actually attaching [270407,1]+[270400,0]
+  '  0:< ::attachToElem() actually attaching [270421,1]+[270422,0]
+  '  0:< ::attachToElem() actually attaching [270422,1]+[270423,0]
+  '  0:< ::attachToElem() actually attaching [270423,1]+[270424,0]
+  '  0:< ::attachToElem() actually attaching [270424,1]+[270421,0]
+  '  7:< ViewElemCache::updateConsolidationData(): DBViewPlan, id=270554, SL_ModelDefault, GReps=3, inSeqOfTotal=100%, inSeqOfOk=100%, seqLen=3.0, seqNodes=74.0
+  '  4:< OnDBViewPlaneRef: 
+  '  4:< id = 270431 (DBViewPlan): Views : Floor Plan : B.L
+  '  4:< vecInPlane (0 0 0)
+  '  4:< rotation 0, mirror 0
+  '  4:< ref ElemId 270431
+  '  4:< Surface type = Plane:
+  '  4:<   origin = (0.000000, 0.000000, 3.000000)
+  '  4:<   xVec = (1.000000, 0.000000, 0.000000)
+  '  4:<   yVec = (0.000000, 1.000000, 0.000000)
+  '  4:<   zVec = (0.000000, 0.000000, 1.000000)
+  '  4:<   OrientFlag:1
+  '  4:<   Not bound by envelope.
+  '  4:< DBG_INFO: sketchPlane has invalid plane ref: line 1150 of Elem\SketchPlane.cpp.
+  '   3.706930    2:<<;PERF;MISC;regenerating
+  '  0:< ::attachToElem() actually attaching [270567,1]+[270568,0]
+  '  0:< ::attachToElem() actually attaching [270568,1]+[270569,0]
+  '  0:< ::attachToElem() actually attaching [270569,1]+[270570,0]
+  '  0:< ::attachToElem() actually attaching [270570,1]+[270567,0]
+  '  0:< ;PERF;MISC;MFCDoc::updateAllViews(...,UV_CLEAR_GRAPHIC_CACHE);
+  '  0:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewPlan id=356: 110 elements need cache update
+  '  0:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewProject id=266: 688 elements need cache update
+  '  0:< ::attachToElem() actually attaching [270582,1]+[270583,0]
+  '  0:< ::attachToElem() actually attaching [270583,1]+[270584,0]
+  '  0:< ::attachToElem() actually attaching [270584,1]+[270585,0]
+  '  0:< ::attachToElem() actually attaching [270585,1]+[270582,0]
+  '  0:< ::attachToElem() actually attaching [270589,1]+[270590,0]
+  '  0:< ::attachToElem() actually attaching [270590,1]+[270591,0]
+  '  0:< ::attachToElem() actually attaching [270591,1]+[270592,0]
+  '  0:< ::attachToElem() actually attaching [270592,1]+[270589,0]
+  '  0:< ;PERF;MISC;MFCDoc::updateAllViews(...,UV_CLEAR_GRAPHIC_CACHE);
+  '  0:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewProject id=266: 690 elements need cache update
+  '  0:< ::attachToElem() actually attaching [270603,1]+[270604,0]
+  '  0:< ::attachToElem() actually attaching [270604,1]+[270605,0]
+  '  0:< ::attachToElem() actually attaching [270605,1]+[270603,0]
+  '  0:< ::attachToElem() actually attaching [270609,1]+[270610,0]
+  '  0:< ::attachToElem() actually attaching [270610,1]+[270611,0]
+  '  0:< ::attachToElem() actually attaching [270611,1]+[270609,0]
+  '  0:< ;PERF;MISC;MFCDoc::updateAllViews(...,UV_CLEAR_GRAPHIC_CACHE);
+  '  0:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewProject id=266: 692 elements need cache update
+  '  1:< Separating family id = 266283 : [30" x 80"] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.205019     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< DBG_INFO: UndoElement::simplify START new problem 1 missing Delete element 266496=266496 ii=0 nnn=2: line 409 of d:\ship\2015_px64\source\revit\revitdb\undo\UndoElement.cpp.
+  '   0.281942    2:<<Separating family id = 266283 : [30" x 80"] <Top Level>/ALL_GAPS   0.076923/Threshold_GAPs 72%
+  '  1:< Separating family id = 266667 : [30" x 80" 3072] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.205718     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '   0.267747    2:<<Separating family id = 266667 : [30" x 80" 3072] <Top Level>/ALL_GAPS   0.062029/Threshold_GAPs 100%
+  '  1:< Separating family id = 267034 : [36" x 48"] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.197522     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '   0.248575    2:<<Separating family id = 267034 : [36" x 48"] <Top Level>/ALL_GAPS   0.051053/Threshold_GAPs 100%
+  '  1:< Separating family id = 267405 : [30" x 80" 3851] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.201410     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '   0.253145    2:<<Separating family id = 267405 : [30" x 80" 3851] <Top Level>/ALL_GAPS   0.051736/Threshold_GAPs 100%
+  '  1:< Separating family id = 267772 : [30" x 80" 4489] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.201790     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '   0.270801    2:<<Separating family id = 267772 : [30" x 80" 4489] <Top Level>/ALL_GAPS   0.069011/Threshold_GAPs 100%
+  '  1:< Separating family id = 268139 : [30" x 80" 4431] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.206044     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '   0.255929    2:<<Separating family id = 268139 : [30" x 80" 4431] <Top Level>/ALL_GAPS   0.049885/Threshold_GAPs 100%
+  '  1:< Separating family id = 268506 : [24" x 24"] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.166488     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '   0.200480    2:<<Separating family id = 268506 : [24" x 24"] <Top Level>/ALL_GAPS   0.033993/Threshold_GAPs 100%
+  '  1:< Separating family id = 268793 : [W10X49] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.169995     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '  4:< UndoElement::simplify PROBLEMS
+  '   0.206067    2:<<Separating family id = 268793 : [W10X49] <Top Level>/ALL_GAPS   0.036072/Threshold_GAPs 99%
+  '  1:< Separating family id = 269093 : [68" x 80"] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.299524     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '   0.372109    2:<<Separating family id = 269093 : [68" x 80"] <Top Level>/ALL_GAPS   0.072586/Threshold_GAPs 98%
+  '  1:< Separating family id = 269598 : [30" x 80" 126101] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.184209     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '   0.223590    2:<<Separating family id = 269598 : [30" x 80" 126101] <Top Level>/ALL_GAPS   0.039381/Threshold_GAPs 100%
+  '  1:< Separating family id = 269921 : [72" x 78"] <Top Level> ...
+  '  3:< Unnecessary nesting;d:\ship\2015_px64\source\revit\revitdb\family\FamilyBaseUI.cpp;334;ID_SAVE_FAMILY ;N++E(N);
+  '   0.283883     3:<<LoadedFamilySaver::exec
+  '  4:< UndoElement::simplify PROBLEMS
+  '   0.349522    2:<<Separating family id = 269921 : [72" x 78"] <Top Level>/ALL_GAPS   0.065639/Threshold_GAPs 100%
+  '  1:< Destroying MFCDoc after separating all families 0000000050298230
+  '  1:< Before : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      975 /     2300       588=InUse      588=Peak 
+  '  1:< VM  Statistics: 134215950 / 134217727       455=InUse      455=Peak 
+  '  1:< After : Destroy Display Manager
+  '  1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ]
+  '  1:< RAM Statistics:      975 /     2300       588=InUse      588=Peak 
+  '  1:< VM  Statistics: 134215950 / 134217727       455=InUse      455=Peak 
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 274367]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 271637]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 272804]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 273196]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 232024]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 273510]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 272412]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 270853]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 274715]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 272020]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 273837]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 223985]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 222183]
+  '  2:< CoreElemCheckClosure: checking document [Family [], id = 271245]
+  '   3.776130   1:<<separateAllLoadedFamilies/ALL_GAPS   0.846223/TurnOff_GAPs 10%
+  '  4:< REGEN_DOC_CONTEXT_INFO: Attempt to modify wrong element during regeneration
+  '  5:< --TB- Level  270430 - Levels : Level : B.L
+  '  5:< DBG_INFO: !gRepCutVisitor.hasBeenReallyCut() in GRepCutVisitor::cutGRep().: line 1289 of Visitors\GRepCutVisitor.cpp.
+  '  4:< ::attachToElem() actually attaching [275231,1]+[275232,0]
+  '  4:< ::attachToElem() actually attaching [275232,1]+[275233,0]
+  '  4:< ::attachToElem() actually attaching [275233,1]+[275234,0]
+  '  4:< ::attachToElem() actually attaching [275234,1]+[275231,0]
+  '  4:< ::attachToElem() actually attaching [275246,1]+[275247,0]
+  '  4:< ::attachToElem() actually attaching [275247,1]+[275248,0]
+  '  4:< ::attachToElem() actually attaching [275248,1]+[275249,0]
+  '  4:< ::attachToElem() actually attaching [275249,1]+[275246,0]
+  '  4:< ::attachToElem() actually attaching [275261,1]+[275262,0]
+  '  4:< ::attachToElem() actually attaching [275262,1]+[275263,0]
+  '  4:< ::attachToElem() actually attaching [275263,1]+[275264,0]
+  '  4:< ::attachToElem() actually attaching [275264,1]+[275261,0]
+  '  4:< ::attachToElem() actually attaching [275276,1]+[275277,0]
+  '  4:< ::attachToElem() actually attaching [275277,1]+[275278,0]
+  '  4:< ::attachToElem() actually attaching [275278,1]+[275279,0]
+  '  4:< ::attachToElem() actually attaching [275279,1]+[275276,0]
+  '  4:< ::attachToElem() actually attaching [275441,1]+[275442,0]
+  '  4:< ::attachToElem() actually attaching [275442,1]+[275443,0]
+  '  4:< ::attachToElem() actually attaching [275443,1]+[275444,0]
+  '  4:< ::attachToElem() actually attaching [275444,1]+[275441,0]
+  '  7:< ViewElemCache::updateConsolidationData(): DBViewPlan, id=275472, SL_ModelDefault, GReps=3, inSeqOfTotal=100%, inSeqOfOk=100%, seqLen=3.0, seqNodes=74.0
+  '  4:< OnDBViewPlaneRef: 
+  '  4:< id = 270621 (DBViewPlan): Views : Floor Plan : C.L
+  '  4:< vecInPlane (0 0 0)
+  '  4:< rotation 0, mirror 0
+  '  4:< ref ElemId 270621
+  '  4:< Surface type = Plane:
+  '  4:<   origin = (0.000000, 0.000000, 13.000000)
+  '  4:<   xVec = (1.000000, 0.000000, 0.000000)
+  '  4:<   yVec = (0.000000, 1.000000, 0.000000)
+  '  4:<   zVec = (0.000000, 0.000000, 1.000000)
+  '  4:<   OrientFlag:1
+  '  4:<   Not bound by envelope.
+  '  4:< OnDBViewPlaneRef: 
+  '  4:< id = 270663 (DBViewPlan): Views : Floor Plan : G.L
+  '  4:< vecInPlane (0 0 0)
+  '  4:< rotation 0, mirror 0
+  '  4:< ref ElemId 270663
+  '  4:< Surface type = Plane:
+  '  4:<   origin = (0.000000, 0.000000, 0.000000)
+  '  4:<   xVec = (1.000000, 0.000000, 0.000000)
+  '  4:<   yVec = (0.000000, 1.000000, 0.000000)
+  '  4:<   zVec = (0.000000, 0.000000, 1.000000)
+  '  4:<   OrientFlag:1
+  '  4:<   Not bound by envelope.
+  '  4:< OnDBViewPlaneRef: 
+  '  4:< id = 270675 (DBViewPlan): Views : Floor Plan : S.L
+  '  4:< vecInPlane (0 0 0)
+  '  4:< rotation 0, mirror 0
+  '  4:< ref ElemId 270675
+  '  4:< Surface type = Plane:
+  '  4:<   origin = (0.000000, 0.000000, 6.000000)
+  '  4:<   xVec = (1.000000, 0.000000, 0.000000)
+  '  4:<   yVec = (0.000000, 1.000000, 0.000000)
+  '  4:<   zVec = (0.000000, 0.000000, 1.000000)
+  '  4:<   OrientFlag:1
+  '  4:<   Not bound by envelope.
+  '  4:< OnDBViewPlaneRef: 
+  '  4:< id = 270687 (DBViewPlan): Views : Floor Plan : L.L
+  '  4:< vecInPlane (0 0 0)
+  '  4:< rotation 0, mirror 0
+  '  4:< ref ElemId 270687
+  '  4:< Surface type = Plane:
+  '  4:<   origin = (0.000000, 0.000000, 10.000000)
+  '  4:<   xVec = (1.000000, 0.000000, 0.000000)
+  '  4:<   yVec = (0.000000, 1.000000, 0.000000)
+  '  4:<   zVec = (0.000000, 0.000000, 1.000000)
+  '  4:<   OrientFlag:1
+  '  4:<   Not bound by envelope.
+  '  4:< OnDBViewPlaneRef: 
+  '  4:< id = 270699 (DBViewPlan): Views : Floor Plan : C.M
+  '  4:< vecInPlane (0 0 0)
+  '  4:< rotation 0, mirror 0
+  '  4:< ref ElemId 270699
+  '  4:< Surface type = Plane:
+  '  4:<   origin = (0.000000, 0.000000, 16.000000)
+  '  4:<   xVec = (1.000000, 0.000000, 0.000000)
+  '  4:<   yVec = (0.000000, 1.000000, 0.000000)
+  '  4:<   zVec = (0.000000, 0.000000, 1.000000)
+  '  4:<   OrientFlag:1
+  '  4:<   Not bound by envelope.
+  '   7.667498    2:<<;PERF;MISC;regenerating
+  '  1:< ::attachToElem() actually attaching [270719,0]+[270442,1]
+  '  1:< ::attachToElem() actually attaching [270713,0]+[270618,1]
+  '  1:< ::attachToElem() actually attaching [270746,1]+[270710,0]
+  '  1:< ::attachToElem() actually attaching [270714,0]+[270710,1]
+  '  1:< ::attachToElem() actually attaching [270713,1]+[270711,0]
+  '  1:< ::attachToElem() actually attaching [270716,0]+[270715,1]
+  '  1:< ::attachToElem() actually attaching [270732,0]+[270717,1]
+  '  1:< ::attachToElem() actually attaching [270718,0]+[270717,0]
+  '  1:< ::attachToElem() actually attaching [270720,1]+[270719,1]
+  '  1:< ::attachToElem() actually attaching [270725,1]+[270721,0]
+  '  1:< ::attachToElem() actually attaching [270726,0]+[270723,1]
+  '  1:< ::attachToElem() actually attaching [270746,0]+[270767,1]
+  '  1:< ::attachToElem() actually attaching [270775,1]+[270772,0]
+  '  1:< ::attachToElem() actually attaching [270773,0]+[270772,1]
+  '  1:< ::attachToElem() actually attaching [270774,0]+[270773,1]
+  '  1:< ::attachToElem() actually attaching [270775,0]+[270774,1]
+  '  1:< ::attachToElem() actually attaching [270618,0]+[270746,3]
+  '  1:< ::attachToElem() actually attaching [270576,0]+[270618,3]
+  '  1:< ::attachToElem() actually attaching [270712,1]+[270618,2]
+  '  1:< ::attachToElem() actually attaching [270714,1]+[270618,2]
+  '  1:< ::attachToElem() actually attaching [270720,0]+[270618,3]
+  '  1:< ::attachToElem() actually attaching [270770,0]+[270618,2]
+  '  1:< ::attachToElem() actually attaching [270716,1]+[270618,3]
+  '  1:< ::attachToElem() actually attaching [270712,0]+[270710,3]
+  '  1:< ::attachToElem() actually attaching [270727,0]+[270711,3]
+  '  1:< ::attachToElem() actually attaching [270729,1]+[270711,3]
+  '  1:< ::attachToElem() actually attaching [270725,0]+[270713,3]
+  '  1:< ::attachToElem() actually attaching [270724,0]+[270713,3]
+  '  1:< ::attachToElem() actually attaching [270730,1]+[270713,3]
+  '  1:< ::attachToElem() actually attaching [270722,1]+[270713,3]
+  '  1:< ::attachToElem() actually attaching [270715,0]+[270746,3]
+  '  1:< ::attachToElem() actually attaching [270732,1]+[270715,2]
+  '  1:< ::attachToElem() actually attaching [270718,1]+[270715,2]
+  '  1:< ::attachToElem() actually attaching [270730,0]+[270716,3]
+  '  1:< ::attachToElem() actually attaching [270731,0]+[270721,2]
+  '  1:< ::attachToElem() actually attaching [270726,1]+[270721,3]
+  '  1:< ::attachToElem() actually attaching [270723,0]+[270722,3]
+  '  1:< ::attachToElem() actually attaching [270724,1]+[270723,2]
+  '  1:< ::attachToElem() actually attaching [270728,0]+[270727,2]
+  '  1:< ::attachToElem() actually attaching [270771,0]+[270727,1]
+  '  1:< ::attachToElem() actually attaching [270741,0]+[270728,1]
+  '  1:< ::attachToElem() actually attaching [270769,1]+[270730,3]
+  '  1:< ::attachToElem() actually attaching [270731,1]+[270771,3]
+  '  1:< ::attachToElem() actually attaching [270743,0]+[270741,1]
+  '  1:< ::attachToElem() actually attaching [270743,1]+[270767,0]
+  '  1:< ::attachToElem() actually attaching [270729,0]+[270743,2]
+  '  1:< ::attachToElem() actually attaching [270767,1]+[270768,1]
+  '  1:< ::attachToElem() actually attaching [270746,0]+[270768,1]
+  '  1:< ::attachToElem() actually attaching [270722,0]+[270769,3]
+  '  5:< --TB- Level  270430 - Levels : Level : B.L
+  '   0.431644    2:<<;PERF;MISC;regenerating
+  '  5:< --TB- Level  270430 - Levels : Level : B.L
+  '   0.246640    2:<<;PERF;MISC;regenerating
+  ' 0:< ::5:: Delta VM: Avail +32 -> 134216006 MB, Used -11 -> 406 MB, Peak +39 -> 455 MB; RAM: Avail +6 -> 1024 MB, Used +20 -> 566 MB, Peak +43 -> 589 MB 
+  'H 27-Jul-2015 11:04:54.390;   0:< 
+  Jrn.Directive "GlobalToProj"  _
+          , "[in]", "Floor Plan: G.L" _
+          , 0.01041666666667 _
+          , 1.00000000000000, 0.00000000000000, 0.00000000000000 _
+          , 0.00000000000000, 1.00000000000000, 0.00000000000000 _
+          , 0.00000000000000, 0.00000000000000, 1.00000000000000 _
+          , 0.00000000000000, 0.00000000000000, 0.00000000000000
+  'H 27-Jul-2015 11:04:54.397;   0:< 
+  Jrn.Directive "ProjToPage"  _
+          , "[in]", "Floor Plan: G.L" _
+          , 95.99999999999992 _
+          , 95.99999999999994, 0.00000000000000, 0.00000000000000 _
+          , 0.00000000000000, 95.99999999999994, 0.00000000000000 _
+          , 0.00000000000000, 0.00000000000000, 95.99999999999994 _
+          , 0.00000000000000, 0.00000000000000, 0.00000000000000
+  'H 27-Jul-2015 11:04:54.397;   0:< 
+  Jrn.Directive "WindowSize"  _
+          , "[in]", "Floor Plan: G.L" _
+          , 864, 308
+  ' 4:< ::5:: Delta VM: Avail -16 -> 134215990 MB, Used +3 -> 409 MB; RAM: Avail -3 -> 1021 MB, Used +2 -> 569 MB 
+  ' 4:< DBG_INFO: DBViewPlan::generateViewSpecificGRep() is invoked and returns VC_Invisible - quick rejection failed.: line 5589 of Elem\DBViewPlan.cpp. 
+  '  0.193206      4:<<<updateGReps  
+  '  0.195365     3:<<G.L: ;PERF;MISC;generating greps 
+  ' 0:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewPlan id=270663: 155 elements need cache update 
+  'H 27-Jul-2015 11:04:54.631;   0:< 
+  Jrn.Directive "ProjToPage"  _
+          , "[in]", "Floor Plan: G.L" _
+          , 236.82238658808691 _
+          , 236.82238658808691, 0.00000000000000, 0.00000000000000 _
+          , 0.00000000000000, 236.82238658808691, 0.00000000000000 _
+          , 0.00000000000000, 0.00000000000000, 236.82238658808691 _
+          , 0.00000000000000, 0.00000000000000, 0.00000000000000
+  'H 27-Jul-2015 11:04:54.631;   0:< 
+  Jrn.Directive "ProjToPage"  _
+          , "[in]", "Floor Plan: G.L" _
+          , 236.82238658808691 _
+          , 236.82238658808691, 0.00000000000000, 0.00000000000000 _
+          , 0.00000000000000, 236.82238658808691, 0.00000000000000 _
+          , 0.00000000000000, 0.00000000000000, 236.82238658808691 _
+          , 601.23784808610856, -241.72888310210837, 0.00000000000000
+  ' 0:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewProject id=266: 703 elements need cache update 
+   'H 27-Jul-2015 11:04:54.734;   0:< 
+   Jrn.Directive "WindowSize"  _
+           , "[in]", "Floor Plan: <Temp. Level 1>" _
+           , 1040, 382
+    'H 27-Jul-2015 11:04:54.738;   0:< 
+    Jrn.Directive "WindowSize"  _
+            , "[in]", "Floor Plan: <Temp. Level 1>" _
+            , 1019, 361
+     'H 27-Jul-2015 11:04:54.778;   0:< 
+     Jrn.Directive "WindowSize"  _
+             , "[in]", "Floor Plan: G.L" _
+             , 1036, 503
+      'H 27-Jul-2015 11:04:54.784;   0:< 
+      Jrn.Directive "WindowSize"  _
+              , "[in]", "Floor Plan: G.L" _
+              , 1019, 486
+       ' 0:< Activate "[in]" , Floor Plan: G.L 
+' 0:< View Open: Element expansion used 0.000000 seconds averaging 0.000000 seconds/hit for 0 hits. 
+' 0:< CrsTimer event occurred for 0 times in DesktopMFCView [Floor Plan: <Temp. Level 1>] 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< DBG_INFO: UndoElement::simplify END old problem 2 missing Delete element 360=360 ii=0 nnn=2: line 411 of d:\ship\2015_px64\source\revit\revitdb\undo\UndoElement.cpp. 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+' 0:< UndoElement::simplify PROBLEMS 
+'  0.165303      4:<<<updateGReps  
+'  0.166356     3:<<G.L: ;PERF;MISC;generating greps 
+' 0:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewPlan id=270663: 155 elements need cache update 
+' 2:< JoinGeometry: Automatically joined 'Columns : 24" x 24" : 24" x 24"'(270632) to 'Walls : Basic Wall : Basic Wall:Generic - 8"'(270713). 
+' 2:< JoinGeometry: Automatically joined 'Columns : 24" x 24" : 24" x 24"'(270646) to 'Walls : Basic Wall : Basic Wall:Generic - 8"'(270729). 
+' 2:< JoinGeometry: Automatically joined 'Columns : 24" x 24" : 24" x 24"'(270646) to 'Walls : Basic Wall : Basic Wall:Generic - 8"'(270743). 
+' 2:< JoinGeometry: Automatically joined 'Columns : 24" x 24" : 24" x 24"'(270647) to 'Walls : Basic Wall : Basic Wall:Generic - 8"'(270711). 
+' 2:< JoinGeometry: Automatically joined 'Columns : 24" x 24" : 24" x 24"'(270648) to 'Walls : Basic Wall : Basic Wall:Generic - 8"'(270711). 
+' 1:< ::5:: Delta VM: Avail -12 -> 134215979 MB, Used +2 -> 411 MB; RAM: Avail -4 -> 1018 MB, Used +2 -> 571 MB 
+'  0.408301    2:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT; 
+'  0.133533    2:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT; 
+' 1:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewProject id=266: 695 elements need cache update 
+' 1:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewPlan id=270663: 155 elements need cache update 
+'H 27-Jul-2015 11:04:56.159;   1:< 
+Jrn.Data "Transaction Successful"  _
+        , "Import"
+'  0.876672   1:<<EndOrAbortUndoTransaction();DOPT;/ALL_GAPS   0.334838/TurnOff_GAPs 61%/Threshold_GAPs 32% 
+ ' 0:< ::5:: Delta VM: Avail +20 -> 134215999 MB, Used -2 -> 409 MB; RAM: Avail +4 -> 1023 MB, Used -5 -> 567 MB 
+ 'E 27-Jul-2015 11:04:57.218;   0:< 
+ Jrn.Size        0 ,   1041 ,    508
+ 'H 27-Jul-2015 11:04:57.220;   0:< 
+ Jrn.Directive "WindowSize"  _
+         , "[in]", "Floor Plan: G.L" _
+         , 1041, 508
+ 'E 27-Jul-2015 11:04:57.227;   0:< 
+ Jrn.Size        0 ,   1020 ,    487
+ 'H 27-Jul-2015 11:04:57.227;   0:< 
+ Jrn.Directive "WindowSize"  _
+         , "[in]", "Floor Plan: G.L" _
+         , 1020, 487
+ 'E 27-Jul-2015 11:04:57.250;   0:< 
+ Jrn.Size        0 ,   1040 ,    507
+ 'H 27-Jul-2015 11:04:57.250;   0:< 
+ Jrn.Directive "WindowSize"  _
+         , "[in]", "Floor Plan: G.L" _
+         , 1040, 507
+ 'E 27-Jul-2015 11:04:57.256;   0:< 
+ Jrn.Size        0 ,   1019 ,    486
+ 'H 27-Jul-2015 11:04:57.256;   0:< 
+ Jrn.Directive "WindowSize"  _
+         , "[in]", "Floor Plan: G.L" _
+         , 1019, 486
+'H 27-Jul-2015 11:04:57.388;   0:< 
+Jrn.Directive "ProjToPage"  _
+        , "[in]", "Floor Plan: G.L" _
+        , 373.68727234353992 _
+        , 373.68727234353992, 0.00000000000000, 0.00000000000000 _
+        , 0.00000000000000, 373.68727234353992, 0.00000000000000 _
+        , 0.00000000000000, 0.00000000000000, 373.68727234353992 _
+        , 601.23784808610856, -241.72888310210837, 0.00000000000000
+'H 27-Jul-2015 11:04:57.388;   0:< 
+Jrn.Directive "ProjToPage"  _
+        , "[in]", "Floor Plan: G.L" _
+        , 373.68727234353992 _
+        , 373.68727234353992, 0.00000000000000, 0.00000000000000 _
+        , 0.00000000000000, 373.68727234353992, 0.00000000000000 _
+        , 0.00000000000000, 0.00000000000000, 373.68727234353992 _
+        , 776.54413691509308, -381.42934151826182, 0.00000000000000
+' 1:< ViewElemCache::updateConsolidationData(): DBViewPlan, id=270663, SL_ModelDefault, GReps=153, inSeqOfTotal=28%, inSeqOfOk=100%, seqLen=43.0, seqNodes=592.0 
+' 0:< ::9:: Delta VM: Avail -37 -> 134215963 MB, Used +29 -> 439 MB; RAM: Avail -34 -> 989 MB, Used +29 -> 597 MB, Peak +9 -> 599 MB 
+'  1.697561   1:<<<;PERF;MISC;drawing 
+'C 27-Jul-2015 11:04:59.282;   0:< idle0_doc 
+'H 27-Jul-2015 11:04:59.287;   0:< 
+Jrn.Directive "AllowPressAndDrag"  _
+        , 1
+' 0:< <<Begin build CT>>
+'
+'Edit mode: IDR_COMMON
+'Command: ID_BUTTON_SELECT
+'Category: 0
+'Bar list: 
+'	Dialog_Revit_DynamicLabelDBar
+'	Dialog_Essentials_FilterSelectionNew
+'Presenter list: 
+'	
+'Product: Revit
+'
+'
+'***********************************************************
+'***********************************************************
+'<<End build CT>> 
+ 'E 27-Jul-2015 11:05:00.802;   0:< 
+ Jrn.MouseMove    0 ,     10 ,     45
+ 'E 27-Jul-2015 11:05:00.802;   0:< 
+ Jrn.AppButtonEvent 1 , "Application Menu is opening"
+' 0:< ::11:: Delta VM: Avail +10 -> 134215974 MB, Used +9 -> 448 MB; RAM: Avail -4 -> 985 MB, Used +11 -> 609 MB, Peak +10 -> 609 MB 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+' 0:< Method PathNameFromControl: the control is neither hosted on Window nor APIDockablePane. 
+ 'E 27-Jul-2015 11:05:04.374;   0:< 
+ Jrn.AppButtonEvent 0 , "Application Menu is closing"
+ 'E 27-Jul-2015 11:05:04.521;   0:< 
+ Jrn.Command "Internal" , "Save the active project with a new name , ID_REVIT_FILE_SAVE_AS"
+ ' 0:< Unnecessary nesting;ArrowUI_4;-1;ID_REVIT_FILE_SAVE_AS ;N++EB(NB); 
+ ' 1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+ ' 1:< RAM Statistics:      986 /     2300       609=InUse      609=Peak  
+ ' 1:< VM  Statistics: 134215975 / 134217727       449=InUse      455=Peak  
+ ' 1:<  0 ModelServerState "Created": Current server = "Not Queried", Model server = "", Model server state = "Not Applicable" 
+ '  0.000008    2:<<<saveModifiedRvtLinkSymbols 
+ '  0.000008    2:<<<saveModifiedImportSymbols 
+ 'H 27-Jul-2015 11:05:09.304;   2:< 
+ Jrn.Data "File Name"  _
+         , "IDOK", "C:\Users\Administrator\AppData\Local\ifc2rvt\out.rvt"
+ '  4.693488    2:<<<getSaveFileName 
+ '  0.000163     3:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+ '  0.000065     3:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
+ '  0.000008      4:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
+ '  0.000054       5:<<<;PERF;MISC;regenerating 
+ '  0.000459     3:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT;/ALL_GAPS   0.000397/TurnOff_GAPs 20% 
+ '  0.002381    2:<<EndOrAbortUndoTransaction();DOPT;/ALL_GAPS   0.001694/TurnOff_GAPs 25% 
+ '  0.004749      4:<<acquireFileLock 
+ '  0.004883     3:<<acquiring lock 
+ '  0.000029       5:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+ '  0.000008       5:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
+ '  0.000008        6:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
+ '  0.000017         7:<<<;PERF;MISC;regenerating 
+ '  0.000244       5:<<EndOrAbortUndoTransaction()--end of transaction checks;DOPT;/ALL_GAPS   0.000219/TurnOff_GAPs 31% 
+ '  0.001282      4:<<EndOrAbortUndoTransaction();DOPT;/ALL_GAPS   0.001001/TurnOff_GAPs 3% 
+ '  0.006645     3:<<preStoreDocument 
+ ' 3:< Unnecessary nesting;ManageDocTemplatesPreview_1;-1;IDS_PREVIEW ;N++OB(NAB); 
+ ' 4:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewPlan id=270663: 155 elements need cache update 
+ ' 6:< ViewElemCache::updateConsolidationData(): DBViewPlan, id=270663, SL_ModelDefault, GReps=153, inSeqOfTotal=28%, inSeqOfOk=100%, seqLen=43.0, seqNodes=592.0 
+ '  0.283584        6:<<<;PERF;MISC;drawing 
+ ' 4:< ;PERF;MISC;FullUpdateGraphicCacheUpdater::updateAll() DBViewPlan id=270663: 155 elements need cache update 
+ '  0.000038       5:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
+ '  0.000489      4:<<EndOrAbortUndoTransaction();DOPT;/ALL_GAPS   0.000451/TurnOff_GAPs 9% 
+ '  0.357649     3:<<createPreviewImage/ALL_GAPS   0.073576/TurnOff_GAPs 14% 
+ '  0.000052     3:<<<end episode 
+ '  0.081792     3:<<<;PERF;MISC;drawing 
+ '  0.001466      4:<<<tmpDeleteElements TransientElement 
+ '  0.000926      4:<<tmpDeleteElements BadHistoryElement 
+ '  0.000015      4:<<tmpDeleteElements BadHistoryGraveyard 
+ '  0.005089     3:<<putAsideTransientElements 
+ '  0.022200     3:<<<forceResetOfElemRecOwnerCache 
+ '  0.555417    2:<<OpenFileForSave::openFileForSave 
+ '  0.002227     3:<<acquireFileLock 
+ '  0.003709    2:<<saveToTempFile().acquire 
+ '  0.007101      4:<<storePreviewImage 
+ '  0.038169      4:<<<storeAllClasses 
+ '  0.000807      4:<<<storeValidation 
+ '  0.032575       5:<<<ElementSender::prepareSaveSources 
+ '  0.000159       5:<<<ElementSender::createSwapouts 
+ '  0.220710       5:<<<ElementSender::prepareToSave 
+ '  0.001053------ 5:<<<ElementSender::getAllLiveElementCounts 
+ '  0.091605       5:<<<ElementSender::updateETforSave 
+ '  0.000085       5:<<Updating increment and partition tables for save (quick) 
+ '  0.000284        6:<<<Storing increment table  [#obsolete=0, first#=0, last#=0] 
+ '  0.000037        6:<<<Storing DocumentHistory  [#episodes=475, #valid=475, max ep id#=474] 
+ '  0.000119        6:<<<Storing PartitionTable  [#partitions=1, #deleted=0, max id#=0] 
+ '  0.075981        6:<<<Storing Content Documents 
+ '  0.006528        6:<<<Storing ElemTable  [#elts=8552, #graveyard=0] 
+ '  0.000465        6:<<<Storing global stream 
+ '  0.014956         7:<<<OLEStgLock::commit overwrite=yes consolidate=no 
+ '  0.018872        6:<<commitAllGlobalStreams/ALL_GAPS   0.003915/TurnOff_GAPs 83% 
+ '  0.115814       5:<<Storing tables 
+ ' 8:< ::13:: Delta VM: Avail -24 -> 134215950 MB, Used +4 -> 452 MB; RAM: Avail -8 -> 977 MB, Used +6 -> 615 MB, Peak +10 -> 620 MB 
+ '  4.520447!!!!!!! 6:!!!BIG_GAP ModelStorer::storeStreams()  
+ '  0.000012          8:<<<OLEStgLock::commit overwrite=yes consolidate=no 
+ '  4.521671       5:<<ModelStorer::storeStreams() /ALL_GAPS   4.521659/TurnOff_GAPs 100% 
+ '  4.997851      4:<<ModelStorer::storeDocument()  
+ ' 3:< GETLOADSTOREOPTIONS in GET Project\ProjectAgent.cpp(42) despite m_dontFetch 
+ ' 3:< GETLOADSTOREOPTIONS in GET Project\OleStorage.cpp(242) despite m_dontFetch 
+ '  0.000111       5:<<<storeSelf DocumentStorageIndexBackup 
+ '  0.000045       5:<<<storeSelf updateDSIforSave 
+ '  0.001504      4:<<DocumentStorageIndex::storeSelf [-1] 
+ ' 3:< GETLOADSTOREOPTIONS in GET d:\ship\2015_px64\source\revit\revitdb\document\Document.cpp(6097) despite m_dontFetch 
+ ' 3:< GETLOADSTOREOPTIONS in GET Project\ProjectExtras.cpp(154) despite m_dontFetch 
+ ' 4:< GETLOADSTOREOPTIONS in GET Project\OleStorage.cpp(242) despite m_dontFetch 
+ ' 4:< GETLOADSTOREOPTIONS in GET Project\ProjectExtras.cpp(191) despite m_dontFetch 
+ '  0.000008       5:<<<needSaveToCentral 
+ '  0.000483      4:<<storeBasicFileInfoStream/ALL_GAPS   0.000475/TurnOff_GAPs 8% 
+ '  0.000007      4:<<<storePartAtomStream 
+ '  0.050767      4:<<storeProjectXMLInfoStream 
+ '  5.177470     3:<<TrustedUtility::SaveToStorage - serialize block 
+ '  0.000085      4:<<<OLEStgLock::commit overwrite=yes consolidate=no 
+ '  0.002575     3:<<TrustedUtility::SaveToStorage - commit format/contents locks/ALL_GAPS   0.002490/TurnOff_GAPs 68% 
+ ' 3:< GETLOADSTOREOPTIONS in GET Project\ProjectAgent.cpp(42) despite m_dontFetch 
+ ' 3:< ::13:: Delta VM: Avail -15 -> 134215936 MB, Used +0 -> 453 MB; RAM: Avail -15 -> 963 MB, Used +19 -> 634 MB, Peak +14 -> 634 MB 
+ '  0.271499      4:<<<OLEStgLock::commit overwrite=yes consolidate=no 
+ '  0.272116     3:<<TrustedUtility::SaveToStorage - commitStorage 
+ '  5.453252    2:<<TrustedUtility::saveToStorage 
+ 'H 27-Jul-2015 11:05:15.983;   1:< 
+ Jrn.Directive "DocSymbol"  _
+         , "[out.rvt]"
+ '  0.000012    2:<<<BackupFileManager::preUnlockPreCommit 
+ ' 3:< DummyStorage destroying DataStorageInterface 0x000000004219C970 
+ '  0.003504     3:<<<relinquishAllLocks 
+ '  0.003644    2:<<saveToTempFile()->preCommit 
+ '  0.000010    2:<<<BackupFileManager::postUnlockPreCommit 
+ ' 3:< ::13:: Delta VM: Avail +29 -> 134215966 MB, Used 453 MB; RAM: Avail +15 -> 979 MB, Used -19 -> 615 MB 
+ ' 3:< DummyStorage destroying DataStorageInterface 0x0000000041A8C1F0 
+ '  0.259649     3:<<<relinquishAllLocks 
+ ' 2:< [ISL] On save, Adler Checksum: 0x3935fc7b [C:\Users\Administrator\AppData\Local\ifc2rvt\out.rvt] 
+ ' 2:< [ISL] Saved last modification time: 27-Jul-2015 11:05:16 (UTC: 27-Jul-2015 10:05:16) 
+ ' 3:< GETLOADSTOREOPTIONS in GET Project\ProjectAgent.cpp(42) despite m_dontFetch 
+ ' 3:< GETLOADSTOREOPTIONS in GET Project\ProjectAgent.cpp(42) despite m_dontFetch 
+ ' 2:< ::13:: Delta VM: Avail -20 -> 134215946 MB, Used 453 MB; RAM: Avail +1 -> 980 MB, Used 615 MB 
+ '  0.002618     3:<<acquireFileLock 
+ '  0.000009     3:<<<relinquishAllLocks 
+ ' 3:< GETLOADSTOREOPTIONS in GET Project\ProjectAgent.cpp(42) despite m_dontFetch 
+ ' 3:< GETLOADSTOREOPTIONS in GET Project\ProjectAgent.cpp(42) despite m_dontFetch 
+ ' 2:< ::13:: Delta VM: Avail -20 -> 134215927 MB, Used 453 MB; RAM: Avail 980 MB, Used 615 MB 
+ '  0.003479     3:<<acquireFileLock 
+ '  0.732275    2:<<saveToTempFile()->commit 
+ '  0.015517    2:<<<BackupFileManager::commit 
+ '  0.000013    2:<<<temporaryEffects.destroy(DoSave) 
+ '  0.000095    2:<<<commit/cleanup 
+ 'H 27-Jul-2015 11:05:16.778;   1:< 
+ Jrn.Directive "FileSizeComparison"  _
+         , "20150727110516", "2015(20140606_1530(x64))", 9732
+ ' 1:<  0 ModelServerState "Destroyed": Current server = "Not Queried", Model server = "", Model server state = "Not Applicable" 
+  'E 27-Jul-2015 11:05:17.273;   1:< 
+  ' [Jrn.File Creation Information] COMMON.FILE_CREATE.FILE_TYPE: .rvt COMMON.FILE_CREATE.ACTION: SaveAs 
+  ' 1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+  ' 1:< RAM Statistics:      978 /     2300       616=InUse      634=Peak  
+  ' 1:< VM  Statistics: 134215927 / 134217727       453=InUse      455=Peak  
+  ' 12.739188   1:<<Save Document 
+  ' 0:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+  ' 0:< RAM Statistics:      978 /     2300       616=InUse      634=Peak  
+  ' 0:< VM  Statistics: 134215927 / 134217727       453=InUse      455=Peak  
+  ' 0:< Element Expansion Statistics: 
+  ' 0:<  1% Opening Plans                    (36649) 
+  ' 0:<  0% Opening RC Plans                 (0) 
+  ' 0:<  0% Opening 3d Views                 (0) 
+  ' 0:<  0% Opening Elevations and Sections  (0) 
+  ' 0:<  34% In Regnerate                     (1262904) 
+  ' 0:<  0% In Autojoin                      (0) 
+  ' 0:<  0% In Overlap Checking              (0) 
+  ' 0:<  0% Reviewing PostedWarnings         (0) 
+  ' 0:<  65% Other                            (2428639) 
+  ' 0:< total bytes expanded: 3728192 
+  ' 0:< ;EES;1;0;0;0;34;0;0;0;65; 
+'C 27-Jul-2015 11:05:17.410;   0:< idle0_doc 
+' 2:< ViewElemCache::updateConsolidationData(): DBViewPlan, id=270663, SL_ModelDefault, GReps=153, inSeqOfTotal=28%, inSeqOfOk=100%, seqLen=43.0, seqNodes=592.0 
+ 'E 27-Jul-2015 11:05:24.637;   0:< 
+ Jrn.MouseMove    0 ,   1020 ,   -165
+ 'E 27-Jul-2015 11:05:24.638;   0:< 
+ Jrn.Command "SystemMenu" , "Quit the application; prompts to save projects , ID_APP_EXIT"
+ ' 1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+ ' 1:< RAM Statistics:      978 /     2300       616=InUse      634=Peak  
+ ' 1:< VM  Statistics: 134215926 / 134217727       456=InUse      458=Peak  
+ ' 1:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+ ' 1:< RAM Statistics:      978 /     2300       616=InUse      634=Peak  
+ ' 1:< VM  Statistics: 134215926 / 134217727       456=InUse      458=Peak  
+  'H 27-Jul-2015 11:05:25.053;   0:< 
+  Jrn.Directive "WindowSize"  _
+          , "[out.rvt]", "Floor Plan: G.L" _
+          , 1264, 507
+   'H 27-Jul-2015 11:05:25.062;   0:< 
+   Jrn.Directive "WindowSize"  _
+           , "[out.rvt]", "Floor Plan: G.L" _
+           , 1243, 486
+   ' 0:< CrsTimer event occurred for 0 times in DesktopMFCView [Floor Plan: G.L] 
+   ' 0:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+   ' 0:< RAM Statistics:      983 /     2300       611=InUse      634=Peak  
+   ' 0:< VM  Statistics: 134215932 / 134217727       454=InUse      458=Peak ;oCD; 
+   ' 0:< Third Party Updater 'Revit: ObjectNumberingUpdater' has been unregistered. 
+   ' 0:< Third Party Updater 'Revit: ObjectNumberingUpdater' has been unregistered. 
+   ' 0:< Before : Destroy Display Manager 
+   ' 0:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+   ' 0:< RAM Statistics:      983 /     2300       612=InUse      634=Peak  
+   ' 0:< VM  Statistics: 134215919 / 134217727       454=InUse      458=Peak  
+   ' 0:< After : Destroy Display Manager 
+   ' 0:<   System (MB) [Available /  Total ]  [Revit Memory Usage (MB)   ] 
+   ' 0:< RAM Statistics:      983 /     2300       612=InUse      634=Peak  
+   ' 0:< VM  Statistics: 134215919 / 134217727       454=InUse      458=Peak  
+   ' 0:< ::16:: Delta VM: Avail +4 -> 134215931 MB, Used -13 -> 441 MB, Peak +2 -> 458 MB; RAM: Avail +11 -> 992 MB, Used -15 -> 601 MB 
+   ' 0:< DummyStorage destroying DataStorageInterface 0x0000000041A8C370 
+   ' 0:< ::16:: Delta VM: Avail +19 -> 134215951 MB, Used 441 MB; RAM: Avail 992 MB, Used 601 MB 
+   ' 0:< DummyStorage destroying DataStorageInterface 0x0000000041A8DC70 
+   ' 0:< ::16:: Delta VM: Avail +19 -> 134215970 MB, Used 441 MB; RAM: Avail 992 MB, Used 601 MB 
+   ' 0:< compact data space: 59591 blocks, occupying total of 40102804 bytes 
+   ' 0:< freed 23256 blocks 
+ ' 0:< ::16:: Delta VM: Avail +12 -> 134215983 MB, Used +1 -> 443 MB; RAM: Avail +5 -> 997 MB, Used -4 -> 597 MB 
+ ' 0:<  ->desktop ExitManagedInstance 
+ ' 0:<  <-desktop ExitManagedInstance 
+ ' 0:<  ->desktop ExitNativeInstance 
+ ' 0:< ::16:: Delta VM: Avail -12 -> 134215971 MB, Used +1 -> 444 MB; RAM: Avail -2 -> 996 MB, Used +2 -> 600 MB 
+ ' 0:< API unregistering ApplicationClosing event by application Ribbon (07587efb-05ef-495a-9a23-ab401bb15327). 
+ ' 0:< ::16:: Delta VM: Avail +1 -> 134215972 MB, Used -19 -> 425 MB; RAM: Avail +19 -> 1015 MB, Used -20 -> 581 MB 
+ ' 0:< Forcibly removing all update triggers for all Updaters 
+ ' 0:< Unregistering all external services. 
+ ' 0:< ::16:: Delta VM: Avail +3 -> 134215976 MB, Used -12 -> 413 MB; RAM: Avail +8 -> 1023 MB, Used -9 -> 572 MB 
+ 'C 27-Jul-2015 11:05:28.853;   0:< Protein : Unload plug-ins 
+ 'C 27-Jul-2015 11:05:28.853;   0:< Protein : Release Plugins 
+ ' 0:< ::16:: Delta VM: Avail +26 -> 134216002 MB, Used 413 MB; RAM: Avail +1 -> 1025 MB, Used -2 -> 570 MB 
+ 'C 27-Jul-2015 11:05:29.053;   0:< Protein : Release Renderer Module 
+ 'C 27-Jul-2015 11:05:29.053;   0:< Protein : Destroy RenderingAsset Library Manager 
+ 'C 27-Jul-2015 11:05:29.102;   0:< Protein : ProteinSdkManager has been destroyed successfully 
+ ' 0:< ::16:: Delta VM: Avail +38 -> 134216041 MB, Used -30 -> 383 MB; RAM: Avail +15 -> 1041 MB, Used -14 -> 556 MB 
+ 'C 27-Jul-2015 11:05:29.268;   0:< License cleanup complete: 0, 0 
+ ' 0:< Journal Exit 
+ ' 0:< Log Summary 
+ ' 0:< .Count 
+ ' 0:< ...CloseHiddenWindowsInAllDocuments = 11 
+ ' 0:< ...CloseHiddenWindowsInDocumentStorage = 6 
+ ' 0:< ...ContentDocElementsCompacted = 4406 
+ ' 0:< ...ContentDocGRepsCompacted = 271 
+ ' 0:< ...ContentDocsCaptured = 11 
+ ' 0:< ...ContentDocsCompacted = 14 
+ ' 0:< ...ContentDocsLoaded = 74 
+ ' 0:< ...ContentDocsLoadedLazy = 74 
+ ' 0:< ...ContentDocsMutated = 3 
+ ' 0:< ...ContentDocsSaved = 85 
+ ' 0:< ...DBG_SOMETHING = 15 
+ ' 0:< ...DBG_WARNING = 1 
+ ' 0:< ...getADocuments_Arr = 5 
+ ' 0:< ...getADocuments_Set = 62 
+ ' 0:< ...onUpdateWindowCloseHidden = 11 
+ ' 0:< ...Peeks = 233 
+ ' 0:< ...PendingMessages = 102 
+ ' 0:< ...resolveJoinStructure = 420 
+ ' 0:< ...ThreadedExpansions = 1339 
+ ' 0:< ...tweakGRepsInView = 209 
+ ' 0:< Total session time spent reclaiming memory: 0.000000 seconds.  Averaged 0.000000 seconds/call for 0 calls. 
+ ' 0:<               BackgroundLoader exec=     1 (parallel=     1)   
+ ' 0:<        ConsumeMultiSegmentFile exec=   277 (parallel=   277)   self=    1.017530 sec (avg=  0.004) rollup=   1.016299 (avg=  0.004) 
+ ' 0:<             ConsumeVisitBucket exec=    29 (parallel=    29)   self=    0.639321 sec (avg=  0.022) rollup=   0.638366 (avg=  0.022) 
+ ' 0:<             CreatePreviewImage exec=    63 (parallel=     0)   self=    4.743519 sec (avg=  0.075) rollup=   4.738272 (avg=  0.075) 
+ ' 0:<                  FormOrAbandon exec=    27 (parallel=     0)   self=   14.987504 sec (avg=  0.555) rollup=  15.098135 (avg=  0.559) 
+ ' 0:<              InvalidateArchive exec=     2 (parallel=     0)   
+ ' 0:<                   JoinTweaking exec=   131 (parallel=    10)   self=    0.010488 sec (avg=  0.000) rollup=   0.008618 (avg=  0.000) 
+ ' 0:<                 PipeliningTask exec=    75 (parallel=    75)   
+ ' 0:<                 ProduceArchive exec=   352 (parallel=     0)   self=    0.101240 sec (avg=  0.000) rollup=   0.099795 (avg=  0.000) 
+ ' 0:<             ProduceVisitBucket exec=    48 (parallel=    48)   self=    0.051738 sec (avg=  0.001) rollup=   0.051449 (avg=  0.001) 
+ ' 0:<    ReadFileAndPerformOperation exec=    71 (parallel=    52)   
+ ' 0:<             RunPipelineContext exec=    19 (parallel=    13)   self=    0.017333 sec (avg=  0.001) rollup=   0.628877 (avg=  0.033) 
+ ' 0:<                 TaskFileExists exec=   435 (parallel=   428)   
+ ' 0:<                   TaskOpenFile exec=     2 (parallel=     2)   
+ ' 0:<          TaskProgressIndicator exec=     6 (parallel=     6)   
+ ' 0:<                 TaskWaitCursor exec=     1 (parallel=     1)   
+ ' 0:< ::16:: Delta VM: Avail +46 -> 134216087 MB, Used -1 -> 382 MB; RAM: Avail +14 -> 1055 MB, Used -14 -> 543 MB 
+ ' 0:<  <-desktop ExitNativeInstance 
+ ' 0:< ::16:: Delta VM: Avail +12 -> 134216100 MB, Used 382 MB; RAM: Avail 1055 MB, Used -1 -> 542 MB 
+ 'C 27-Jul-2015 11:05:30.034;   0:< finished recording journal file 

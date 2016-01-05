@@ -56,7 +56,6 @@ namespace ifc2RVTConverter
             }
 
             string appPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            string journalPath = appPath + @"\Autodesk\Revit\Autodesk Revit 2015\Journals";
             string tmpIfcFile = appPath + @"\ifc2rvt\in.ifc";
             string tmpRvtFile = appPath + @"\ifc2rvt\out.rvt";
             Process process;
@@ -78,7 +77,6 @@ namespace ifc2RVTConverter
             }
             File.Copy(inFile, tmpIfcFile);
             ProcessStartInfo startInfo = new ProcessStartInfo();
-            startInfo.WorkingDirectory = journalPath;
             startInfo.FileName = this.revitPath + @"\Revit.exe";
             startInfo.Arguments = journal + " /nosplash";
             process = Process.Start(startInfo);

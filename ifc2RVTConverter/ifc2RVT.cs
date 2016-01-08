@@ -55,7 +55,7 @@ namespace ifc2RVTConverter
                 outFile = outFile + "\\" + Path.ChangeExtension(Path.GetFileName(inFile), "rvt");
             }
 
-            string appPath = Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+            string appPath = Environment.GetFolderPath(Environment.SpecialFolder.CommonApplicationData);
             string tmpIfcFile = appPath + @"\ifc2rvt\in.ifc";
             string tmpRvtFile = appPath + @"\ifc2rvt\out.rvt";
             Process process;

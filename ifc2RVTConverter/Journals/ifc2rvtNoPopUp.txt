@@ -17,7 +17,7 @@ Set Jrn = CrsJournalScript
 ' 0:< ::0:: Delta VM: Avail -724 -> 134216556 MB, Used +106 -> 168 MB, Peak +97 -> 168 MB; RAM: Avail +155 -> 1348 MB, Used +129 -> 238 MB, Peak +129 -> 238 MB 
 ' 0:< Autodesk Revit 2015 
 ' 0:< 64-bit load point = C:\Program Files\Autodesk\Revit 2015 
-' 0:< this journal = C:\Users\ProcLauncher\AppData\Local\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt 
+' 0:< this journal = C:\ProgramData\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt 
 ' 0:< ::0:: Delta VM: Avail -55 -> 134216502 MB, Used +7 -> 176 MB, Peak +40 -> 209 MB; RAM: Avail -21 -> 1328 MB, Used +19 -> 258 MB, Peak +19 -> 258 MB 
 '  0.185634   1:<<<DictionaryAnalysis::initialize 
 ' 0:< Journal Init 
@@ -410,7 +410,7 @@ Jrn.Directive "IdleTimeTaskSymbol"  _
  ' 0:< ::4:: Delta VM: Avail -16 -> 134216172 MB, Used +4 -> 249 MB, Peak +3 -> 251 MB; RAM: Avail -6 -> 1222 MB, Used +7 -> 368 MB, Peak +5 -> 370 MB 
  'H 27-Jul-2015 11:03:44.706;   0:< 
  Jrn.Data "FileDialog"  _
-         , "IDOK", "C:\Users\ProcLauncher\AppData\Local\ifc2rvt\in.ifc", "ifc" _
+         , "IDOK", "C:\ProgramData\ifc2rvt\in.ifc", "ifc" _
          , "in.ifc", "in"
  'H 27-Jul-2015 11:03:44.707;   0:< 
  Jrn.Data "FileType"  _
@@ -425,7 +425,7 @@ Jrn.Directive "IdleTimeTaskSymbol"  _
  Jrn.Directive "DocSymbol"  _
          , "[Project1]"
  ' 1:< File: Open 
- ' 2:< Connecting session [$2ec1d78e] to Worksharing Log [C:\Users\ProcLauncher\AppData\Local\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt] 
+ ' 2:< Connecting session [$2ec1d78e] to Worksharing Log [C:\ProgramData\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt] 
  '  0.000143     3:<<<WorksharingLog::getSlog [] 
  ' 2:< Additional IP address/name found for host WIN-DAGP2QCH00H: fe80::184c:15de:f5ff:fdf0%14  
  ' 2:< Additional IP address/name found for host WIN-DAGP2QCH00H: 10.0.2.15  
@@ -502,7 +502,7 @@ Jrn.Directive "IdleTimeTaskSymbol"  _
   '  0.000663       5:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
   '  0.000078       5:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
   '  0.000005        6:<<<EndOrAbortUndoTransaction()--end of transaction checks--invisible elements;DOPT; 
-  ' 5:< Connecting session [$00065a2e] to Worksharing Log [C:\Users\ProcLauncher\AppData\Local\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt] 
+  ' 5:< Connecting session [$00065a2e] to Worksharing Log [C:\ProgramData\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt] 
   '  0.000023        6:<<<WorksharingLog::getSlog [] 
   ' 5:< Additional IP address/name found for host WIN-DAGP2QCH00H: fe80::184c:15de:f5ff:fdf0%14  
   ' 5:< Additional IP address/name found for host WIN-DAGP2QCH00H: 10.0.2.15  
@@ -913,7 +913,7 @@ Jrn.Directive "IdleTimeTaskSymbol"  _
   ' 2:< DBG_INFO: Could not get material property type from RenderingAsset! Name is MasonryCMUSchema.: line 264 of RvtLink\ExternalFileUtils.cpp. 
   ' 7:< ::5:: Delta VM: Avail +0 -> 134215996 MB, Used +5 -> 396 MB, Peak +5 -> 396 MB; RAM: Avail -11 -> 1046 MB, Used +9 -> 520 MB, Peak +9 -> 520 MB 
   ' 7:< Unnecessary nesting;Family\FamilyDocument.cpp;642;ContentADoc__UpdateReplicasInSmallDocStep;N++EB(NB); 
-  ' 9:< Connecting session [$76174263] to Worksharing Log [C:\Users\ProcLauncher\AppData\Local\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt] 
+  ' 9:< Connecting session [$76174263] to Worksharing Log [C:\ProgramData\Autodesk\Revit\Autodesk Revit 2015\Journals\journal.0058.txt] 
   ' 9:< Additional IP address/name found for host WIN-DAGP2QCH00H: fe80::184c:15de:f5ff:fdf0%14  
   ' 9:< Additional IP address/name found for host WIN-DAGP2QCH00H: 10.0.2.15  
   ' 8:< Excusing Content Doc "Transaction Successful": ContentADoc__UpdateReplicasInSmallDocStep 
@@ -2356,7 +2356,7 @@ Jrn.Directive "AllowPressAndDrag"  _
  '  0.000008    2:<<<saveModifiedImportSymbols 
  'H 27-Jul-2015 11:05:09.304;   2:< 
  Jrn.Data "File Name"  _
-         , "IDOK", "C:\Users\ProcLauncher\AppData\Local\ifc2rvt\out.rvt"
+         , "IDOK", "C:\ProgramData\ifc2rvt\out.rvt"
  '  4.693488    2:<<<getSaveFileName 
  '  0.000163     3:<<<EndOrAbortUndoTransaction() -- trackers regen;DOPT; 
  '  0.000065     3:<<<EndOrAbortUndoTransaction()--AtomViewReferencingUpdate();DOPT; 
@@ -2446,7 +2446,7 @@ Jrn.Directive "AllowPressAndDrag"  _
  ' 3:< ::13:: Delta VM: Avail +29 -> 134215966 MB, Used 453 MB; RAM: Avail +15 -> 979 MB, Used -19 -> 615 MB 
  ' 3:< DummyStorage destroying DataStorageInterface 0x0000000041A8C1F0 
  '  0.259649     3:<<<relinquishAllLocks 
- ' 2:< [ISL] On save, Adler Checksum: 0x3935fc7b [C:\Users\ProcLauncher\AppData\Local\ifc2rvt\out.rvt] 
+ ' 2:< [ISL] On save, Adler Checksum: 0x3935fc7b [C:\ProgramData\ifc2rvt\out.rvt] 
  ' 2:< [ISL] Saved last modification time: 27-Jul-2015 11:05:16 (UTC: 27-Jul-2015 10:05:16) 
  ' 3:< GETLOADSTOREOPTIONS in GET Project\ProjectAgent.cpp(42) despite m_dontFetch 
  ' 3:< GETLOADSTOREOPTIONS in GET Project\ProjectAgent.cpp(42) despite m_dontFetch 
